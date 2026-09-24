@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "bark",
+    "unlockingItems": [
+      "CUSTOM:StrippedEchowoodLog"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:StrippedEchowoodLog",
+      "CUSTOM:StrippedEchowoodLog",
+      "",
+      "CUSTOM:StrippedEchowoodLog",
+      "CUSTOM:StrippedEchowoodLog",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:StrippedEchowoodWood",
+    "name": "stripped_echowood_wood_recipe",
+    "namespace": "mod"
+  }
+}

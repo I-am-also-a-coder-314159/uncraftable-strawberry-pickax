@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "wooden_stairs",
+    "unlockingItems": [
+      "CUSTOM:EchowoodPlanks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:EchowoodPlanks",
+      "",
+      "",
+      "CUSTOM:EchowoodPlanks",
+      "CUSTOM:EchowoodPlanks",
+      "",
+      "CUSTOM:EchowoodPlanks",
+      "CUSTOM:EchowoodPlanks",
+      "CUSTOM:EchowoodPlanks"
+    ],
+    "recipeReturnStack": "CUSTOM:EchowoodStairs",
+    "name": "echowood_stairs_recipe",
+    "namespace": "mod"
+  }
+}

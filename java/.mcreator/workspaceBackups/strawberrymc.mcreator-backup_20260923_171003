@@ -1,0 +1,144 @@
+{
+  "mod_elements": [
+    {
+      "name": "Chorine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/chorine.json",
+          "src/main/resources/assets/strawberrymc/items/chorine.json",
+          "src/main/java/io/github/strawberrymc/item/ChorineItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ChorineOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/chorine_ore.json",
+          "src/main/java/io/github/strawberrymc/block/ChorineOreBlock.java",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/chorine_ore.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/chorine_ore.json",
+          "src/main/resources/assets/strawberrymc/items/chorine_ore.json",
+          "src/main/resources/assets/strawberrymc/models/block/chorine_ore.json",
+          "src/main/resources/assets/strawberrymc/blockstates/chorine_ore.json",
+          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/chorine_ore_biome_modifier.json",
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/chorine_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/chorine_block.json",
+          "src/main/resources/assets/strawberrymc/models/block/chorine_block.json",
+          "src/main/resources/assets/strawberrymc/blockstates/chorine_block.json",
+          "src/main/java/io/github/strawberrymc/block/ChorineBlockBlock.java",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/chorine_block.json",
+          "src/main/resources/assets/strawberrymc/models/item/chorine_block.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_ore_block_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/chorine_ore_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_block_ore_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/chorine_block_ore_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_ore_smelting.json",
+          "src/main/resources/data/strawberrymc/recipe/chorine_ore_smelting.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~ChorineBlock@CUSTOM:ChorineBlock",
+      "~ChorineOre@CUSTOM:ChorineOre"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~ChorineBlock@CUSTOM:ChorineBlock",
+      "~ChorineOre@CUSTOM:ChorineOre"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.strawberrymc.chorine": "Chorine",
+      "item.strawberrymc.chorine_ore": "Chorine Ore",
+      "item.strawberrymc.chorine_block": "Block of Chorine"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlocks.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModItems.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/io/github/strawberrymc/StrawberrymcMod.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "strawberrymc",
+    "modName": "Strawberry Minecraft",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-26.1.2",
+    "modElementsPackage": "io.github.strawberrymc"
+  },
+  "mcreatorVersion": 202600233518
+}

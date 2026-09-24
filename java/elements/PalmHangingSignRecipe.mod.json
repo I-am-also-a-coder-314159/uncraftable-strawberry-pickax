@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "hanging_sign",
+    "unlockingItems": [
+      "CUSTOM:StrippedPalmLog"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "Blocks.CHAIN",
+      "",
+      "Blocks.CHAIN",
+      "CUSTOM:StrippedPalmLog",
+      "CUSTOM:StrippedPalmLog",
+      "CUSTOM:StrippedPalmLog",
+      "CUSTOM:StrippedPalmLog",
+      "CUSTOM:StrippedPalmLog",
+      "CUSTOM:StrippedPalmLog"
+    ],
+    "recipeReturnStack": "CUSTOM:PalmHangingSign",
+    "name": "palm_hanging_sign_recipe",
+    "namespace": "mod"
+  }
+}

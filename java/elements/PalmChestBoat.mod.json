@@ -1,0 +1,14 @@
+{
+  "_fv": 89,
+  "_type": "specialentity",
+  "definition": {
+    "entityType": "ChestBoat",
+    "name": "Palm Boat with Chest",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      "TOOLS"
+    ],
+    "entityTexture": "palm_chest_boat",
+    "itemTexture": "palm_chest_boat"
+  }
+}

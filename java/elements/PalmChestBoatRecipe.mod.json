@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "chest_boat",
+    "unlockingItems": [
+      "CUSTOM:PalmBoat"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      "CUSTOM:PalmBoat",
+      "Blocks.CHEST",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:PalmChestBoat",
+    "name": "palm_chest_boat_recipe",
+    "namespace": "mod"
+  }
+}

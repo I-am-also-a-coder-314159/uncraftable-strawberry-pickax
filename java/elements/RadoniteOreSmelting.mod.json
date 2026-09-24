@@ -1,0 +1,33 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:RadoniteOre"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.7,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "recipeReturnStack": "",
+    "smeltingInputStack": "CUSTOM:RadoniteOre",
+    "smeltingReturnStack": "CUSTOM:RadoniteIngot",
+    "name": "radonite_ore_smelting",
+    "namespace": "mod"
+  }
+}

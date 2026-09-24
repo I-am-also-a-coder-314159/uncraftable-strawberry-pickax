@@ -1,0 +1,14 @@
+{
+  "_fv": 89,
+  "_type": "specialentity",
+  "definition": {
+    "entityType": "Boat",
+    "name": "Echowood Boat",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      "TOOLS"
+    ],
+    "entityTexture": "echowood_boat",
+    "itemTexture": "echowood_boat"
+  }
+}

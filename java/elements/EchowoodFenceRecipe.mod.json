@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "wooden_fence",
+    "unlockingItems": [
+      "CUSTOM:EchowoodPlanks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "CUSTOM:EchowoodPlanks",
+      "Items.STICK",
+      "CUSTOM:EchowoodPlanks",
+      "CUSTOM:EchowoodPlanks",
+      "Items.STICK",
+      "CUSTOM:EchowoodPlanks"
+    ],
+    "recipeReturnStack": "CUSTOM:EchowoodFence",
+    "name": "echowood_fence_recipe",
+    "namespace": "mod"
+  }
+}
