@@ -77,6 +77,9 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> GARNET_NODULE;
 	public static final DeferredItem<Item> GARNET;
 	public static final DeferredItem<Item> CRYSTALLINE_CALCITE;
+	public static final DeferredItem<Item> RECOVERY_PEARL;
+	public static final DeferredItem<Item> COCONUT;
+	public static final DeferredItem<Item> PALM_SEEDLING;
 	static {
 		CHORINE = register("chorine", ChorineItem::new);
 		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
@@ -138,6 +141,9 @@ public class StrawberrymcModItems {
 		GARNET_NODULE = register("garnet_nodule", GarnetNoduleItem::new);
 		GARNET = register("garnet", GarnetItem::new);
 		CRYSTALLINE_CALCITE = block(StrawberrymcModBlocks.CRYSTALLINE_CALCITE);
+		RECOVERY_PEARL = register("recovery_pearl", RecoveryPearlItem::new);
+		COCONUT = register("coconut", CoconutItem::new);
+		PALM_SEEDLING = block(StrawberrymcModBlocks.PALM_SEEDLING);
 	}
 
 	// Start of user code block custom items

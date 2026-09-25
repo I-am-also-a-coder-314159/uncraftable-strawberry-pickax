@@ -15,8 +15,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
 
 import java.util.function.Function;
-import java.lang.reflect.Field;
-import java.lang.reflect.Proxy;
 
 import io.github.strawberrymc.init.StrawberrymcModBiomes;
 
@@ -25,30 +23,19 @@ public class BiomeSourcePresetMixin {
 	@Mutable
 	@Shadow
 	@Final
-	private Object provider;
+	private MultiNoiseBiomeSourceParameterList.Preset.SourceProvider provider;
 
 	@Inject(method = "<init>", at = @At("RETURN"))
-	private void daisyChainProvider(Identifier idArg, Object ignored, CallbackInfo ci) {
+	private void daisyChainProvider(Identifier idArg, MultiNoiseBiomeSourceParameterList.Preset.SourceProvider ignored, CallbackInfo ci) {
 		if (idArg.equals(StrawberrymcModBiomes.OVERWORLD_BIOMESOURCE_PRESET_ID) || idArg.equals(StrawberrymcModBiomes.NETHER_BIOMESOURCE_PRESET_ID)) {
-			try {
-				Field providerField = MultiNoiseBiomeSourceParameterList.Preset.class.getDeclaredField("provider");
-				providerField.setAccessible(true);
-				Object existingProvider = providerField.get(this);
-				Class<?> providerType = providerField.getType();
-				this.provider = Proxy.newProxyInstance(providerType.getClassLoader(), new Class<?>[] { providerType },
-					(proxy, method, args) -> {
-						if (method.getName().equals("apply")) {
-							@SuppressWarnings("unchecked")
-							Function<ResourceKey<Biome>, Object> lookup = (Function<ResourceKey<Biome>, Object>) args[0];
-							@SuppressWarnings("unchecked")
-							Climate.ParameterList<Object> originalList = (Climate.ParameterList<Object>) method.invoke(existingProvider, lookup);
-							return StrawberrymcModBiomes.adaptPresetParameterList(idArg, originalList, lookup);
-						}
-						return method.invoke(existingProvider, args);
-					});
-			} catch (ReflectiveOperationException exception) {
-				throw new IllegalStateException("Unable to adapt biome source preset provider", exception);
-			}
+			MultiNoiseBiomeSourceParameterList.Preset.SourceProvider existingProvider = this.provider;
+			this.provider = new MultiNoiseBiomeSourceParameterList.Preset.SourceProvider() {
+				@Override
+				public <T> Climate.ParameterList<T> apply(Function<ResourceKey<Biome>, T> lookup) {
+					Climate.ParameterList<T> originalList = existingProvider.apply(lookup);
+					return StrawberrymcModBiomes.adaptPresetParameterList(idArg, originalList, lookup);
+				}
+			};
 		}
 	}
 }

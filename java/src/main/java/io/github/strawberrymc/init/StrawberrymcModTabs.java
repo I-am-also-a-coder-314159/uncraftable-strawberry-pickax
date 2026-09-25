@@ -57,6 +57,8 @@ public class StrawberrymcModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_LEAVES.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.PALM_LEAVES.get().asItem());
+			tabData.accept(StrawberrymcModItems.COCONUT.get());
+			tabData.accept(StrawberrymcModBlocks.PALM_SEEDLING.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_HANGING_SIGN.get().asItem());
@@ -77,6 +79,10 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_CHESTPLATE.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_LEGGINGS.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_BOOTS.get());
+			tabData.accept(StrawberrymcModItems.RECOVERY_PEARL.get());
+			tabData.accept(StrawberrymcModItems.COCONUT.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+			tabData.accept(StrawberrymcModItems.COCONUT.get());
 		}
 	}
 }

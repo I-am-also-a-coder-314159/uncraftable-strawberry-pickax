@@ -1600,6 +1600,287 @@
           "src/main/java/io/github/strawberrymc/Crystal.java"
         ]
       }
+    },
+    {
+      "name": "RecoveryPearl",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recovery_pearl",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/RecoveryPearlItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/recovery_pearl.json",
+          "src/main/resources/assets/strawberrymc/items/recovery_pearl.json"
+        ]
+      }
+    },
+    {
+      "name": "RecoveryPearlActivation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recovery_pearl_activation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlActivationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RecoveryPearlParticle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recovery_pearl_particle",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlParticleProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RecoveryPearlFail",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recovery_pearl_fail",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlFailProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RecoveryPearlProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recovery_pearl_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/entity/RecoveryPearlProjectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Coconut",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/CoconutItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/coconut.json",
+          "src/main/resources/assets/strawberrymc/items/coconut.json"
+        ]
+      }
+    },
+    {
+      "name": "CoconutFragment",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_fragment",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/particles/coconut_fragment.json",
+          "src/main/java/io/github/strawberrymc/client/particle/CoconutFragmentParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutHitParticle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_hit_particle",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CoconutHitParticleProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/entity/CoconutProjectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "RecoveryPearlRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recovery_pearl_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/recovery_pearl_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/recovery_pearl_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Palm",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/palm.json",
+          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/palm_biome_modifier.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/palm.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmSeedlingGrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_seedling_grow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/PalmSeedlingGrowProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PalmSeedling",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_seedling",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/palm_seedling.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_seedling.json",
+          "src/main/resources/assets/strawberrymc/models/item/palm_seedling.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_seedling.json",
+          "src/main/java/io/github/strawberrymc/block/PalmSeedlingBlock.java",
+          "src/main/resources/assets/strawberrymc/items/palm_seedling.json"
+        ]
+      }
+    },
+    {
+      "name": "PlantCoconut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plant_coconut",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/PlantCoconutProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1882,28 +2163,33 @@
       "item.strawberrymc.garnet_nodule": "Garnet Nodule",
       "item.strawberrymc.garnet": "Garnet",
       "biome.strawberrymc.crystal_hollows": "Crystal Hollows",
-      "item.strawberrymc.crystalline_calcite": "Crystalline Calcite"
+      "item.strawberrymc.crystalline_calcite": "Crystalline Calcite",
+      "item.strawberrymc.recovery_pearl": "Recovery Pearl",
+      "item.strawberrymc.coconut": "Coconut",
+      "item.strawberrymc.palm_seedling": "Palm Seedling"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/io/github/strawberrymc/mixin/LevelStorageSourceMixin.java",
       "src/main/java/io/github/strawberrymc/mixin/BiomeSourcePresetMixin.java",
       "src/main/java/io/github/strawberrymc/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/io/github/strawberrymc/mixin/LevelStorageSourceMixin.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBiomes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModWoodTypes.java",
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticleTypes.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticles.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModItems.java",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntityRenderers.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntities.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/strawberrymc.mixins.json",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModTabs.java",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModModels.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/pack.mcmeta",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntityRenderers.java",
       "src/main/java/io/github/strawberrymc/StrawberrymcMod.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModModels.java",
+      "src/main/resources/strawberrymc.mixins.json",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModDispenseBehaviors.java"
     ]
   },
