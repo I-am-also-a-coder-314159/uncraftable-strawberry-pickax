@@ -69,6 +69,7 @@ public class StrawberrymcModBlocks {
 	public static final DeferredBlock<Block> GARNET_CRYSTAL;
 	public static final DeferredBlock<Block> GARNET_BLOCK;
 	public static final DeferredBlock<Block> CRYSTALLINE_CALCITE;
+	public static final DeferredBlock<Block> PALM_SEEDLING;
 	static {
 		CHORINE_ORE = register("chorine_ore", ChorineOreBlock::new);
 		CHORINE_BLOCK = register("chorine_block", ChorineBlockBlock::new);
@@ -115,6 +116,7 @@ public class StrawberrymcModBlocks {
 		GARNET_CRYSTAL = register("garnet_crystal", GarnetCrystalBlock::new);
 		GARNET_BLOCK = register("garnet_block", GarnetBlockBlock::new);
 		CRYSTALLINE_CALCITE = register("crystalline_calcite", CrystallineCalciteBlock::new);
+		PALM_SEEDLING = register("palm_seedling", PalmSeedlingBlock::new);
 	}
 
 	// Start of user code block custom blocks

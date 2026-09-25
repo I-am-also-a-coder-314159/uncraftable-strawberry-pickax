@@ -63,5 +63,8 @@
   "item.strawberrymc.garnet_nodule": "Garnet Nodule",
   "item.strawberrymc.garnet": "Garnet",
   "biome.strawberrymc.crystal_hollows": "Crystal Hollows",
-  "item.strawberrymc.crystalline_calcite": "Dendrite Block"
+  "item.strawberrymc.crystalline_calcite": "Crystalline Calcite",
+  "item.strawberrymc.recovery_pearl": "Recovery Pearl",
+  "item.strawberrymc.coconut": "Coconut",
+  "item.strawberrymc.palm_seedling": "Palm Seedling"
 }

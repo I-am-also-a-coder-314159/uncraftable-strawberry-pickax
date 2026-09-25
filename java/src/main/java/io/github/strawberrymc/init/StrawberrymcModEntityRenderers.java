@@ -8,6 +8,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.client.renderer.entity.BoatRenderer;
 
 @EventBusSubscriber(Dist.CLIENT)
@@ -18,5 +19,7 @@ public class StrawberrymcModEntityRenderers {
 		event.registerEntityRenderer(StrawberrymcModEntities.ECHOWOOD_CHEST_BOAT.get(), context -> new BoatRenderer(context, StrawberrymcModModels.ECHOWOOD_CHEST_BOAT_LAYER_LOCATION));
 		event.registerEntityRenderer(StrawberrymcModEntities.PALM_BOAT.get(), context -> new BoatRenderer(context, StrawberrymcModModels.PALM_BOAT_LAYER_LOCATION));
 		event.registerEntityRenderer(StrawberrymcModEntities.PALM_CHEST_BOAT.get(), context -> new BoatRenderer(context, StrawberrymcModModels.PALM_CHEST_BOAT_LAYER_LOCATION));
+		event.registerEntityRenderer(StrawberrymcModEntities.RECOVERY_PEARL_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(StrawberrymcModEntities.COCONUT_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

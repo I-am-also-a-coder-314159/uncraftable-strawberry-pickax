@@ -1,0 +1,22 @@
+{
+  "_fv": 89,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": "CUSTOM:RecoveryPearl",
+    "showParticles": true,
+    "actionSound": "entity.arrow.shoot",
+    "igniteFire": false,
+    "disableGravity": false,
+    "disableDiscarding": false,
+    "power": 1.0,
+    "damage": 0.0,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5,
+    "onHitsPlayer": "RecoveryPearlFail",
+    "onHitsEntity": "RecoveryPearlActivation",
+    "onFlyingTick": "RecoveryPearlParticle"
+  }
+}
