@@ -74,5 +74,6 @@
   "death.attack.shocking.player": "%1$s was shocked whilst trying to escape %2$s",
   "enchantment.strawberrymc.electricution": "Shocking",
   "item.strawberrymc.glowroot_tuber": "Glowroot Tuber",
-  "item.strawberrymc.glowroot_tuber_stone": "Glowroot Tuber Stone"
+  "item.strawberrymc.glowroot_tuber_stone": "Glowroot Tuber Stone",
+  "item.strawberrymc.glowroot": "Glowroot"
 }

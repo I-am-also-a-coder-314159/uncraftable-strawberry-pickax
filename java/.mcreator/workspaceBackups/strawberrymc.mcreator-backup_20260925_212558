@@ -1666,6 +1666,352 @@
           "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlParticleProcedure.java"
         ]
       }
+    },
+    {
+      "name": "RecoveryPearlFail",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recovery_pearl_fail",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlFailProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RecoveryPearlProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recovery_pearl_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/entity/RecoveryPearlProjectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Coconut",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/CoconutItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/coconut.json",
+          "src/main/resources/assets/strawberrymc/items/coconut.json"
+        ]
+      }
+    },
+    {
+      "name": "CoconutFragment",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_fragment",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/particles/coconut_fragment.json",
+          "src/main/java/io/github/strawberrymc/client/particle/CoconutFragmentParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutHitParticle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_hit_particle",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CoconutHitParticleProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/entity/CoconutProjectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "RecoveryPearlRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recovery_pearl_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/recovery_pearl_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/recovery_pearl_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Palm",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/palm.json",
+          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/palm_biome_modifier.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/palm.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmSeedlingGrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_seedling_grow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/PalmSeedlingGrowProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PalmSeedling",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_seedling",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/palm_seedling.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_seedling.json",
+          "src/main/resources/assets/strawberrymc/models/item/palm_seedling.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_seedling.json",
+          "src/main/java/io/github/strawberrymc/block/PalmSeedlingBlock.java",
+          "src/main/resources/assets/strawberrymc/items/palm_seedling.json"
+        ]
+      }
+    },
+    {
+      "name": "PlantCoconut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plant_coconut",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/PlantCoconutProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CrystalHollowsHere",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_hollows_here",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/crystal_hollows_here.json"
+        ]
+      }
+    },
+    {
+      "name": "Shocking",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shocking",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/damage_type/shocking.json"
+        ]
+      }
+    },
+    {
+      "name": "Electricution",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electricution",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/enchantment/electricution.json"
+        ]
+      }
+    },
+    {
+      "name": "EntityShock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_shock",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/EntityShockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GlowrootTuber",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowroot_tuber",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/glowroot_tuber.json",
+          "src/main/java/io/github/strawberrymc/item/GlowrootTuberItem.java",
+          "src/main/resources/assets/strawberrymc/items/glowroot_tuber.json"
+        ]
+      }
+    },
+    {
+      "name": "GlowrootTuberStone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowroot_tuber_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/loot_table/blocks/glowroot_tuber_stone.json",
+          "src/main/resources/assets/strawberrymc/models/item/glowroot_tuber_stone.json",
+          "src/main/resources/assets/strawberrymc/items/glowroot_tuber_stone.json",
+          "src/main/resources/assets/strawberrymc/models/block/glowroot_tuber_stone.json",
+          "src/main/java/io/github/strawberrymc/block/GlowrootTuberStoneBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/glowroot_tuber_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "GlowrootTuberPlant",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowroot_tuber_plant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/GlowrootTuberPlantProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1879,6 +2225,18 @@
     ],
     "BIOMES:minecraft:has_structure/stronghold": [
       "~CrystalHollows@CUSTOM:CrystalHollows"
+    ],
+    "ENCHANTMENTS:minecraft:tradeable": [
+      "~Electricution@CUSTOM:Electricution"
+    ],
+    "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~Electricution@CUSTOM:Electricution"
+    ],
+    "ENCHANTMENTS:minecraft:non_treasure": [
+      "~Electricution@CUSTOM:Electricution"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~GlowrootTuberStone@CUSTOM:GlowrootTuberStone"
     ]
   },
   "tab_element_order": {},
@@ -1949,7 +2307,17 @@
       "item.strawberrymc.garnet": "Garnet",
       "biome.strawberrymc.crystal_hollows": "Crystal Hollows",
       "item.strawberrymc.crystalline_calcite": "Crystalline Calcite",
-      "item.strawberrymc.recovery_pearl": "Recovery Pearl"
+      "item.strawberrymc.recovery_pearl": "Recovery Pearl",
+      "item.strawberrymc.coconut": "Coconut",
+      "item.strawberrymc.palm_seedling": "Palm Seedling",
+      "advancements.crystal_hollows_here.title": "Crystal Hollows Here",
+      "advancements.crystal_hollows_here.descr": "not a lush cave....",
+      "death.attack.shocking.item": "%1$s was shocked by %2$s using %3$s",
+      "death.attack.shocking": "%1$s was electricuted",
+      "death.attack.shocking.player": "%1$s was shocked whilst trying to escape %2$s",
+      "enchantment.strawberrymc.electricution": "Shocking",
+      "item.strawberrymc.glowroot_tuber": "Glowroot Tuber",
+      "item.strawberrymc.glowroot_tuber_stone": "Glowroot Tuber Stone"
     }
   },
   "metadata": {
@@ -1960,6 +2328,8 @@
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBiomes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModWoodTypes.java",
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticleTypes.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticles.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModItems.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntities.java",
