@@ -2012,12 +2012,94 @@
           "src/main/java/io/github/strawberrymc/procedures/GlowrootTuberPlantProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Glowroot",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowroot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/glowroot.json",
+          "src/main/resources/assets/strawberrymc/models/block/glowroot.json",
+          "src/main/resources/assets/strawberrymc/items/glowroot.json",
+          "src/main/resources/assets/strawberrymc/models/item/glowroot.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/glowroot.json",
+          "src/main/java/io/github/strawberrymc/block/GlowrootBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "GlowrootTuberGrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowroot_tuber_grow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/GlowrootTuberGrowProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GlowrootTuberForceOut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowroot_tuber_force_out",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/GlowrootTuberForceOutProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~GlowrootTuberStone@CUSTOM:GlowrootTuberStone",
       "~RadoniteOre@CUSTOM:RadoniteOre",
       "~RadoniteBlock@CUSTOM:RadoniteBlock",
       "~ChorineOre@CUSTOM:ChorineOre",
@@ -2234,9 +2316,6 @@
     ],
     "ENCHANTMENTS:minecraft:non_treasure": [
       "~Electricution@CUSTOM:Electricution"
-    ],
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~GlowrootTuberStone@CUSTOM:GlowrootTuberStone"
     ]
   },
   "tab_element_order": {},
@@ -2317,7 +2396,8 @@
       "death.attack.shocking.player": "%1$s was shocked whilst trying to escape %2$s",
       "enchantment.strawberrymc.electricution": "Shocking",
       "item.strawberrymc.glowroot_tuber": "Glowroot Tuber",
-      "item.strawberrymc.glowroot_tuber_stone": "Glowroot Tuber Stone"
+      "item.strawberrymc.glowroot_tuber_stone": "Glowroot Tuber Stone",
+      "item.strawberrymc.glowroot": "Glowroot"
     }
   },
   "metadata": {

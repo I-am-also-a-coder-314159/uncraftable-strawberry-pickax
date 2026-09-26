@@ -61,6 +61,7 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.COCONUT.get());
 			tabData.accept(StrawberrymcModBlocks.PALM_SEEDLING.get().asItem());
 			tabData.accept(StrawberrymcModItems.GLOWROOT_TUBER.get());
+			tabData.accept(StrawberrymcModBlocks.GLOWROOT.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_HANGING_SIGN.get().asItem());

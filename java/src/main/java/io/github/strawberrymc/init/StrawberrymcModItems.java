@@ -82,6 +82,7 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> PALM_SEEDLING;
 	public static final DeferredItem<Item> GLOWROOT_TUBER;
 	public static final DeferredItem<Item> GLOWROOT_TUBER_STONE;
+	public static final DeferredItem<Item> GLOWROOT;
 	static {
 		CHORINE = register("chorine", ChorineItem::new);
 		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
@@ -148,6 +149,7 @@ public class StrawberrymcModItems {
 		PALM_SEEDLING = block(StrawberrymcModBlocks.PALM_SEEDLING);
 		GLOWROOT_TUBER = register("glowroot_tuber", GlowrootTuberItem::new);
 		GLOWROOT_TUBER_STONE = block(StrawberrymcModBlocks.GLOWROOT_TUBER_STONE);
+		GLOWROOT = block(StrawberrymcModBlocks.GLOWROOT);
 	}
 
 	// Start of user code block custom items

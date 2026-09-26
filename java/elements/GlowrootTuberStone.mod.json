@@ -51,7 +51,7 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [],
-    "destroyTool": "shovel",
+    "destroyTool": "pickaxe",
     "customDrop": "CUSTOM:GlowrootTuber",
     "dropAmount": 1,
     "xpAmountMin": 0,
@@ -98,6 +98,7 @@
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": true,
+    "onBonemealSuccess": "GlowrootTuberGrow",
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
     "vibrationSensitivityRadius": {
