@@ -1,7 +1,6 @@
 package io.github.strawberrymc.item;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -17,7 +16,12 @@ import io.github.strawberrymc.entity.RecoveryPearlProjectileEntity;
 
 public class RecoveryPearlItem extends Item {
 	public RecoveryPearlItem(Item.Properties properties) {
-		super(properties.rarity(Rarity.UNCOMMON).stacksTo(16));
+		super(properties.stacksTo(16));
+	}
+
+	@Override
+	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
+		return 72000;
 	}
 
 	@Override

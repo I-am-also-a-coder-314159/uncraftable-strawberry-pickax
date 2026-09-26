@@ -1,0 +1,17 @@
+/place feature minecraft:pale_oak_creaking
+/place feature strawberrymc:crystal
+/tp @p ~~10~
+/give @s minecraft:ender_pearl
+/place feature strawberrymc:crystal
+/effect give @s minecraft:night_vision
+/effect give @s minecraft:night_vision infinite
+/place feature strawberrymc:crystal
+/give @s minecraft:stick
+/enchant @s minecraft:knockback 255
+/place
+/place structure minecraft:end_city
+/w
+/place structure minecraft:end_city
+/
+/locate structure minecraft:end_city
+/tp @s 1984 ~ -864

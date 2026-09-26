@@ -3,7 +3,7 @@
   "_type": "projectile",
   "definition": {
     "projectileItem": "CUSTOM:RecoveryPearl",
-    "showParticles": true,
+    "showParticles": false,
     "actionSound": "entity.arrow.shoot",
     "igniteFire": false,
     "disableGravity": false,
@@ -15,8 +15,8 @@
     "customModelTexture": "",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
-    "onHitsPlayer": "RecoveryPearlFail",
-    "onHitsEntity": "RecoveryPearlActivation",
-    "onFlyingTick": "RecoveryPearlParticle"
+    "onHitsBlock": "RecoveryPearlFetchProcedure",
+    "onHitsPlayer": "RecoveryPearlFetchProcedureEntityHit",
+    "onHitsEntity": "RecoveryPearlFetchProcedureEntityHit"
   }
 }

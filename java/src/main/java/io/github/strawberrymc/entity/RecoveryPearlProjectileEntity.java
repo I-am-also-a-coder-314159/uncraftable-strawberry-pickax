@@ -2,6 +2,7 @@ package io.github.strawberrymc.entity;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.EntityHitResult;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.ItemStack;
@@ -20,9 +21,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 import javax.annotation.Nullable;
 
-import io.github.strawberrymc.procedures.RecoveryPearlParticleProcedure;
-import io.github.strawberrymc.procedures.RecoveryPearlFailProcedure;
-import io.github.strawberrymc.procedures.RecoveryPearlActivationProcedure;
+import io.github.strawberrymc.procedures.RecoveryPearlFetchProcedureProcedure;
+import io.github.strawberrymc.procedures.RecoveryPearlFetchProcedureEntityHitProcedure;
 import io.github.strawberrymc.init.StrawberrymcModItems;
 import io.github.strawberrymc.init.StrawberrymcModEntities;
 
@@ -79,22 +79,24 @@ public class RecoveryPearlProjectileEntity extends AbstractArrow implements Item
 		}
 	}
 
-	@Override
-	public void playerTouch(Player entity) {
+	public void playerTouch(Player entity, LivingEntity sourceentity, double x, double y, double z, Level world) {
 		super.playerTouch(entity);
-		RecoveryPearlFailProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+		RecoveryPearlFetchProcedureEntityHitProcedure.execute(world, x, y, z, sourceentity);
 	}
 
-	@Override
-	public void onHitEntity(EntityHitResult entityHitResult) {
+	public void onHitEntity(EntityHitResult entityHitResult, LivingEntity sourceentity, double x, double y, double z, Level world) {
 		super.onHitEntity(entityHitResult);
-		RecoveryPearlActivationProcedure.execute(entityHitResult.getEntity(), this.getOwner());
+		RecoveryPearlFetchProcedureEntityHitProcedure.execute(world, x, y, z, sourceentity);
+	}
+
+	public void onHitBlock(BlockHitResult blockHitResult, LivingEntity sourceentity, double x, double y, double z, Level world) {
+		super.onHitBlock(blockHitResult);
+		RecoveryPearlFetchProcedureProcedure.execute(world, x, y, z, sourceentity);
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
-		RecoveryPearlParticleProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 		if (this.isInGround())
 			this.discard();
 	}
@@ -111,7 +113,7 @@ public class RecoveryPearlProjectileEntity extends AbstractArrow implements Item
 		RecoveryPearlProjectileEntity entityarrow = new RecoveryPearlProjectileEntity(StrawberrymcModEntities.RECOVERY_PEARL_PROJECTILE.get(), entity, world, null);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
-		entityarrow.setCritArrow(true);
+		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
@@ -128,7 +130,7 @@ public class RecoveryPearlProjectileEntity extends AbstractArrow implements Item
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(0);
 		entityarrow.setKnockback(0);
-		entityarrow.setCritArrow(true);
+		entityarrow.setCritArrow(false);
 		entity.level().addFreshEntity(entityarrow);
 		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
