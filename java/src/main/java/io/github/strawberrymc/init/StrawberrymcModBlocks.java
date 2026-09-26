@@ -72,6 +72,8 @@ public class StrawberrymcModBlocks {
 	public static final DeferredBlock<Block> PALM_SEEDLING;
 	public static final DeferredBlock<Block> GLOWROOT_TUBER_STONE;
 	public static final DeferredBlock<Block> GLOWROOT;
+	public static final DeferredBlock<Block> GLOWROOT_DUMMY_SPAWNER;
+	public static final DeferredBlock<Block> CLOVER_MAT;
 	static {
 		CHORINE_ORE = register("chorine_ore", ChorineOreBlock::new);
 		CHORINE_BLOCK = register("chorine_block", ChorineBlockBlock::new);
@@ -121,6 +123,8 @@ public class StrawberrymcModBlocks {
 		PALM_SEEDLING = register("palm_seedling", PalmSeedlingBlock::new);
 		GLOWROOT_TUBER_STONE = register("glowroot_tuber_stone", GlowrootTuberStoneBlock::new);
 		GLOWROOT = register("glowroot", GlowrootBlock::new);
+		GLOWROOT_DUMMY_SPAWNER = register("glowroot_dummy_spawner", GlowrootDummySpawnerBlock::new);
+		CLOVER_MAT = register("clover_mat", CloverMatBlock::new);
 	}
 
 	// Start of user code block custom blocks

@@ -2061,11 +2061,137 @@
       }
     },
     {
-      "name": "GlowrootTuberForceOut",
+      "name": "GlowrootGeneration",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "glowroot_tuber_force_out",
+      "registry_name": "glowroot_generation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/GlowrootGenerationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GlowrootDummySpawner",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowroot_dummy_spawner",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/block/GlowrootDummySpawnerBlock.java",
+          "src/main/resources/assets/strawberrymc/items/glowroot_dummy_spawner.json",
+          "src/main/resources/assets/strawberrymc/models/item/glowroot_dummy_spawner.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/glowroot_dummy_spawner.json",
+          "src/main/resources/assets/strawberrymc/blockstates/glowroot_dummy_spawner.json",
+          "src/main/resources/assets/strawberrymc/models/block/glowroot_dummy_spawner.json"
+        ]
+      }
+    },
+    {
+      "name": "GlowrootHavest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowroot_havest",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/GlowrootHavestProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GlowrootDummyPatch",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowroot_dummy_patch",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/glowroot_dummy_patch.json",
+          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/glowroot_dummy_patch_biome_modifier.json",
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/glowroot_dummy_patch.json"
+        ]
+      }
+    },
+    {
+      "name": "CloverCluff",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_cluff",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/clover_cluff.json",
+          "src/main/java/io/github/strawberrymc/item/CloverCluffItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/clover_cluff.json"
+        ]
+      }
+    },
+    {
+      "name": "CloverMat",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_mat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/clover_mat.json",
+          "src/main/resources/assets/strawberrymc/items/clover_mat.json",
+          "src/main/java/io/github/strawberrymc/block/CloverMatBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/clover_mat.json",
+          "src/main/resources/assets/strawberrymc/blockstates/clover_mat.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/clover_mat.json"
+        ]
+      }
+    },
+    {
+      "name": "CloverPlant",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_plant",
       "metadata": {
         "dependencies": [
           {
@@ -2090,7 +2216,21 @@
           }
         ],
         "files": [
-          "src/main/java/io/github/strawberrymc/procedures/GlowrootTuberForceOutProcedure.java"
+          "src/main/java/io/github/strawberrymc/procedures/CloverPlantProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RareCloverCluff",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rare_clover_cluff",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/rare_clover_cluff.json",
+          "src/main/java/io/github/strawberrymc/item/RareCloverCluffItem.java",
+          "src/main/resources/assets/strawberrymc/items/rare_clover_cluff.json"
         ]
       }
     }
@@ -2397,7 +2537,11 @@
       "enchantment.strawberrymc.electricution": "Shocking",
       "item.strawberrymc.glowroot_tuber": "Glowroot Tuber",
       "item.strawberrymc.glowroot_tuber_stone": "Glowroot Tuber Stone",
-      "item.strawberrymc.glowroot": "Glowroot"
+      "item.strawberrymc.glowroot": "Glowroot",
+      "item.strawberrymc.glowroot_dummy_spawner": "Glowroot Dummy Spawner",
+      "item.strawberrymc.clover_cluff": "3-leaved Clover",
+      "item.strawberrymc.clover_mat": "Clover Mat",
+      "item.strawberrymc.rare_clover_cluff": "4-Leaved Clover"
     }
   },
   "metadata": {
