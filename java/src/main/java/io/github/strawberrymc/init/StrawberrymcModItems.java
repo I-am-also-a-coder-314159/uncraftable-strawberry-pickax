@@ -78,6 +78,18 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> GARNET;
 	public static final DeferredItem<Item> CRYSTALLINE_CALCITE;
 	public static final DeferredItem<Item> RECOVERY_PEARL;
+<<<<<<< HEAD
+=======
+	public static final DeferredItem<Item> COCONUT;
+	public static final DeferredItem<Item> PALM_SEEDLING;
+	public static final DeferredItem<Item> GLOWROOT_TUBER;
+	public static final DeferredItem<Item> GLOWROOT_TUBER_STONE;
+	public static final DeferredItem<Item> GLOWROOT;
+	public static final DeferredItem<Item> GLOWROOT_DUMMY_SPAWNER;
+	public static final DeferredItem<Item> CLOVER_CLUFF;
+	public static final DeferredItem<Item> CLOVER_MAT;
+	public static final DeferredItem<Item> RARE_CLOVER_CLUFF;
+>>>>>>> a3afc44e0e19c1757c63289c4ac33b5bb678a5bc
 	static {
 		CHORINE = register("chorine", ChorineItem::new);
 		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
@@ -140,6 +152,15 @@ public class StrawberrymcModItems {
 		GARNET = register("garnet", GarnetItem::new);
 		CRYSTALLINE_CALCITE = block(StrawberrymcModBlocks.CRYSTALLINE_CALCITE);
 		RECOVERY_PEARL = register("recovery_pearl", RecoveryPearlItem::new);
+		COCONUT = register("coconut", CoconutItem::new);
+		PALM_SEEDLING = block(StrawberrymcModBlocks.PALM_SEEDLING);
+		GLOWROOT_TUBER = register("glowroot_tuber", GlowrootTuberItem::new);
+		GLOWROOT_TUBER_STONE = block(StrawberrymcModBlocks.GLOWROOT_TUBER_STONE);
+		GLOWROOT = block(StrawberrymcModBlocks.GLOWROOT);
+		GLOWROOT_DUMMY_SPAWNER = block(StrawberrymcModBlocks.GLOWROOT_DUMMY_SPAWNER);
+		CLOVER_CLUFF = register("clover_cluff", CloverCluffItem::new);
+		CLOVER_MAT = block(StrawberrymcModBlocks.CLOVER_MAT);
+		RARE_CLOVER_CLUFF = register("rare_clover_cluff", RareCloverCluffItem::new);
 	}
 
 	// Start of user code block custom items
