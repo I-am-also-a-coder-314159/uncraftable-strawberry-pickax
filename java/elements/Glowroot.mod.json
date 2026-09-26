@@ -79,11 +79,13 @@
     "aiPathNodeType": "DEFAULT",
     "strippingResult": "",
     "ignitedByLava": false,
-    "flammability": 100,
-    "fireSpreadSpeed": 60,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      "CUSTOM:GlowrootTuberStone"
+    ],
     "isBonemealable": false,
     "frequencyOnChunks": 5,
     "generateFeature": false,
