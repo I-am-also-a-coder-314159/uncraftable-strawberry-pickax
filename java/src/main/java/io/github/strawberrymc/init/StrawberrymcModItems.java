@@ -89,12 +89,7 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> CLOVER_CLUFF;
 	public static final DeferredItem<Item> CLOVER_MAT;
 	public static final DeferredItem<Item> RARE_CLOVER_CLUFF;
-	public static final DeferredItem<Item> FIBER;
-	public static final DeferredItem<Item> GLOWROOT_PASTE;
-	public static final DeferredItem<Item> COCONUT_OIL;
-	public static final DeferredItem<Item> GREEN_BERYL;
-	public static final DeferredItem<Item> RAW_DIAMOND;
-	public static final DeferredItem<Item> LAZURITE;
+>>>>>>> a3afc44e0e19c1757c63289c4ac33b5bb678a5bc
 	static {
 		CHORINE = register("chorine", ChorineItem::new);
 		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
@@ -166,12 +161,6 @@ public class StrawberrymcModItems {
 		CLOVER_CLUFF = register("clover_cluff", CloverCluffItem::new);
 		CLOVER_MAT = block(StrawberrymcModBlocks.CLOVER_MAT);
 		RARE_CLOVER_CLUFF = register("rare_clover_cluff", RareCloverCluffItem::new);
-		FIBER = register("fiber", FiberItem::new);
-		GLOWROOT_PASTE = register("glowroot_paste", GlowrootPasteItem::new);
-		COCONUT_OIL = register("coconut_oil", CoconutOilItem::new);
-		GREEN_BERYL = register("green_beryl", GreenBerylItem::new);
-		RAW_DIAMOND = register("raw_diamond", RawDiamondItem::new);
-		LAZURITE = register("lazurite", LazuriteItem::new);
 	}
 
 	// Start of user code block custom items
