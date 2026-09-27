@@ -2390,6 +2390,53 @@
           "src/main/java/io/github/strawberrymc/client/gui/GemcutterScreen.java"
         ]
       }
+    },
+    {
+      "name": "Herb",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herb",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "LuckPotion",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "luck_potion",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/recipe/brewing/LuckPotionBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "LuckPotionAfter",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "luck_potion_after",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/recipe/brewing/LuckPotionAfterBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "ForgingTable",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forging_table",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/world/inventory/ForgingTableMenu.java",
+          "src/main/java/io/github/strawberrymc/client/gui/ForgingTableScreen.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2707,7 +2754,17 @@
       "item.strawberrymc.lazurite": "Lazurite",
       "gui.strawberrymc.gemcutter.label_empty": "\u003d\u003e",
       "gui.strawberrymc.gemcutter.label_gemcutter": "Gemcutter",
-      "gui.strawberrymc.gemcutter.label_lubricant": "Lubricant"
+      "gui.strawberrymc.gemcutter.label_lubricant": "Lubricant",
+      "item.minecraft.lingering_potion.effect.herb": "Lingering Potion of Herb",
+      "item.minecraft.splash_potion.effect.herb": "Splash Potion of Herb",
+      "item.minecraft.tipped_arrow.effect.herb": "Arrow of Herb",
+      "item.minecraft.potion.effect.herb": "Potion of Herb",
+      "gui.strawberrymc.forging_table.option_prefix": "",
+      "gui.strawberrymc.forging_table.label_forger": "Forger",
+      "gui.strawberrymc.forging_table.label_remainder": "Remainder",
+      "gui.strawberrymc.forging_table.label_base": "Base",
+      "gui.strawberrymc.forging_table.label_modifier": "Modifier",
+      "gui.strawberrymc.forging_table.option_suffix": ""
     }
   },
   "metadata": {
@@ -2723,6 +2780,7 @@
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticleTypes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticles.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModPotions.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModItems.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntities.java",
