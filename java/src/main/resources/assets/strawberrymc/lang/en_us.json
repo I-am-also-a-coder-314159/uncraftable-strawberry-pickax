@@ -79,5 +79,14 @@
   "item.strawberrymc.glowroot_dummy_spawner": "Glowroot Dummy Spawner",
   "item.strawberrymc.clover_cluff": "3-leaved Clover",
   "item.strawberrymc.clover_mat": "Clover Mat",
-  "item.strawberrymc.rare_clover_cluff": "4-Leaved Clover"
+  "item.strawberrymc.rare_clover_cluff": "4-Leaved Clover",
+  "item.strawberrymc.fiber": "Fiber",
+  "item.strawberrymc.glowroot_paste": "Glowroot Paste",
+  "item.strawberrymc.coconut_oil": "Coconut Oil",
+  "item.strawberrymc.green_beryl": "Green Beryl",
+  "item.strawberrymc.raw_diamond": "Raw Diamond",
+  "item.strawberrymc.lazurite": "Lazurite",
+  "gui.strawberrymc.gemcutter.label_empty": "=>",
+  "gui.strawberrymc.gemcutter.label_gemcutter": "Gemcutter",
+  "gui.strawberrymc.gemcutter.label_lubricant": "Lubricant"
 }
