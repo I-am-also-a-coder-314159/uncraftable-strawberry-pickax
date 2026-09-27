@@ -52,8 +52,8 @@ public class StrawberrymcMod {
 		StrawberrymcModItems.REGISTRY.register(modEventBus);
 		StrawberrymcModEntities.REGISTRY.register(modEventBus);
 		StrawberrymcModTabs.REGISTRY.register(modEventBus);
+		StrawberrymcModPotions.REGISTRY.register(modEventBus);
 		StrawberrymcModMenus.REGISTRY.register(modEventBus);
-		StrawberrymcModParticleTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

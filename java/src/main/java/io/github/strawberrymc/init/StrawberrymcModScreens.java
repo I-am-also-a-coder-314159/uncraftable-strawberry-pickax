@@ -15,6 +15,7 @@ public class StrawberrymcModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(StrawberrymcModMenus.GEMCUTTER.get(), GemcutterScreen::new);
+		event.register(StrawberrymcModMenus.FORGING_TABLE.get(), ForgingTableScreen::new);
 	}
 
 	public interface ScreenAccessor {

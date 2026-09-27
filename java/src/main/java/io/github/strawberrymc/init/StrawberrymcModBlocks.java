@@ -69,7 +69,6 @@ public class StrawberrymcModBlocks {
 	public static final DeferredBlock<Block> GARNET_CRYSTAL;
 	public static final DeferredBlock<Block> GARNET_BLOCK;
 	public static final DeferredBlock<Block> CRYSTALLINE_CALCITE;
-	public static final DeferredBlock<Block> PALM_SEEDLING;
 	public static final DeferredBlock<Block> GLOWROOT_TUBER_STONE;
 	public static final DeferredBlock<Block> GLOWROOT;
 	public static final DeferredBlock<Block> GLOWROOT_DUMMY_SPAWNER;
@@ -120,7 +119,6 @@ public class StrawberrymcModBlocks {
 		GARNET_CRYSTAL = register("garnet_crystal", GarnetCrystalBlock::new);
 		GARNET_BLOCK = register("garnet_block", GarnetBlockBlock::new);
 		CRYSTALLINE_CALCITE = register("crystalline_calcite", CrystallineCalciteBlock::new);
-		PALM_SEEDLING = register("palm_seedling", PalmSeedlingBlock::new);
 		GLOWROOT_TUBER_STONE = register("glowroot_tuber_stone", GlowrootTuberStoneBlock::new);
 		GLOWROOT = register("glowroot", GlowrootBlock::new);
 		GLOWROOT_DUMMY_SPAWNER = register("glowroot_dummy_spawner", GlowrootDummySpawnerBlock::new);

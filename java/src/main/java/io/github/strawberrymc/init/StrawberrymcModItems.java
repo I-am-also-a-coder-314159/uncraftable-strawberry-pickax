@@ -78,8 +78,6 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> GARNET;
 	public static final DeferredItem<Item> CRYSTALLINE_CALCITE;
 	public static final DeferredItem<Item> RECOVERY_PEARL;
-	public static final DeferredItem<Item> COCONUT;
-	public static final DeferredItem<Item> PALM_SEEDLING;
 	public static final DeferredItem<Item> GLOWROOT_TUBER;
 	public static final DeferredItem<Item> GLOWROOT_TUBER_STONE;
 	public static final DeferredItem<Item> GLOWROOT;
@@ -93,6 +91,8 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> GREEN_BERYL;
 	public static final DeferredItem<Item> RAW_DIAMOND;
 	public static final DeferredItem<Item> LAZURITE;
+	public static final DeferredItem<Item> IRON_DUST;
+	public static final DeferredItem<Item> FORGE_HAMMER;
 	static {
 		CHORINE = register("chorine", ChorineItem::new);
 		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
@@ -155,8 +155,6 @@ public class StrawberrymcModItems {
 		GARNET = register("garnet", GarnetItem::new);
 		CRYSTALLINE_CALCITE = block(StrawberrymcModBlocks.CRYSTALLINE_CALCITE);
 		RECOVERY_PEARL = register("recovery_pearl", RecoveryPearlItem::new);
-		COCONUT = register("coconut", CoconutItem::new);
-		PALM_SEEDLING = block(StrawberrymcModBlocks.PALM_SEEDLING);
 		GLOWROOT_TUBER = register("glowroot_tuber", GlowrootTuberItem::new);
 		GLOWROOT_TUBER_STONE = block(StrawberrymcModBlocks.GLOWROOT_TUBER_STONE);
 		GLOWROOT = block(StrawberrymcModBlocks.GLOWROOT);
@@ -170,6 +168,8 @@ public class StrawberrymcModItems {
 		GREEN_BERYL = register("green_beryl", GreenBerylItem::new);
 		RAW_DIAMOND = register("raw_diamond", RawDiamondItem::new);
 		LAZURITE = register("lazurite", LazuriteItem::new);
+		IRON_DUST = register("iron_dust", IronDustItem::new);
+		FORGE_HAMMER = register("forge_hammer", ForgeHammerItem::new);
 	}
 
 	// Start of user code block custom items

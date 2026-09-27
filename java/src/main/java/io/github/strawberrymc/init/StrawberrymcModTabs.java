@@ -30,6 +30,7 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.GREEN_BERYL.get());
 			tabData.accept(StrawberrymcModItems.RAW_DIAMOND.get());
 			tabData.accept(StrawberrymcModItems.LAZURITE.get());
+			tabData.accept(StrawberrymcModItems.IRON_DUST.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.CHORINE_ORE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.CHORINE_BLOCK.get().asItem());
@@ -64,8 +65,6 @@ public class StrawberrymcModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_LEAVES.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.PALM_LEAVES.get().asItem());
-			tabData.accept(StrawberrymcModItems.COCONUT.get());
-			tabData.accept(StrawberrymcModBlocks.PALM_SEEDLING.get().asItem());
 			tabData.accept(StrawberrymcModItems.GLOWROOT_TUBER.get());
 			tabData.accept(StrawberrymcModBlocks.GLOWROOT.get().asItem());
 			tabData.accept(StrawberrymcModItems.CLOVER_CLUFF.get());
@@ -88,6 +87,7 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.RADONITE_HOE.get());
 			tabData.accept(StrawberrymcModItems.PALM_BOAT.get());
 			tabData.accept(StrawberrymcModItems.PALM_CHEST_BOAT.get());
+			tabData.accept(StrawberrymcModItems.FORGE_HAMMER.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(StrawberrymcModItems.RADONITE_SWORD.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_HELMET.get());
@@ -95,9 +95,6 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_LEGGINGS.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_BOOTS.get());
 			tabData.accept(StrawberrymcModItems.RECOVERY_PEARL.get());
-			tabData.accept(StrawberrymcModItems.COCONUT.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-			tabData.accept(StrawberrymcModItems.COCONUT.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
 			if (tabData.hasPermissions()) {
 				tabData.accept(StrawberrymcModBlocks.GLOWROOT_DUMMY_SPAWNER.get().asItem());

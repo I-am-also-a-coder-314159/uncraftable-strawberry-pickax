@@ -25,6 +25,7 @@ import io.github.strawberrymc.StrawberrymcMod;
 public class StrawberrymcModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, StrawberrymcMod.MODID);
 	public static final DeferredHolder<MenuType<?>, MenuType<GemcutterMenu>> GEMCUTTER = REGISTRY.register("gemcutter", () -> IMenuTypeExtension.create(GemcutterMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<ForgingTableMenu>> FORGING_TABLE = REGISTRY.register("forging_table", () -> IMenuTypeExtension.create(ForgingTableMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

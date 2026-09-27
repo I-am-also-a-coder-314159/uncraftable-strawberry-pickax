@@ -1,13 +1,11 @@
 package io.github.strawberrymc.entity;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
 import net.minecraft.world.entity.projectile.ItemSupplier;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
@@ -20,9 +18,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 import javax.annotation.Nullable;
 
-import io.github.strawberrymc.procedures.RecoveryPearlParticleProcedure;
-import io.github.strawberrymc.procedures.RecoveryPearlFailProcedure;
-import io.github.strawberrymc.procedures.RecoveryPearlActivationProcedure;
 import io.github.strawberrymc.init.StrawberrymcModItems;
 import io.github.strawberrymc.init.StrawberrymcModEntities;
 
@@ -80,21 +75,8 @@ public class RecoveryPearlProjectileEntity extends AbstractArrow implements Item
 	}
 
 	@Override
-	public void playerTouch(Player entity) {
-		super.playerTouch(entity);
-		RecoveryPearlFailProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
-	}
-
-	@Override
-	public void onHitEntity(EntityHitResult entityHitResult) {
-		super.onHitEntity(entityHitResult);
-		RecoveryPearlActivationProcedure.execute(entityHitResult.getEntity(), this.getOwner());
-	}
-
-	@Override
 	public void tick() {
 		super.tick();
-		RecoveryPearlParticleProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 		if (this.isInGround())
 			this.discard();
 	}
