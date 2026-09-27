@@ -26,10 +26,6 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.GLOWROOT_TUBER.get());
 			tabData.accept(StrawberrymcModItems.CLOVER_CLUFF.get());
 			tabData.accept(StrawberrymcModItems.RARE_CLOVER_CLUFF.get());
-			tabData.accept(StrawberrymcModItems.FIBER.get());
-			tabData.accept(StrawberrymcModItems.GREEN_BERYL.get());
-			tabData.accept(StrawberrymcModItems.RAW_DIAMOND.get());
-			tabData.accept(StrawberrymcModItems.LAZURITE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.CHORINE_ORE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.CHORINE_BLOCK.get().asItem());
@@ -70,10 +66,6 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.GLOWROOT.get().asItem());
 			tabData.accept(StrawberrymcModItems.CLOVER_CLUFF.get());
 			tabData.accept(StrawberrymcModItems.RARE_CLOVER_CLUFF.get());
-			tabData.accept(StrawberrymcModItems.FIBER.get());
-			tabData.accept(StrawberrymcModItems.GREEN_BERYL.get());
-			tabData.accept(StrawberrymcModItems.RAW_DIAMOND.get());
-			tabData.accept(StrawberrymcModItems.LAZURITE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_HANGING_SIGN.get().asItem());

@@ -1602,32 +1602,6 @@
       }
     },
     {
-      "name": "RecoveryPearlFetchProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "recovery_pearl_fetch_procedure",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlFetchProcedureProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "RecoveryPearlFetchProcedureEntityHit",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "recovery_pearl_fetch_procedure_entity_hit",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlFetchProcedureEntityHitProcedure.java"
-        ]
-      }
-    },
-    {
       "name": "RecoveryPearl",
       "type": "item",
       "compiles": true,
@@ -1636,8 +1610,90 @@
       "metadata": {
         "files": [
           "src/main/java/io/github/strawberrymc/item/RecoveryPearlItem.java",
-          "src/main/resources/assets/strawberrymc/items/recovery_pearl.json",
-          "src/main/resources/assets/strawberrymc/models/item/recovery_pearl.json"
+          "src/main/resources/assets/strawberrymc/models/item/recovery_pearl.json",
+          "src/main/resources/assets/strawberrymc/items/recovery_pearl.json"
+        ]
+      }
+    },
+    {
+      "name": "RecoveryPearlActivation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recovery_pearl_activation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlActivationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RecoveryPearlParticle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recovery_pearl_particle",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlParticleProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RecoveryPearlFail",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recovery_pearl_fail",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlFailProcedure.java"
         ]
       }
     },
@@ -1645,7 +1701,7 @@
       "name": "RecoveryPearlProjectile",
       "type": "projectile",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "recovery_pearl_projectile",
       "metadata": {
         "files": [
@@ -2005,6 +2061,40 @@
       }
     },
     {
+      "name": "GlowrootTuberForceOut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowroot_tuber_force_out",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/GlowrootTuberForceOutProcedure.java"
+        ]
+      }
+    },
+    {
       "name": "GlowrootGeneration",
       "type": "procedure",
       "compiles": true,
@@ -2048,133 +2138,6 @@
           "src/main/resources/data/strawberrymc/loot_table/blocks/glowroot_dummy_spawner.json",
           "src/main/resources/assets/strawberrymc/blockstates/glowroot_dummy_spawner.json",
           "src/main/resources/assets/strawberrymc/models/block/glowroot_dummy_spawner.json"
-        ]
-      }
-    },
-    {
-      "name": "GlowrootHavest",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glowroot_havest",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/io/github/strawberrymc/procedures/GlowrootHavestProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "GlowrootDummyPatch",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glowroot_dummy_patch",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/strawberrymc/worldgen/configured_feature/glowroot_dummy_patch.json",
-          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/glowroot_dummy_patch_biome_modifier.json",
-          "src/main/resources/data/strawberrymc/worldgen/placed_feature/glowroot_dummy_patch.json"
-        ]
-      }
-    },
-    {
-      "name": "CloverCluff",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "clover_cluff",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/strawberrymc/items/clover_cluff.json",
-          "src/main/java/io/github/strawberrymc/item/CloverCluffItem.java",
-          "src/main/resources/assets/strawberrymc/models/item/clover_cluff.json"
-        ]
-      }
-    },
-    {
-      "name": "CloverMat",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "clover_mat",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/strawberrymc/models/block/clover_mat.json",
-          "src/main/resources/assets/strawberrymc/items/clover_mat.json",
-          "src/main/java/io/github/strawberrymc/block/CloverMatBlock.java",
-          "src/main/resources/assets/strawberrymc/models/item/clover_mat.json",
-          "src/main/resources/assets/strawberrymc/blockstates/clover_mat.json",
-          "src/main/resources/data/strawberrymc/loot_table/blocks/clover_mat.json"
-        ]
-      }
-    },
-    {
-      "name": "CloverPlant",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "clover_plant",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/io/github/strawberrymc/procedures/CloverPlantProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "RareCloverCluff",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rare_clover_cluff",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/strawberrymc/models/item/rare_clover_cluff.json",
-          "src/main/java/io/github/strawberrymc/item/RareCloverCluffItem.java",
-          "src/main/resources/assets/strawberrymc/items/rare_clover_cluff.json"
         ]
       }
     }
@@ -2482,31 +2445,30 @@
       "item.strawberrymc.glowroot_tuber": "Glowroot Tuber",
       "item.strawberrymc.glowroot_tuber_stone": "Glowroot Tuber Stone",
       "item.strawberrymc.glowroot": "Glowroot",
-      "item.strawberrymc.glowroot_dummy_spawner": "Glowroot Dummy Spawner",
-      "item.strawberrymc.clover_cluff": "3-leaved Clover",
-      "item.strawberrymc.clover_mat": "Clover Mat",
-      "item.strawberrymc.rare_clover_cluff": "4-Leaved Clover"
+      "item.strawberrymc.glowroot_dummy_spawner": "Glowroot Dummy Spawner"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/io/github/strawberrymc/mixin/LevelStorageSourceMixin.java",
       "src/main/java/io/github/strawberrymc/mixin/BiomeSourcePresetMixin.java",
       "src/main/java/io/github/strawberrymc/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/io/github/strawberrymc/mixin/LevelStorageSourceMixin.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBiomes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModWoodTypes.java",
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticleTypes.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticles.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModItems.java",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntityRenderers.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntities.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/strawberrymc.mixins.json",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModTabs.java",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModModels.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/pack.mcmeta",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntityRenderers.java",
       "src/main/java/io/github/strawberrymc/StrawberrymcMod.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModModels.java",
+      "src/main/resources/strawberrymc.mixins.json",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModDispenseBehaviors.java"
     ]
   },
