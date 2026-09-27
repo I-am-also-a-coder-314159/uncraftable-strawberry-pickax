@@ -1,0 +1,33 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "minecraft:ender_pearl": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:ender_pearl": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 43688,
+      "minecraft:walk_one_cm": 16898,
+      "minecraft:leave_game": 3,
+      "minecraft:play_time": 21844,
+      "minecraft:jump": 32,
+      "minecraft:time_since_death": 21844,
+      "minecraft:drop": 1,
+      "minecraft:interact_with_brewingstand": 1,
+      "minecraft:sprint_one_cm": 5747,
+      "minecraft:open_chest": 4,
+      "minecraft:total_world_time": 22806,
+      "minecraft:fly_one_cm": 443937,
+      "minecraft:crouch_one_cm": 579,
+      "minecraft:sneak_time": 1260,
+      "minecraft:climb_one_cm": 328
+    },
+    "minecraft:used": {
+      "minecraft:ender_eye": 12,
+      "minecraft:end_portal_frame": 12,
+      "minecraft:ender_pearl": 13
+    }
+  },
+  "DataVersion": 4790
+}

@@ -56,6 +56,7 @@ public class StrawberrymcMod {
 		StrawberrymcModMenus.REGISTRY.register(modEventBus);
 		StrawberrymcModParticleTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
+		Crystal.init(modEventBus);
 		// End of user code block mod init
 	}
 

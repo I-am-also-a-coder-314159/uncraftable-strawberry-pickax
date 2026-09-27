@@ -78,6 +78,8 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> GARNET;
 	public static final DeferredItem<Item> CRYSTALLINE_CALCITE;
 	public static final DeferredItem<Item> RECOVERY_PEARL;
+<<<<<<< HEAD
+=======
 	public static final DeferredItem<Item> COCONUT;
 	public static final DeferredItem<Item> PALM_SEEDLING;
 	public static final DeferredItem<Item> GLOWROOT_TUBER;
