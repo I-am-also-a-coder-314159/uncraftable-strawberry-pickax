@@ -1506,12 +1506,12 @@
       "registry_name": "garnet_crystal",
       "metadata": {
         "files": [
-          "src/main/resources/data/strawberrymc/loot_table/blocks/garnet_crystal.json",
           "src/main/java/io/github/strawberrymc/block/GarnetCrystalBlock.java",
-          "src/main/resources/assets/strawberrymc/items/garnet_crystal.json",
           "src/main/resources/assets/strawberrymc/blockstates/garnet_crystal.json",
+          "src/main/resources/assets/strawberrymc/models/item/garnet_crystal.json",
+          "src/main/resources/assets/strawberrymc/items/garnet_crystal.json",
           "src/main/resources/assets/strawberrymc/models/block/garnet_crystal.json",
-          "src/main/resources/assets/strawberrymc/models/item/garnet_crystal.json"
+          "src/main/resources/data/strawberrymc/loot_table/blocks/garnet_crystal.json"
         ]
       }
     },
@@ -2177,6 +2177,210 @@
           "src/main/resources/assets/strawberrymc/items/rare_clover_cluff.json"
         ]
       }
+    },
+    {
+      "name": "Fiber",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fiber",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/FiberItem.java",
+          "src/main/resources/assets/strawberrymc/items/fiber.json",
+          "src/main/resources/assets/strawberrymc/models/item/fiber.json"
+        ]
+      }
+    },
+    {
+      "name": "GlowrootPaste",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowroot_paste",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/GlowrootPasteItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/glowroot_paste.json",
+          "src/main/resources/assets/strawberrymc/items/glowroot_paste.json"
+        ]
+      }
+    },
+    {
+      "name": "GlowrootPasteRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowroot_paste_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/glowroot_paste_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/glowroot_paste_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CoconutOil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_oil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/coconut_oil.json",
+          "src/main/resources/assets/strawberrymc/items/coconut_oil.json",
+          "src/main/java/io/github/strawberrymc/item/CoconutOilItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CalcGemcutterOut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calc_gemcutter_out",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CalcGemcutterOutProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ChoriteRefine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorite_refine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/chorite_refine.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorite_refine.json"
+        ]
+      }
+    },
+    {
+      "name": "GreenBeryl",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_beryl",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/GreenBerylItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/green_beryl.json",
+          "src/main/resources/assets/strawberrymc/items/green_beryl.json"
+        ]
+      }
+    },
+    {
+      "name": "RawDiamond",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_diamond",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/raw_diamond.json",
+          "src/main/resources/assets/strawberrymc/items/raw_diamond.json",
+          "src/main/java/io/github/strawberrymc/item/RawDiamondItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Lazurite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lazurite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/lazurite.json",
+          "src/main/resources/assets/strawberrymc/items/lazurite.json",
+          "src/main/java/io/github/strawberrymc/item/LazuriteItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Gemcutter",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gemcutter",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/world/inventory/GemcutterMenu.java",
+          "src/main/java/io/github/strawberrymc/client/gui/GemcutterScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "Herb",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herb",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "LuckPotion",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "luck_potion",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/recipe/brewing/LuckPotionBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "LuckPotionAfter",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "luck_potion_after",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/recipe/brewing/LuckPotionAfterBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "ForgingTable",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forging_table",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/world/inventory/ForgingTableMenu.java",
+          "src/main/java/io/github/strawberrymc/client/gui/ForgingTableScreen.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2485,7 +2689,26 @@
       "item.strawberrymc.glowroot_dummy_spawner": "Glowroot Dummy Spawner",
       "item.strawberrymc.clover_cluff": "3-leaved Clover",
       "item.strawberrymc.clover_mat": "Clover Mat",
-      "item.strawberrymc.rare_clover_cluff": "4-Leaved Clover"
+      "item.strawberrymc.rare_clover_cluff": "4-Leaved Clover",
+      "item.strawberrymc.fiber": "Fiber",
+      "item.strawberrymc.glowroot_paste": "Glowroot Paste",
+      "item.strawberrymc.coconut_oil": "Coconut Oil",
+      "item.strawberrymc.green_beryl": "Green Beryl",
+      "item.strawberrymc.raw_diamond": "Raw Diamond",
+      "item.strawberrymc.lazurite": "Lazurite",
+      "gui.strawberrymc.gemcutter.label_empty": "\u003d\u003e",
+      "gui.strawberrymc.gemcutter.label_gemcutter": "Gemcutter",
+      "gui.strawberrymc.gemcutter.label_lubricant": "Lubricant",
+      "item.minecraft.lingering_potion.effect.herb": "Lingering Potion of Herb",
+      "item.minecraft.splash_potion.effect.herb": "Splash Potion of Herb",
+      "item.minecraft.tipped_arrow.effect.herb": "Arrow of Herb",
+      "item.minecraft.potion.effect.herb": "Potion of Herb",
+      "gui.strawberrymc.forging_table.option_prefix": "",
+      "gui.strawberrymc.forging_table.label_forger": "Forger",
+      "gui.strawberrymc.forging_table.label_remainder": "Remainder",
+      "gui.strawberrymc.forging_table.label_base": "Base",
+      "gui.strawberrymc.forging_table.label_modifier": "Modifier",
+      "gui.strawberrymc.forging_table.option_suffix": ""
     }
   },
   "metadata": {
@@ -2495,7 +2718,13 @@
       "src/main/java/io/github/strawberrymc/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBiomes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModWoodTypes.java",
+      "src/main/java/io/github/strawberrymc/network/MenuStateUpdateMessage.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModMenus.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModScreens.java",
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticleTypes.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticles.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModPotions.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModItems.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntityRenderers.java",

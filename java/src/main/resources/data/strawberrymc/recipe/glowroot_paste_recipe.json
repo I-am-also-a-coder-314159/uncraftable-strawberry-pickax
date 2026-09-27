@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "strawberrymc:glowroot_tuber",
+    "b": "minecraft:glowstone_dust"
+  },
+  "result": {
+    "id": "strawberrymc:glowroot_paste",
+    "count": 1
+  }
+}
