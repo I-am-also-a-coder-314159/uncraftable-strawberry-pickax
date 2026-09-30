@@ -69,11 +69,11 @@ public class StrawberrymcModBlocks {
 	public static final DeferredBlock<Block> GARNET_CRYSTAL;
 	public static final DeferredBlock<Block> GARNET_BLOCK;
 	public static final DeferredBlock<Block> CRYSTALLINE_CALCITE;
-	public static final DeferredBlock<Block> PALM_SEEDLING;
 	public static final DeferredBlock<Block> GLOWROOT_TUBER_STONE;
 	public static final DeferredBlock<Block> GLOWROOT;
 	public static final DeferredBlock<Block> GLOWROOT_DUMMY_SPAWNER;
 	public static final DeferredBlock<Block> CLOVER_MAT;
+	public static final DeferredBlock<Block> FERTILE_FARMLAND;
 	static {
 		CHORINE_ORE = register("chorine_ore", ChorineOreBlock::new);
 		CHORINE_BLOCK = register("chorine_block", ChorineBlockBlock::new);
@@ -120,11 +120,11 @@ public class StrawberrymcModBlocks {
 		GARNET_CRYSTAL = register("garnet_crystal", GarnetCrystalBlock::new);
 		GARNET_BLOCK = register("garnet_block", GarnetBlockBlock::new);
 		CRYSTALLINE_CALCITE = register("crystalline_calcite", CrystallineCalciteBlock::new);
-		PALM_SEEDLING = register("palm_seedling", PalmSeedlingBlock::new);
 		GLOWROOT_TUBER_STONE = register("glowroot_tuber_stone", GlowrootTuberStoneBlock::new);
 		GLOWROOT = register("glowroot", GlowrootBlock::new);
 		GLOWROOT_DUMMY_SPAWNER = register("glowroot_dummy_spawner", GlowrootDummySpawnerBlock::new);
 		CLOVER_MAT = register("clover_mat", CloverMatBlock::new);
+		FERTILE_FARMLAND = register("fertile_farmland", FertileFarmlandBlock::new);
 	}
 
 	// Start of user code block custom blocks

@@ -5,6 +5,9 @@
     },
     "strawberrymc:palm_leaves": {
       "chance": 0.3
+    },
+    "strawberrymc:clover_cluff": {
+      "chance": 0.5
     }
   }
 }
