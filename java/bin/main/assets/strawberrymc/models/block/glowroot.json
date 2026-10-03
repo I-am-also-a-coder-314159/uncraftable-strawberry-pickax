@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "strawberrymc:block/placeholder",
-    "particle": "minecraft:block/ochre_froglight_side"
-  }
-}

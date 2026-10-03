@@ -85,11 +85,9 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> CLOVER_CLUFF;
 	public static final DeferredItem<Item> CLOVER_MAT;
 	public static final DeferredItem<Item> RARE_CLOVER_CLUFF;
-	public static final DeferredItem<Item> LAZURITE;
-	public static final DeferredItem<Item> PALM_SEEDLING;
 	public static final DeferredItem<Item> FERTILE_FARMLAND;
 	public static final DeferredItem<Item> SULFUR_SLAG;
-	public static final DeferredItem<Item> IRON_HAMMER;
+	public static final DeferredItem<Item> PLANT_FIBER;
 	static {
 		CHORINE = register("chorine", ChorineItem::new);
 		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
@@ -159,11 +157,9 @@ public class StrawberrymcModItems {
 		CLOVER_CLUFF = register("clover_cluff", CloverCluffItem::new);
 		CLOVER_MAT = block(StrawberrymcModBlocks.CLOVER_MAT);
 		RARE_CLOVER_CLUFF = register("rare_clover_cluff", RareCloverCluffItem::new);
-		LAZURITE = register("lazurite", LazuriteItem::new);
-		PALM_SEEDLING = block(StrawberrymcModBlocks.PALM_SEEDLING);
 		FERTILE_FARMLAND = block(StrawberrymcModBlocks.FERTILE_FARMLAND);
 		SULFUR_SLAG = register("sulfur_slag", SulfurSlagItem::new);
-		IRON_HAMMER = register("iron_hammer", IronHammerItem::new);
+		PLANT_FIBER = register("plant_fiber", PlantFiberItem::new);
 	}
 
 	// Start of user code block custom items

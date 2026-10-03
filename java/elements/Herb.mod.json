@@ -1,0 +1,11 @@
+{
+  "_fv": 89,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Herb",
+    "splashName": "Splash Potion of Herb",
+    "lingeringName": "Lingering Potion of Herb",
+    "arrowName": "Arrow of Herb",
+    "effects": []
+  }
+}

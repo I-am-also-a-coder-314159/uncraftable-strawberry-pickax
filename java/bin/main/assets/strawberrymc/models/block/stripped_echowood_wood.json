@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "strawberrymc:block/stripped_echowood_log",
-    "particle": "strawberrymc:block/stripped_echowood_log"
-  }
-}

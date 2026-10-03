@@ -1,7 +1,0 @@
-{
-  "parent": "block/template_fence_gate_wall",
-  "textures": {
-    "texture": "strawberrymc:block/echowood_planks",
-    "particle": "strawberrymc:block/echowood_planks"
-  }
-}

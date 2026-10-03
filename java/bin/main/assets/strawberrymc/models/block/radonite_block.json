@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "strawberrymc:block/radonite_ore_block",
-    "particle": "strawberrymc:block/radonite_ore_block"
-  }
-}
