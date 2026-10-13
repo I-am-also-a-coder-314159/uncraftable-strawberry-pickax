@@ -27,6 +27,7 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.CLOVER_CLUFF.get());
 			tabData.accept(StrawberrymcModItems.RARE_CLOVER_CLUFF.get());
 			tabData.accept(StrawberrymcModItems.PLANT_FIBER.get());
+			tabData.accept(StrawberrymcModItems.FLINT_SHARD.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.CHORINE_ORE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.CHORINE_BLOCK.get().asItem());

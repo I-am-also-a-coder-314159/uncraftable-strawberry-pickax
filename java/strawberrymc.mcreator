@@ -2390,6 +2390,27 @@
           "src/main/resources/assets/strawberrymc/models/item/poor_farmland.json"
         ]
       }
+    },
+    {
+      "name": "FlintShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/FlintShardItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/flint_shard.json",
+          "src/main/resources/assets/strawberrymc/items/flint_shard.json"
+        ]
+      }
+    },
+    {
+      "name": "FlintRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint_recipe"
     }
   ],
   "variable_elements": [],
@@ -2732,7 +2753,8 @@
       "item.strawberrymc.sulfur_slag": "Sulfur Slag",
       "item.strawberrymc.plant_fiber": "Plant Fiber",
       "biome.strawberrymc.dry_savanna": "Dry Savanna",
-      "item.strawberrymc.poor_farmland": "Poor Farmland"
+      "item.strawberrymc.poor_farmland": "Poor Farmland",
+      "item.strawberrymc.flint_shard": "Flint Shard"
     }
   },
   "metadata": {
