@@ -2325,6 +2325,71 @@
           "src/main/resources/data/strawberrymc/advancement/recipes/chorite_refine.json"
         ]
       }
+    },
+    {
+      "name": "DrySavanna",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dry_savanna",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/dry_savanna_tree.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/dry_savanna_tree.json",
+          "src/main/resources/data/strawberrymc/worldgen/biome/dry_savanna.json"
+        ]
+      }
+    },
+    {
+      "name": "PoorFarmlandFertilize",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poor_farmland_fertilize",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/PoorFarmlandFertilizeProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PoorFarmland",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poor_farmland",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/poor_farmland.json",
+          "src/main/resources/assets/strawberrymc/items/poor_farmland.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/poor_farmland.json",
+          "src/main/resources/assets/strawberrymc/models/block/poor_farmland.json",
+          "src/main/java/io/github/strawberrymc/block/PoorFarmlandBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/poor_farmland.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2553,7 +2618,8 @@
       "~ForgeHammer@Blocks.IRON_BLOCK"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
-      "~FertileFarmland@CUSTOM:FertileFarmland"
+      "~FertileFarmland@CUSTOM:FertileFarmland",
+      "~PoorFarmland@CUSTOM:PoorFarmland"
     ]
   },
   "tab_element_order": {},
@@ -2664,7 +2730,9 @@
       "item.strawberrymc.forge_hammer": "Forge Hammer",
       "item.strawberrymc.fertile_farmland": "Fertile Farmland",
       "item.strawberrymc.sulfur_slag": "Sulfur Slag",
-      "item.strawberrymc.plant_fiber": "Plant Fiber"
+      "item.strawberrymc.plant_fiber": "Plant Fiber",
+      "biome.strawberrymc.dry_savanna": "Dry Savanna",
+      "item.strawberrymc.poor_farmland": "Poor Farmland"
     }
   },
   "metadata": {

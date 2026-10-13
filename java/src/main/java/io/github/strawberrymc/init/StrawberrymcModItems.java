@@ -88,6 +88,7 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> FERTILE_FARMLAND;
 	public static final DeferredItem<Item> SULFUR_SLAG;
 	public static final DeferredItem<Item> PLANT_FIBER;
+	public static final DeferredItem<Item> POOR_FARMLAND;
 	static {
 		CHORINE = register("chorine", ChorineItem::new);
 		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
@@ -160,6 +161,7 @@ public class StrawberrymcModItems {
 		FERTILE_FARMLAND = block(StrawberrymcModBlocks.FERTILE_FARMLAND);
 		SULFUR_SLAG = register("sulfur_slag", SulfurSlagItem::new);
 		PLANT_FIBER = register("plant_fiber", PlantFiberItem::new);
+		POOR_FARMLAND = block(StrawberrymcModBlocks.POOR_FARMLAND);
 	}
 
 	// Start of user code block custom items

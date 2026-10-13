@@ -22,15 +22,15 @@
       "registry_name": "chorine_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/strawberrymc/models/item/chorine_ore.json",
-          "src/main/java/io/github/strawberrymc/block/ChorineOreBlock.java",
-          "src/main/resources/data/strawberrymc/worldgen/configured_feature/chorine_ore.json",
-          "src/main/resources/data/strawberrymc/loot_table/blocks/chorine_ore.json",
-          "src/main/resources/assets/strawberrymc/items/chorine_ore.json",
-          "src/main/resources/assets/strawberrymc/models/block/chorine_ore.json",
-          "src/main/resources/assets/strawberrymc/blockstates/chorine_ore.json",
           "src/main/resources/data/strawberrymc/neoforge/biome_modifier/chorine_ore_biome_modifier.json",
-          "src/main/resources/data/strawberrymc/worldgen/placed_feature/chorine_ore.json"
+          "src/main/resources/assets/strawberrymc/items/chorine_ore.json",
+          "src/main/resources/assets/strawberrymc/blockstates/chorine_ore.json",
+          "src/main/resources/assets/strawberrymc/models/item/chorine_ore.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/chorine_ore.json",
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/chorine_ore.json",
+          "src/main/java/io/github/strawberrymc/block/ChorineOreBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/chorine_ore.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/chorine_ore.json"
         ]
       }
     },
@@ -1506,12 +1506,12 @@
       "registry_name": "garnet_crystal",
       "metadata": {
         "files": [
-          "src/main/resources/data/strawberrymc/loot_table/blocks/garnet_crystal.json",
           "src/main/java/io/github/strawberrymc/block/GarnetCrystalBlock.java",
-          "src/main/resources/assets/strawberrymc/items/garnet_crystal.json",
           "src/main/resources/assets/strawberrymc/blockstates/garnet_crystal.json",
+          "src/main/resources/assets/strawberrymc/models/item/garnet_crystal.json",
+          "src/main/resources/assets/strawberrymc/items/garnet_crystal.json",
           "src/main/resources/assets/strawberrymc/models/block/garnet_crystal.json",
-          "src/main/resources/assets/strawberrymc/models/item/garnet_crystal.json"
+          "src/main/resources/data/strawberrymc/loot_table/blocks/garnet_crystal.json"
         ]
       }
     },
@@ -1602,32 +1602,6 @@
       }
     },
     {
-      "name": "RecoveryPearlFetchProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "recovery_pearl_fetch_procedure",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlFetchProcedureProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "RecoveryPearlFetchProcedureEntityHit",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "recovery_pearl_fetch_procedure_entity_hit",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlFetchProcedureEntityHitProcedure.java"
-        ]
-      }
-    },
-    {
       "name": "RecoveryPearl",
       "type": "item",
       "compiles": true,
@@ -1636,8 +1610,8 @@
       "metadata": {
         "files": [
           "src/main/java/io/github/strawberrymc/item/RecoveryPearlItem.java",
-          "src/main/resources/assets/strawberrymc/items/recovery_pearl.json",
-          "src/main/resources/assets/strawberrymc/models/item/recovery_pearl.json"
+          "src/main/resources/assets/strawberrymc/models/item/recovery_pearl.json",
+          "src/main/resources/assets/strawberrymc/items/recovery_pearl.json"
         ]
       }
     },
@@ -1645,96 +1619,11 @@
       "name": "RecoveryPearlProjectile",
       "type": "projectile",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "recovery_pearl_projectile",
       "metadata": {
         "files": [
           "src/main/java/io/github/strawberrymc/entity/RecoveryPearlProjectileEntity.java"
-        ]
-      }
-<<<<<<< HEAD
-<<<<<<< HEAD:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260926_134313
-=======
-    },
-    {
-      "name": "Coconut",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coconut",
-      "metadata": {
-        "files": [
-          "src/main/java/io/github/strawberrymc/item/CoconutItem.java",
-          "src/main/resources/assets/strawberrymc/models/item/coconut.json",
-          "src/main/resources/assets/strawberrymc/items/coconut.json"
-        ]
-      }
-    },
-    {
-      "name": "CoconutFragment",
-      "type": "particle",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coconut_fragment",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/strawberrymc/particles/coconut_fragment.json",
-          "src/main/java/io/github/strawberrymc/client/particle/CoconutFragmentParticle.java"
-        ]
-      }
-    },
-    {
-      "name": "CoconutHitParticle",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coconut_hit_particle",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/io/github/strawberrymc/procedures/CoconutHitParticleProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "CoconutProjectile",
-      "type": "projectile",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coconut_projectile",
-      "metadata": {
-        "files": [
-          "src/main/java/io/github/strawberrymc/entity/CoconutProjectileEntity.java"
-        ]
-      }
-    },
-    {
-      "name": "RecoveryPearlRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "recovery_pearl_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/strawberrymc/recipe/recovery_pearl_recipe.json",
-          "src/main/resources/data/strawberrymc/advancement/recipes/recovery_pearl_recipe.json"
         ]
       }
     },
@@ -1749,53 +1638,6 @@
           "src/main/resources/data/strawberrymc/worldgen/placed_feature/palm.json",
           "src/main/resources/data/strawberrymc/neoforge/biome_modifier/palm_biome_modifier.json",
           "src/main/resources/data/strawberrymc/worldgen/configured_feature/palm.json"
-        ]
-      }
-    },
-    {
-      "name": "PalmSeedlingGrow",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "palm_seedling_grow",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/io/github/strawberrymc/procedures/PalmSeedlingGrowProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "PalmSeedling",
-      "type": "plant",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "palm_seedling",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/strawberrymc/blockstates/palm_seedling.json",
-          "src/main/resources/assets/strawberrymc/models/block/palm_seedling.json",
-          "src/main/resources/assets/strawberrymc/models/item/palm_seedling.json",
-          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_seedling.json",
-          "src/main/java/io/github/strawberrymc/block/PalmSeedlingBlock.java",
-          "src/main/resources/assets/strawberrymc/items/palm_seedling.json"
         ]
       }
     },
@@ -2128,8 +1970,7 @@
           "src/main/resources/assets/strawberrymc/items/clover_mat.json",
           "src/main/java/io/github/strawberrymc/block/CloverMatBlock.java",
           "src/main/resources/assets/strawberrymc/models/item/clover_mat.json",
-          "src/main/resources/assets/strawberrymc/blockstates/clover_mat.json",
-          "src/main/resources/data/strawberrymc/loot_table/blocks/clover_mat.json"
+          "src/main/resources/assets/strawberrymc/blockstates/clover_mat.json"
         ]
       }
     },
@@ -2180,18 +2021,334 @@
           "src/main/resources/assets/strawberrymc/items/rare_clover_cluff.json"
         ]
       }
->>>>>>> parent of 19a2f34... fixed more buggy stuff, use runclient not compilejava:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260927_195358
-=======
->>>>>>> parent of 19a2f34... fixed more buggy stuff, use runclient not compilejava
+    },
+    {
+      "name": "GlowrootPaste",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowroot_paste",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/GlowrootPasteItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/glowroot_paste.json",
+          "src/main/resources/assets/strawberrymc/items/glowroot_paste.json"
+        ]
+      }
+    },
+    {
+      "name": "GlowrootPasteRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowroot_paste_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/glowroot_paste_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/glowroot_paste_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GreenBeryl",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_beryl",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/GreenBerylItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/green_beryl.json",
+          "src/main/resources/assets/strawberrymc/items/green_beryl.json"
+        ]
+      }
+    },
+    {
+      "name": "RawDiamond",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_diamond",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/raw_diamond.json",
+          "src/main/resources/assets/strawberrymc/items/raw_diamond.json",
+          "src/main/java/io/github/strawberrymc/item/RawDiamondItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Lazurite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lazurite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/lazurite.json",
+          "src/main/resources/assets/strawberrymc/items/lazurite.json",
+          "src/main/java/io/github/strawberrymc/item/LazuriteItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Gemcutter",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gemcutter",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/world/inventory/GemcutterMenu.java",
+          "src/main/java/io/github/strawberrymc/client/gui/GemcutterScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "FertileFarmland",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fertile_farmland",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/loot_table/blocks/fertile_farmland.json",
+          "src/main/resources/assets/strawberrymc/models/item/fertile_farmland.json",
+          "src/main/java/io/github/strawberrymc/block/FertileFarmlandBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/fertile_farmland.json",
+          "src/main/resources/assets/strawberrymc/blockstates/fertile_farmland.json",
+          "src/main/resources/assets/strawberrymc/items/fertile_farmland.json"
+        ]
+      }
+    },
+    {
+      "name": "TrampleFertileFarmland",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trample_fertile_farmland",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TrampleFertileFarmlandProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SulfurParticulate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfur_particulate",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/SulfurParticulateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SulfurSlag",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfur_slag",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/SulfurSlagItem.java",
+          "src/main/resources/assets/strawberrymc/items/sulfur_slag.json",
+          "src/main/resources/assets/strawberrymc/models/item/sulfur_slag.json"
+        ]
+      }
+    },
+    {
+      "name": "SulfurFertilizeFarmland",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfur_fertilize_farmland",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/SulfurFertilizeFarmlandProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CloverCompost",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_compost",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CloverMatDrop",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_mat_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/loot_table/blocks/clover_mat.json"
+        ]
+      }
+    },
+    {
+      "name": "Herb",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herb",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "HerbBrewing",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herb_brewing",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/recipe/brewing/HerbBrewingBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "LuckBrewing",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "luck_brewing",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/recipe/brewing/LuckBrewingBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "CloverPatch",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_patch",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/clover_patch_biome_modifier.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/clover_patch.json",
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/clover_patch.json"
+        ]
+      }
+    },
+    {
+      "name": "PlantFiber",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plant_fiber",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/PlantFiberItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/plant_fiber.json",
+          "src/main/resources/assets/strawberrymc/items/plant_fiber.json"
+        ]
+      }
+    },
+    {
+      "name": "ChoriteRefine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorite_refine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/chorite_refine.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorite_refine.json"
+        ]
+      }
+    },
+    {
+      "name": "DrySavanna",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dry_savanna",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/dry_savanna_tree.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/dry_savanna_tree.json",
+          "src/main/resources/data/strawberrymc/worldgen/biome/dry_savanna.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~ChorineOre@CUSTOM:ChorineOre",
+      "~GlowrootTuberStone@CUSTOM:GlowrootTuberStone",
       "~RadoniteOre@CUSTOM:RadoniteOre",
       "~RadoniteBlock@CUSTOM:RadoniteBlock",
-      "~ChorineOre@CUSTOM:ChorineOre",
       "~ChorineBlock@CUSTOM:ChorineBlock"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
@@ -2396,13 +2553,28 @@
     ],
     "BIOMES:minecraft:has_structure/stronghold": [
       "~CrystalHollows@CUSTOM:CrystalHollows"
+    ],
+    "ENCHANTMENTS:minecraft:tradeable": [
+      "~Electricution@CUSTOM:Electricution"
+    ],
+    "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~Electricution@CUSTOM:Electricution"
+    ],
+    "ENCHANTMENTS:minecraft:non_treasure": [
+      "~Electricution@CUSTOM:Electricution"
+    ],
+    "ITEMS:strawberrymc:forge_hammer_repair_items": [
+      "~ForgeHammer@Blocks.IRON_BLOCK"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~FertileFarmland@CUSTOM:FertileFarmland"
     ]
   },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.strawberrymc.chorine": "Chorine",
-      "item.strawberrymc.chorine_ore": "Chorine Ore",
+      "item.strawberrymc.chorine": "Chorine Nodule",
+      "item.strawberrymc.chorine_ore": "Chorite Ore",
       "item.strawberrymc.chorine_block": "Block of Chorine",
       "item.strawberrymc.chorite": "Chorite",
       "item.strawberrymc.echowood_log": "Echowood Log",
@@ -2466,10 +2638,6 @@
       "item.strawberrymc.garnet": "Garnet",
       "biome.strawberrymc.crystal_hollows": "Crystal Hollows",
       "item.strawberrymc.crystalline_calcite": "Crystalline Calcite",
-<<<<<<< HEAD
-<<<<<<< HEAD:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260926_134313
-      "item.strawberrymc.recovery_pearl": "Recovery Pearl"
-=======
       "item.strawberrymc.recovery_pearl": "Recovery Pearl",
       "item.strawberrymc.coconut": "Coconut",
       "item.strawberrymc.palm_seedling": "Palm Seedling",
@@ -2485,32 +2653,55 @@
       "item.strawberrymc.glowroot_dummy_spawner": "Glowroot Dummy Spawner",
       "item.strawberrymc.clover_cluff": "3-leaved Clover",
       "item.strawberrymc.clover_mat": "Clover Mat",
-      "item.strawberrymc.rare_clover_cluff": "4-Leaved Clover"
->>>>>>> parent of 19a2f34... fixed more buggy stuff, use runclient not compilejava:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260927_195358
-=======
-      "item.strawberrymc.recovery_pearl": "Recovery Pearl"
->>>>>>> parent of 19a2f34... fixed more buggy stuff, use runclient not compilejava
+      "item.strawberrymc.rare_clover_cluff": "4-Leaved Clover",
+      "item.strawberrymc.fiber": "Fiber",
+      "item.strawberrymc.glowroot_paste": "Glowroot Paste",
+      "item.strawberrymc.coconut_oil": "Coconut Oil",
+      "item.strawberrymc.green_beryl": "Green Beryl",
+      "item.strawberrymc.raw_diamond": "Raw Diamond",
+      "item.strawberrymc.lazurite": "Lazurite",
+      "gui.strawberrymc.gemcutter.label_empty": "\u003d\u003e",
+      "gui.strawberrymc.gemcutter.label_gemcutter": "Gemcutter",
+      "gui.strawberrymc.gemcutter.label_lubricant": "Lubricant",
+      "item.minecraft.lingering_potion.effect.herb": "Lingering Potion of Herb",
+      "item.minecraft.splash_potion.effect.herb": "Splash Potion of Herb",
+      "item.minecraft.tipped_arrow.effect.herb": "Arrow of Herb",
+      "item.minecraft.potion.effect.herb": "Potion of Herb",
+      "gui.strawberrymc.forging_table.option_prefix": "",
+      "gui.strawberrymc.forging_table.label_forger": "Forger",
+      "gui.strawberrymc.forging_table.label_remainder": "Remainder",
+      "gui.strawberrymc.forging_table.label_base": "Base",
+      "gui.strawberrymc.forging_table.label_modifier": "Modifier",
+      "gui.strawberrymc.forging_table.option_suffix": "",
+      "biome.strawberrymc.clover_glades": "Clover Glades",
+      "item.strawberrymc.iron_dust": "Iron Dust",
+      "item.strawberrymc.forge_hammer": "Forge Hammer",
+      "item.strawberrymc.fertile_farmland": "Fertile Farmland",
+      "item.strawberrymc.sulfur_slag": "Sulfur Slag",
+      "item.strawberrymc.plant_fiber": "Plant Fiber",
+      "biome.strawberrymc.dry_savanna": "Dry Savanna"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/io/github/strawberrymc/mixin/LevelStorageSourceMixin.java",
       "src/main/java/io/github/strawberrymc/mixin/BiomeSourcePresetMixin.java",
       "src/main/java/io/github/strawberrymc/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/io/github/strawberrymc/mixin/LevelStorageSourceMixin.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBiomes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModWoodTypes.java",
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModPotions.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModItems.java",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntityRenderers.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntities.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/strawberrymc.mixins.json",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModTabs.java",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModModels.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/pack.mcmeta",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntityRenderers.java",
       "src/main/java/io/github/strawberrymc/StrawberrymcMod.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModModels.java",
+      "src/main/resources/strawberrymc.mixins.json",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModDispenseBehaviors.java"
     ]
   },

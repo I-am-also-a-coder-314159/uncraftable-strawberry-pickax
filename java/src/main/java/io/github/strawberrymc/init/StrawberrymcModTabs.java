@@ -65,7 +65,9 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.GLOWROOT.get().asItem());
 			tabData.accept(StrawberrymcModItems.CLOVER_CLUFF.get());
 			tabData.accept(StrawberrymcModItems.RARE_CLOVER_CLUFF.get());
+			tabData.accept(StrawberrymcModBlocks.FERTILE_FARMLAND.get().asItem());
 			tabData.accept(StrawberrymcModItems.PLANT_FIBER.get());
+			tabData.accept(StrawberrymcModBlocks.POOR_FARMLAND.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_HANGING_SIGN.get().asItem());

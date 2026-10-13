@@ -22,15 +22,15 @@
       "registry_name": "chorine_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/strawberrymc/models/item/chorine_ore.json",
-          "src/main/java/io/github/strawberrymc/block/ChorineOreBlock.java",
-          "src/main/resources/data/strawberrymc/worldgen/configured_feature/chorine_ore.json",
-          "src/main/resources/data/strawberrymc/loot_table/blocks/chorine_ore.json",
-          "src/main/resources/assets/strawberrymc/items/chorine_ore.json",
-          "src/main/resources/assets/strawberrymc/models/block/chorine_ore.json",
-          "src/main/resources/assets/strawberrymc/blockstates/chorine_ore.json",
           "src/main/resources/data/strawberrymc/neoforge/biome_modifier/chorine_ore_biome_modifier.json",
-          "src/main/resources/data/strawberrymc/worldgen/placed_feature/chorine_ore.json"
+          "src/main/resources/assets/strawberrymc/items/chorine_ore.json",
+          "src/main/resources/assets/strawberrymc/blockstates/chorine_ore.json",
+          "src/main/resources/assets/strawberrymc/models/item/chorine_ore.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/chorine_ore.json",
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/chorine_ore.json",
+          "src/main/java/io/github/strawberrymc/block/ChorineOreBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/chorine_ore.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/chorine_ore.json"
         ]
       }
     },
@@ -1626,7 +1626,6 @@
           "src/main/java/io/github/strawberrymc/entity/RecoveryPearlProjectileEntity.java"
         ]
       }
-<<<<<<< HEAD:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260930_090350
     },
     {
       "name": "Palm",
@@ -2024,20 +2023,6 @@
       }
     },
     {
-      "name": "Fiber",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiber",
-      "metadata": {
-        "files": [
-          "src/main/java/io/github/strawberrymc/item/FiberItem.java",
-          "src/main/resources/assets/strawberrymc/items/fiber.json",
-          "src/main/resources/assets/strawberrymc/models/item/fiber.json"
-        ]
-      }
-    },
-    {
       "name": "GlowrootPaste",
       "type": "item",
       "compiles": true,
@@ -2061,67 +2046,6 @@
         "files": [
           "src/main/resources/data/strawberrymc/recipe/glowroot_paste_recipe.json",
           "src/main/resources/data/strawberrymc/advancement/recipes/glowroot_paste_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "CoconutOil",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coconut_oil",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/strawberrymc/models/item/coconut_oil.json",
-          "src/main/resources/assets/strawberrymc/items/coconut_oil.json",
-          "src/main/java/io/github/strawberrymc/item/CoconutOilItem.java"
-        ]
-      }
-    },
-    {
-      "name": "CalcGemcutterOut",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "calc_gemcutter_out",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/io/github/strawberrymc/procedures/CalcGemcutterOutProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "ChoriteRefine",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chorite_refine",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/strawberrymc/recipe/chorite_refine.json",
-          "src/main/resources/data/strawberrymc/advancement/recipes/chorite_refine.json"
         ]
       }
     },
@@ -2177,120 +2101,6 @@
         "files": [
           "src/main/java/io/github/strawberrymc/world/inventory/GemcutterMenu.java",
           "src/main/java/io/github/strawberrymc/client/gui/GemcutterScreen.java"
-        ]
-      }
-    },
-    {
-      "name": "Herb",
-      "type": "potion",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "herb",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
-      "name": "HerbBrewing",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "herb_brewing",
-      "metadata": {
-        "files": [
-          "src/main/java/io/github/strawberrymc/recipe/brewing/HerbBrewingBrewingRecipe.java"
-        ]
-      }
-    },
-    {
-      "name": "LuckBrewing",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "luck_brewing",
-      "metadata": {
-        "files": [
-          "src/main/java/io/github/strawberrymc/recipe/brewing/LuckBrewingBrewingRecipe.java"
-        ]
-      }
-    },
-    {
-      "name": "CloverPatch",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "clover_patch",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/clover_patch_biome_modifier.json",
-          "src/main/resources/data/strawberrymc/worldgen/configured_feature/clover_patch.json",
-          "src/main/resources/data/strawberrymc/worldgen/placed_feature/clover_patch.json"
-        ]
-      }
-    },
-    {
-      "name": "CloverGlades",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "clover_glades",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/strawberrymc/worldgen/biome/clover_glades.json"
-        ]
-      }
-    },
-    {
-      "name": "IronDust",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_dust",
-      "metadata": {
-        "files": [
-          "src/main/java/io/github/strawberrymc/item/IronDustItem.java",
-          "src/main/resources/assets/strawberrymc/items/iron_dust.json",
-          "src/main/resources/assets/strawberrymc/models/item/iron_dust.json"
-        ]
-      }
-    },
-    {
-      "name": "IronDustToNugget",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_dust_to_nugget",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/strawberrymc/advancement/recipes/iron_dust_to_nugget.json",
-          "src/main/resources/data/strawberrymc/recipe/iron_dust_to_nugget.json"
-        ]
-      }
-    },
-    {
-      "name": "ForgeHammer",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_hammer",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/strawberrymc/items/forge_hammer.json",
-          "src/main/java/io/github/strawberrymc/item/ForgeHammerItem.java",
-          "src/main/resources/assets/strawberrymc/models/item/forge_hammer.json"
-        ]
-      }
-    },
-    {
-      "name": "ForgingTable",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forging_table",
-      "metadata": {
-        "files": [
-          "src/main/java/io/github/strawberrymc/world/inventory/ForgingTableMenu.java",
-          "src/main/java/io/github/strawberrymc/client/gui/ForgingTableScreen.java"
         ]
       }
     },
@@ -2430,24 +2240,6 @@
       }
     },
     {
-      "name": "CalcForgeOutput",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "calc_forge_output",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/io/github/strawberrymc/procedures/CalcForgeOutputProcedure.java"
-        ]
-      }
-    },
-    {
       "name": "CloverMatDrop",
       "type": "loottable",
       "compiles": true,
@@ -2458,17 +2250,91 @@
           "src/main/resources/data/strawberrymc/loot_table/blocks/clover_mat.json"
         ]
       }
-=======
->>>>>>> parent of 19a2f34... fixed more buggy stuff, use runclient not compilejava:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260926_134313
+    },
+    {
+      "name": "Herb",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herb",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "HerbBrewing",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herb_brewing",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/recipe/brewing/HerbBrewingBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "LuckBrewing",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "luck_brewing",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/recipe/brewing/LuckBrewingBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "CloverPatch",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_patch",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/clover_patch_biome_modifier.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/clover_patch.json",
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/clover_patch.json"
+        ]
+      }
+    },
+    {
+      "name": "PlantFiber",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plant_fiber",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/PlantFiberItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/plant_fiber.json",
+          "src/main/resources/assets/strawberrymc/items/plant_fiber.json"
+        ]
+      }
+    },
+    {
+      "name": "ChoriteRefine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorite_refine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/chorite_refine.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorite_refine.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~ChorineOre@CUSTOM:ChorineOre",
+      "~GlowrootTuberStone@CUSTOM:GlowrootTuberStone",
       "~RadoniteOre@CUSTOM:RadoniteOre",
       "~RadoniteBlock@CUSTOM:RadoniteBlock",
-      "~ChorineOre@CUSTOM:ChorineOre",
       "~ChorineBlock@CUSTOM:ChorineBlock"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
@@ -2612,10 +2478,6 @@
       "~RadoniteBlock@CUSTOM:RadoniteBlock"
     ],
     "ITEMS:minecraft:pickaxes": [
-<<<<<<< HEAD:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260930_090350
-      "~ForgeHammer@CUSTOM:ForgeHammer",
-=======
->>>>>>> parent of 19a2f34... fixed more buggy stuff, use runclient not compilejava:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260926_134313
       "~RadonitePickaxe@CUSTOM:RadonitePickaxe"
     ],
     "ITEMS:strawberrymc:radonite_pickaxe_repair_items": [
@@ -2673,12 +2535,10 @@
       "CUSTOM:StrippedPalmWood"
     ],
     "BIOMES:minecraft:has_structure/mineshaft": [
-      "~CloverGlades@CUSTOM:CloverGlades",
       "~CrystalHollows@CUSTOM:CrystalHollows"
     ],
     "BIOMES:minecraft:has_structure/stronghold": [
       "~CrystalHollows@CUSTOM:CrystalHollows"
-<<<<<<< HEAD:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260930_090350
     ],
     "ENCHANTMENTS:minecraft:tradeable": [
       "~Electricution@CUSTOM:Electricution"
@@ -2689,26 +2549,18 @@
     "ENCHANTMENTS:minecraft:non_treasure": [
       "~Electricution@CUSTOM:Electricution"
     ],
-    "BIOMES:minecraft:has_structure/pillager_outpost": [
-      "~CloverGlades@CUSTOM:CloverGlades"
-    ],
-    "BIOMES:minecraft:has_structure/ruined_portal_swamp": [
-      "~CloverGlades@CUSTOM:CloverGlades"
-    ],
     "ITEMS:strawberrymc:forge_hammer_repair_items": [
       "~ForgeHammer@Blocks.IRON_BLOCK"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
       "~FertileFarmland@CUSTOM:FertileFarmland"
-=======
->>>>>>> parent of 19a2f34... fixed more buggy stuff, use runclient not compilejava:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260926_134313
     ]
   },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.strawberrymc.chorine": "Chorine",
-      "item.strawberrymc.chorine_ore": "Chorine Ore",
+      "item.strawberrymc.chorine": "Chorine Nodule",
+      "item.strawberrymc.chorine_ore": "Chorite Ore",
       "item.strawberrymc.chorine_block": "Block of Chorine",
       "item.strawberrymc.chorite": "Chorite",
       "item.strawberrymc.echowood_log": "Echowood Log",
@@ -2772,7 +2624,6 @@
       "item.strawberrymc.garnet": "Garnet",
       "biome.strawberrymc.crystal_hollows": "Crystal Hollows",
       "item.strawberrymc.crystalline_calcite": "Crystalline Calcite",
-<<<<<<< HEAD:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260930_090350
       "item.strawberrymc.recovery_pearl": "Recovery Pearl",
       "item.strawberrymc.coconut": "Coconut",
       "item.strawberrymc.palm_seedling": "Palm Seedling",
@@ -2811,51 +2662,31 @@
       "biome.strawberrymc.clover_glades": "Clover Glades",
       "item.strawberrymc.iron_dust": "Iron Dust",
       "item.strawberrymc.forge_hammer": "Forge Hammer",
-      "gui.strawberrymc.forging_table.label_forging_table": "Forging table",
-      "gui.strawberrymc.forging_table.tooltip_use_a_forging_hammer": "Use a forging hammer",
       "item.strawberrymc.fertile_farmland": "Fertile Farmland",
-      "item.strawberrymc.sulfur_slag": "Sulfur Slag"
-=======
-      "item.strawberrymc.recovery_pearl": "Recovery Pearl"
->>>>>>> parent of 19a2f34... fixed more buggy stuff, use runclient not compilejava:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260926_134313
+      "item.strawberrymc.sulfur_slag": "Sulfur Slag",
+      "item.strawberrymc.plant_fiber": "Plant Fiber"
     }
   },
   "metadata": {
     "files": [
-<<<<<<< HEAD:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260930_090350
       "src/main/java/io/github/strawberrymc/mixin/BiomeSourcePresetMixin.java",
       "src/main/java/io/github/strawberrymc/mixin/NoiseGeneratorSettingsMixin.java",
       "src/main/java/io/github/strawberrymc/mixin/LevelStorageSourceMixin.java",
-=======
-      "src/main/java/io/github/strawberrymc/mixin/LevelStorageSourceMixin.java",
-      "src/main/java/io/github/strawberrymc/mixin/BiomeSourcePresetMixin.java",
-      "src/main/java/io/github/strawberrymc/mixin/NoiseGeneratorSettingsMixin.java",
->>>>>>> parent of 19a2f34... fixed more buggy stuff, use runclient not compilejava:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260926_134313
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBiomes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModWoodTypes.java",
-      "src/main/java/io/github/strawberrymc/network/MenuStateUpdateMessage.java",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModMenus.java",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModScreens.java",
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModPotions.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModItems.java",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntityRenderers.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntities.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/strawberrymc.mixins.json",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModTabs.java",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModModels.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-<<<<<<< HEAD:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260930_090350
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/io/github/strawberrymc/init/StrawberrymcModModels.java",
-      "src/main/resources/strawberrymc.mixins.json",
-      "src/main/resources/pack.mcmeta",
-=======
-      "src/main/resources/pack.mcmeta",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntityRenderers.java",
       "src/main/java/io/github/strawberrymc/StrawberrymcMod.java",
->>>>>>> parent of 19a2f34... fixed more buggy stuff, use runclient not compilejava:java/.mcreator/workspaceBackups/strawberrymc.mcreator-backup_20260926_134313
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModModels.java",
+      "src/main/resources/strawberrymc.mixins.json",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModDispenseBehaviors.java"
     ]
   },
