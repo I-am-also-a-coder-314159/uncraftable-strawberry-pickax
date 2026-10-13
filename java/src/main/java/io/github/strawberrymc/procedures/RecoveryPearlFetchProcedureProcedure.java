@@ -12,10 +12,10 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.ParticleTypes;
 
 public class RecoveryPearlFetchProcedureProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity immediatesourceentity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity sourceentity, Entity immediatesourceentity) {
 		if (immediatesourceentity == null)
 			return;
-		Player player = immediatesourceentity instanceof Player _player ? _player
+		Player player = sourceentity instanceof Player _player ? _player
 				: immediatesourceentity instanceof Projectile _projectile && _projectile.getOwner() instanceof Player _player ? _player : null;
 		if (player == null)
 			return;
