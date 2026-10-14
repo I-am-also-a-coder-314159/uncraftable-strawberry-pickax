@@ -2487,6 +2487,19 @@
           "src/main/java/io/github/strawberrymc/procedures/HoeTillNewOverrideProcedure.java"
         ]
       }
+    },
+    {
+      "name": "PoorFarmlandProperties",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "poor_farmland_properties",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/PoorFarmlandPropertiesProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
