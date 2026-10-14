@@ -1,14 +1,11 @@
 package io.github.strawberrymc.entity;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.EntityHitResult;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
 import net.minecraft.world.entity.projectile.ItemSupplier;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
@@ -21,8 +18,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 import javax.annotation.Nullable;
 
-import io.github.strawberrymc.procedures.RecoveryPearlFetchProcedureProcedure;
-import io.github.strawberrymc.procedures.RecoveryPearlFetchProcedureEntityHitProcedure;
 import io.github.strawberrymc.init.StrawberrymcModItems;
 import io.github.strawberrymc.init.StrawberrymcModEntities;
 
@@ -77,21 +72,6 @@ public class RecoveryPearlProjectileEntity extends AbstractArrow implements Item
 		} else { // knockback might be set by firedFromWeapon passed into constructor
 			super.doKnockback(livingEntity, damageSource);
 		}
-	}
-
-	public void playerTouch(Player entity, LivingEntity sourceentity, double x, double y, double z, Level world) {
-		super.playerTouch(entity);
-		RecoveryPearlFetchProcedureEntityHitProcedure.execute(world, x, y, z, sourceentity);
-	}
-
-	public void onHitEntity(EntityHitResult entityHitResult, LivingEntity sourceentity, double x, double y, double z, Level world) {
-		super.onHitEntity(entityHitResult);
-		RecoveryPearlFetchProcedureEntityHitProcedure.execute(world, x, y, z, sourceentity);
-	}
-
-	public void onHitBlock(BlockHitResult blockHitResult, LivingEntity sourceentity, double x, double y, double z, Level world) {
-		super.onHitBlock(blockHitResult);
-		RecoveryPearlFetchProcedureProcedure.execute(world, x, y, z, sourceentity);
 	}
 
 	@Override

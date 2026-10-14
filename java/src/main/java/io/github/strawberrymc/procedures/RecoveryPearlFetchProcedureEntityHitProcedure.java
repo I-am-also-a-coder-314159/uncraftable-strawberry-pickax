@@ -5,6 +5,6 @@ import net.minecraft.world.entity.Entity;
 
 public class RecoveryPearlFetchProcedureEntityHitProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity immediatesourceentity) {
-		RecoveryPearlFetchProcedureProcedure.execute(world, x, y, z, immediatesourceentity);
+		RecoveryPearlFetchProcedureProcedure.execute(world, x, y, z, entity, immediatesourceentity);
 	}
 }

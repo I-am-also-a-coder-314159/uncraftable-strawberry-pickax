@@ -20,10 +20,10 @@ public class FarmlandDegradeProcedure {
             BlockState farmlandState = world.getBlockState(farmlandPos);
 
             // 1. Check if it is the Farmland Clone (degrades to Poor Farmland)
-            if (farmlandState.getBlock() == StrawberrymcModBlocks.CUSTOM_FARMLAND.get()) {
+            if (farmlandState.getBlock() == StrawberrymcModBlocks.FARMLAND_STRAWBERRY.get()) {
                 BlockEntity blockEntity = world.getBlockEntity(farmlandPos);
                 if (blockEntity != null) {
-                    double currentHarvests = blockEntity.getPersistentData().getDouble("HarvestCount");
+                    double currentHarvests = (double) blockEntity.getPersistentData().getDouble("HarvestCount").orElse(0.0);
                     if (currentHarvests >= 3) {
                         world.setBlock(farmlandPos, StrawberrymcModBlocks.POOR_FARMLAND.get().defaultBlockState(), 3);
                     } else {
@@ -35,9 +35,9 @@ public class FarmlandDegradeProcedure {
             else if (farmlandState.getBlock() == StrawberrymcModBlocks.FERTILE_FARMLAND.get()) {
                 BlockEntity blockEntity = world.getBlockEntity(farmlandPos);
                 if (blockEntity != null) {
-                    double currentHarvests = blockEntity.getPersistentData().getDouble("HarvestCount");
+                    double currentHarvests = (double) blockEntity.getPersistentData().getDouble("HarvestCount").orElse(0.0);
                     if (currentHarvests >= 3) {
-                        world.setBlock(farmlandPos, StrawberrymcModBlocks.CUSTOM_FARMLAND.get().defaultBlockState(), 3);
+                        world.setBlock(farmlandPos, StrawberrymcModBlocks.FARMLAND_STRAWBERRY.get().defaultBlockState(), 3);
                     } else {
                         blockEntity.getPersistentData().putDouble("HarvestCount", currentHarvests + 1);
                     }

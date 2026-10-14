@@ -1,14 +1,14 @@
 package io.github.strawberrymc.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.eventbus.api.Event.Result;
-import net.minecraftforge.event.level.BlockEvent;
+import net.neoforged.bus.api.Event;
+import net.neoforged.bus.api.Event.Result;
+import net.neoforged.neoforge.event.level.BlockEvent;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.BlockPos;
 
 import io.github.strawberrymc.init.StrawberrymcModBlocks;
 
-public class PoorFarmlandSlowdownProcedure {
+public class PoorFarmlandPropertiesProcedure {
     public static void execute(Event event, LevelAccessor world, double x, double y, double z) {
         if (world == null || event == null) return;
         

@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 import io.github.strawberrymc.init.StrawberrymcModBlocks;
 
-public class CustomFarmlandPlantingProcedure {
+public class OverrideFarmlandVanillaProcedure {
     public static void execute(LevelAccessor world, double x, double y, double z, LivingEntity entity) {
         if (world == null || entity == null) return;
         
@@ -18,7 +18,7 @@ public class CustomFarmlandPlantingProcedure {
         net.minecraft.world.level.block.Block targetBlock = world.getBlockState(targetPos).getBlock();
         
         // 1. Verify the clicked block is one of your custom farmlands
-        if (targetBlock == StrawberrymcModBlocks.POOR_FARMLAND.get() || targetBlock == StrawberrymcModBlocks.FERTILE_FARMLAND.get() || targetBlock == StrawberrymcModBlocks.CUSTOM_FARMLAND.get()) {
+        if (targetBlock == StrawberrymcModBlocks.POOR_FARMLAND.get() || targetBlock == StrawberrymcModBlocks.FERTILE_FARMLAND.get() || targetBlock == StrawberrymcModBlocks.FARMLAND_STRAWBERRY.get()) {
             ItemStack mainHandItem = entity.getMainHandItem();
             BlockPos plantPos = BlockPos.containing(x, y + 1, z);
             

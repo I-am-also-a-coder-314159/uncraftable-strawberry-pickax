@@ -9,11 +9,11 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraftforge.eventbus.api.Event;
+import net.neoforged.bus.api.Event;
 
 import io.github.strawberrymc.init.StrawberrymcModBlocks;
 
-public class CustomHoeTillProcedure {
+public class HoeTillNewOverrideProcedure {
     public static void execute(Event event, LevelAccessor world, double x, double y, double z, LivingEntity entity) {
         if (world == null || entity == null) return;
         
@@ -34,7 +34,7 @@ public class CustomHoeTillProcedure {
                     }
                     
                     // 5. Place your Custom Farmland Clone
-                    world.setBlock(targetPos, StrawberrymcModBlocks.CUSTOM_FARMLAND.get().defaultBlockState(), 3);
+                    world.setBlock(targetPos, StrawberrymcModBlocks.FARMLAND_STRAWBERRY.get().defaultBlockState(), 3);
                     
                     // 6. Play the standard tilling sound
                     if (!world.isClientSide()) {
@@ -43,7 +43,7 @@ public class CustomHoeTillProcedure {
                     
                     // 7. Damage the hoe by 1 point (if not in Creative mode)
                     if (entity instanceof Player player && !player.getAbilities().instabuild) {
-                        mainHandItem.hurtAndBreak(1, player, (p) -> p.broadcastBreakEvent(player.getUsedItemHand()));
+                        mainHandItem.hurtAndBreak(1, player, net.minecraft.world.entity.EquipmentSlot.MAINHAND);
                         // Swing the player's arm for visual feedback
                         player.swing(player.getUsedItemHand(), true);
                     }

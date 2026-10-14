@@ -1618,7 +1618,7 @@
     {
       "name": "RecoveryPearlProjectile",
       "type": "projectile",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "recovery_pearl_projectile",
       "metadata": {
@@ -2339,6 +2339,167 @@
           "src/main/resources/data/strawberrymc/worldgen/biome/dry_savanna.json"
         ]
       }
+    },
+    {
+      "name": "PoorFarmlandFertilize",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poor_farmland_fertilize",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/PoorFarmlandFertilizeProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PoorFarmland",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poor_farmland",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/poor_farmland.json",
+          "src/main/resources/assets/strawberrymc/items/poor_farmland.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/poor_farmland.json",
+          "src/main/resources/assets/strawberrymc/models/block/poor_farmland.json",
+          "src/main/java/io/github/strawberrymc/block/PoorFarmlandBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/poor_farmland.json"
+        ]
+      }
+    },
+    {
+      "name": "FlintShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/FlintShardItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/flint_shard.json",
+          "src/main/resources/assets/strawberrymc/items/flint_shard.json"
+        ]
+      }
+    },
+    {
+      "name": "FlintRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/flint_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/flint_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "FarmlandDegrade",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "farmland_degrade",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/FarmlandDegradeProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "FarmlandTrampleCustom",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "farmland_trample_custom",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/FarmlandTrampleCustomProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "FarmlandStrawberry",
+      "type": "block",
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "farmland_strawberry",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/farmland_strawberry.json",
+          "src/main/resources/assets/strawberrymc/models/block/farmland_strawberry.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/farmland_strawberry.json",
+          "src/main/resources/assets/strawberrymc/blockstates/farmland_strawberry.json",
+          "src/main/java/io/github/strawberrymc/block/entity/FarmlandStrawberryBlockEntity.java",
+          "src/main/java/io/github/strawberrymc/block/FarmlandStrawberryBlock.java",
+          "src/main/resources/assets/strawberrymc/items/farmland_strawberry.json"
+        ]
+      }
+    },
+    {
+      "name": "OverrideFarmlandVanilla",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "override_farmland_vanilla",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/OverrideFarmlandVanillaProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "HoeTillNewOverride",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "hoe_till_new_override",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/HoeTillNewOverrideProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PoorFarmlandProperties",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "poor_farmland_properties",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/PoorFarmlandPropertiesProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2567,7 +2728,14 @@
       "~ForgeHammer@Blocks.IRON_BLOCK"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
+      "~FarmlandStrawberry@CUSTOM:FarmlandStrawberry",
+      "~PoorFarmland@CUSTOM:PoorFarmland",
       "~FertileFarmland@CUSTOM:FertileFarmland"
+    ],
+    "BLOCKS:minecraft:farmland": [
+      "CUSTOM:FertileFarmland",
+      "CUSTOM:PoorFarmland",
+      "CUSTOM:FarmlandStrawberry"
     ]
   },
   "tab_element_order": {},
@@ -2679,7 +2847,10 @@
       "item.strawberrymc.fertile_farmland": "Fertile Farmland",
       "item.strawberrymc.sulfur_slag": "Sulfur Slag",
       "item.strawberrymc.plant_fiber": "Plant Fiber",
-      "biome.strawberrymc.dry_savanna": "Dry Savanna"
+      "biome.strawberrymc.dry_savanna": "Dry Savanna",
+      "item.strawberrymc.poor_farmland": "Poor Farmland",
+      "item.strawberrymc.flint_shard": "Flint Shard",
+      "item.strawberrymc.farmland_strawberry": "Farmland real"
     }
   },
   "metadata": {
@@ -2692,6 +2863,7 @@
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModPotions.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlocks.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlockEntities.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModItems.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntities.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntityRenderers.java",

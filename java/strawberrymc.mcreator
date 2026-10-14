@@ -1618,7 +1618,7 @@
     {
       "name": "RecoveryPearlProjectile",
       "type": "projectile",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "recovery_pearl_projectile",
       "metadata": {
@@ -2498,6 +2498,20 @@
         "dependencies": [],
         "files": [
           "src/main/java/io/github/strawberrymc/procedures/PoorFarmlandPropertiesProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CrystalHollowsGenerator",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "crystal_hollows_generator",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CrystalHollowsGeneratorProcedure.java"
         ]
       }
     }
