@@ -1,6 +1,6 @@
 {
-  "item.strawberrymc.chorine": "Chorine",
-  "item.strawberrymc.chorine_ore": "Chorine Ore",
+  "item.strawberrymc.chorine": "Chorine Nodule",
+  "item.strawberrymc.chorine_ore": "Chorite Ore",
   "item.strawberrymc.chorine_block": "Block of Chorine",
   "item.strawberrymc.chorite": "Chorite",
   "item.strawberrymc.echowood_log": "Echowood Log",
@@ -103,5 +103,10 @@
   "item.strawberrymc.iron_dust": "Iron Dust",
   "item.strawberrymc.forge_hammer": "Forge Hammer",
   "item.strawberrymc.fertile_farmland": "Fertile Farmland",
-  "item.strawberrymc.sulfur_slag": "Sulfur Slag"
+  "item.strawberrymc.sulfur_slag": "Sulfur Slag",
+  "item.strawberrymc.plant_fiber": "Plant Fiber",
+  "biome.strawberrymc.dry_savanna": "Dry Savanna",
+  "item.strawberrymc.poor_farmland": "Poor Farmland",
+  "item.strawberrymc.flint_shard": "Flint Shard",
+  "item.strawberrymc.farmland_strawberry": "Farmland real"
 }

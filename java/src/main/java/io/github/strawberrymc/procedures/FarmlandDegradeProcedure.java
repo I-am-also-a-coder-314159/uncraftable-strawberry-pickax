@@ -15,25 +15,30 @@ public class FarmlandDegradeProcedure {
         BlockPos brokenBlockPos = BlockPos.containing(x, y, z);
         BlockState brokenBlockState = world.getBlockState(brokenBlockPos);
 
-        // 1. Check if the broken block is categorized as a crop
         if (brokenBlockState.is(BlockTags.CROPS)) {
-            
-            // 2. Check the block directly below the crop
             BlockPos farmlandPos = BlockPos.containing(x, y - 1, z);
             BlockState farmlandState = world.getBlockState(farmlandPos);
 
-            // 3. Verify it is your custom farmland block that can hold NBT data
+            // 1. Check if it is the Farmland Clone (degrades to Poor Farmland)
             if (farmlandState.getBlock() == StrawberrymcModBlocks.CUSTOM_FARMLAND.get()) {
                 BlockEntity blockEntity = world.getBlockEntity(farmlandPos);
-                
                 if (blockEntity != null) {
                     double currentHarvests = blockEntity.getPersistentData().getDouble("HarvestCount");
-                    
                     if (currentHarvests >= 3) {
-                        // Degrade to PoorFarmland
                         world.setBlock(farmlandPos, StrawberrymcModBlocks.POOR_FARMLAND.get().defaultBlockState(), 3);
                     } else {
-                        // Increment harvest count
+                        blockEntity.getPersistentData().putDouble("HarvestCount", currentHarvests + 1);
+                    }
+                }
+            } 
+            // 2. Check if it is Fertile Farmland (degrades to Farmland Clone)
+            else if (farmlandState.getBlock() == StrawberrymcModBlocks.FERTILE_FARMLAND.get()) {
+                BlockEntity blockEntity = world.getBlockEntity(farmlandPos);
+                if (blockEntity != null) {
+                    double currentHarvests = blockEntity.getPersistentData().getDouble("HarvestCount");
+                    if (currentHarvests >= 3) {
+                        world.setBlock(farmlandPos, StrawberrymcModBlocks.CUSTOM_FARMLAND.get().defaultBlockState(), 3);
+                    } else {
                         blockEntity.getPersistentData().putDouble("HarvestCount", currentHarvests + 1);
                     }
                 }
