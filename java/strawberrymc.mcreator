@@ -2410,7 +2410,83 @@
       "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "flint_recipe"
+      "registry_name": "flint_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/flint_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/flint_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "FarmlandDegrade",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "farmland_degrade",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/FarmlandDegradeProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "FarmlandTrampleCustom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "farmland_trample_custom",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/FarmlandTrampleCustomProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "FarmlandStrawberry",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "farmland_strawberry",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/farmland_strawberry.json",
+          "src/main/resources/assets/strawberrymc/models/block/farmland_strawberry.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/farmland_strawberry.json",
+          "src/main/resources/assets/strawberrymc/blockstates/farmland_strawberry.json",
+          "src/main/java/io/github/strawberrymc/block/entity/FarmlandStrawberryBlockEntity.java",
+          "src/main/java/io/github/strawberrymc/block/FarmlandStrawberryBlock.java",
+          "src/main/resources/assets/strawberrymc/items/farmland_strawberry.json"
+        ]
+      }
+    },
+    {
+      "name": "OverrideFarmlandVanilla",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "override_farmland_vanilla",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/OverrideFarmlandVanillaProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "HoeTillNewOverride",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hoe_till_new_override",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/HoeTillNewOverrideProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2639,8 +2715,14 @@
       "~ForgeHammer@Blocks.IRON_BLOCK"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
-      "~FertileFarmland@CUSTOM:FertileFarmland",
-      "~PoorFarmland@CUSTOM:PoorFarmland"
+      "~FarmlandStrawberry@CUSTOM:FarmlandStrawberry",
+      "~PoorFarmland@CUSTOM:PoorFarmland",
+      "~FertileFarmland@CUSTOM:FertileFarmland"
+    ],
+    "BLOCKS:minecraft:farmland": [
+      "CUSTOM:FertileFarmland",
+      "CUSTOM:PoorFarmland",
+      "CUSTOM:FarmlandStrawberry"
     ]
   },
   "tab_element_order": {},
@@ -2754,7 +2836,8 @@
       "item.strawberrymc.plant_fiber": "Plant Fiber",
       "biome.strawberrymc.dry_savanna": "Dry Savanna",
       "item.strawberrymc.poor_farmland": "Poor Farmland",
-      "item.strawberrymc.flint_shard": "Flint Shard"
+      "item.strawberrymc.flint_shard": "Flint Shard",
+      "item.strawberrymc.farmland_strawberry": "Farmland real"
     }
   },
   "metadata": {
@@ -2767,6 +2850,7 @@
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModPotions.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlocks.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlockEntities.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModItems.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntities.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntityRenderers.java",

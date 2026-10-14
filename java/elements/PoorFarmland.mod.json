@@ -54,7 +54,7 @@
       "DECORATIONS"
     ],
     "destroyTool": "shovel",
-    "customDrop": "Blocks.DIRT#1",
+    "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
