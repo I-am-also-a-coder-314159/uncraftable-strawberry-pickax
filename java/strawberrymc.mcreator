@@ -2421,7 +2421,7 @@
     {
       "name": "FarmlandDegrade",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "farmland_degrade",
       "metadata": {
@@ -2434,11 +2434,28 @@
     {
       "name": "FarmlandTrampleCustom",
       "type": "procedure",
-      "compiles": false,
-      "locked_code": true,
+      "compiles": true,
+      "locked_code": false,
       "registry_name": "farmland_trample_custom",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
           "src/main/java/io/github/strawberrymc/procedures/FarmlandTrampleCustomProcedure.java"
         ]
@@ -2447,7 +2464,7 @@
     {
       "name": "FarmlandStrawberry",
       "type": "block",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "farmland_strawberry",
       "metadata": {
@@ -2465,7 +2482,7 @@
     {
       "name": "OverrideFarmlandVanilla",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "override_farmland_vanilla",
       "metadata": {
@@ -2478,7 +2495,7 @@
     {
       "name": "HoeTillNewOverride",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "hoe_till_new_override",
       "metadata": {
@@ -2491,11 +2508,28 @@
     {
       "name": "PoorFarmlandProperties",
       "type": "procedure",
-      "compiles": false,
-      "locked_code": true,
+      "compiles": true,
+      "locked_code": false,
       "registry_name": "poor_farmland_properties",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
           "src/main/java/io/github/strawberrymc/procedures/PoorFarmlandPropertiesProcedure.java"
         ]
@@ -2504,14 +2538,49 @@
     {
       "name": "CrystalHollowsGenerator",
       "type": "procedure",
-      "compiles": false,
-      "locked_code": true,
+      "compiles": true,
+      "locked_code": false,
       "registry_name": "crystal_hollows_generator",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "return_type": "logic",
         "files": [
           "src/main/java/io/github/strawberrymc/procedures/CrystalHollowsGeneratorProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RecoveryPearlFetch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recovery_pearl_fetch",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlFetchProcedure.java"
         ]
       }
     }

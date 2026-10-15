@@ -42,7 +42,7 @@ public class FarmlandStrawberryBlock extends Block implements EntityBlock {
 	@Override
 	public void fallOn(Level world, BlockState blockstate, BlockPos pos, Entity entity, double distance) {
 		super.fallOn(world, blockstate, pos, entity, distance);
-		FarmlandTrampleCustomProcedure.execute();
+		FarmlandTrampleCustomProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

@@ -1,6 +1,7 @@
 package io.github.strawberrymc.entity;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.ItemStack;
@@ -18,6 +19,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 import javax.annotation.Nullable;
 
+import io.github.strawberrymc.procedures.RecoveryPearlFetchProcedure;
 import io.github.strawberrymc.init.StrawberrymcModItems;
 import io.github.strawberrymc.init.StrawberrymcModEntities;
 
@@ -72,6 +74,12 @@ public class RecoveryPearlProjectileEntity extends AbstractArrow implements Item
 		} else { // knockback might be set by firedFromWeapon passed into constructor
 			super.doKnockback(livingEntity, damageSource);
 		}
+	}
+
+	@Override
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
+		RecoveryPearlFetchProcedure.execute(entityHitResult.getEntity(), this.getOwner());
 	}
 
 	@Override

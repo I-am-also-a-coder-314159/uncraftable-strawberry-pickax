@@ -29,9 +29,9 @@ public class HoeTillNewOverrideProcedure {
                 if (world.isEmptyBlock(targetPos.above())) {
                     
                     // 4. Cancel the vanilla tilling event so vanilla farmland isn't placed
-                    if (event != null && event.isCancelable()) {
-                        event.setCanceled(true);
-                    }
+                    if (event instanceof net.neoforged.bus.api.ICancellableEvent cancellable) {
+    					cancellable.setCanceled(true);
+					}
                     
                     // 5. Place your Custom Farmland Clone
                     world.setBlock(targetPos, StrawberrymcModBlocks.FARMLAND_STRAWBERRY.get().defaultBlockState(), 3);
