@@ -74,6 +74,8 @@ public class StrawberrymcModBlocks {
 	public static final DeferredBlock<Block> GLOWROOT_DUMMY_SPAWNER;
 	public static final DeferredBlock<Block> CLOVER_MAT;
 	public static final DeferredBlock<Block> FERTILE_FARMLAND;
+	public static final DeferredBlock<Block> POOR_FARMLAND;
+	public static final DeferredBlock<Block> FARMLAND_STRAWBERRY;
 	static {
 		CHORINE_ORE = register("chorine_ore", ChorineOreBlock::new);
 		CHORINE_BLOCK = register("chorine_block", ChorineBlockBlock::new);
@@ -125,6 +127,8 @@ public class StrawberrymcModBlocks {
 		GLOWROOT_DUMMY_SPAWNER = register("glowroot_dummy_spawner", GlowrootDummySpawnerBlock::new);
 		CLOVER_MAT = register("clover_mat", CloverMatBlock::new);
 		FERTILE_FARMLAND = register("fertile_farmland", FertileFarmlandBlock::new);
+		POOR_FARMLAND = register("poor_farmland", PoorFarmlandBlock::new);
+		FARMLAND_STRAWBERRY = register("farmland_strawberry", FarmlandStrawberryBlock::new);
 	}
 
 	// Start of user code block custom blocks

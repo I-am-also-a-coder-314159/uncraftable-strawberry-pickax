@@ -15,8 +15,6 @@
     "customModelTexture": "",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
-    "onHitsBlock": "RecoveryPearlFetchProcedure",
-    "onHitsPlayer": "RecoveryPearlFetchProcedureEntityHit",
-    "onHitsEntity": "RecoveryPearlFetchProcedureEntityHit"
+    "onHitsEntity": "RecoveryPearlFetch"
   }
 }

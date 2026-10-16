@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "strawberrymc:item/placeholder"
+    "layer0": "strawberrymc:item/purple-ender-pearl"
   },
   "display": {
     "thirdperson_righthand": {

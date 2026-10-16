@@ -49,11 +49,11 @@ public class StrawberrymcMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		StrawberrymcModBlocks.REGISTRY.register(modEventBus);
+		StrawberrymcModBlockEntities.REGISTRY.register(modEventBus);
 		StrawberrymcModItems.REGISTRY.register(modEventBus);
 		StrawberrymcModEntities.REGISTRY.register(modEventBus);
 		StrawberrymcModTabs.REGISTRY.register(modEventBus);
 		StrawberrymcModPotions.REGISTRY.register(modEventBus);
-		StrawberrymcModMenus.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		Crystal.init(modEventBus);
 		// End of user code block mod init

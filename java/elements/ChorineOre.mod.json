@@ -38,12 +38,12 @@
       }
     ],
     "customProperties": [],
-    "name": "Chorine Ore",
+    "name": "Chorite Ore",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 0.6000000000000001,
-    "resistance": 0.8278377968767289,
+    "hardness": 2.0,
+    "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "hasBlockItem": true,
