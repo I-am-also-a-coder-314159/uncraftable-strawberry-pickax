@@ -1,0 +1,10 @@
+{
+  "_fv": 89,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": false,
+    "generationStep": "SURFACE_STRUCTURES",
+    "restrictionBiomes": [],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_ore\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"2\"></mutation><field name=\"size\">50</field><field name=\"discardOnAirChance\">0</field><value name=\"target0\"><block type=\"ore_target\"><value name=\"target\"><block type=\"rule_test_tag_match\"><field name=\"tag\">ore</field></block></value><value name=\"state\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">Blocks.COBBLESTONE</field></block></value></block></value><value name=\"target1\"><block type=\"ore_target\"><value name=\"target\"><block type=\"rule_test_tag_match\"><field name=\"tag\">ore</field></block></value><value name=\"state\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">Blocks.GRAVEL</field></block></value></block></value></block></value><next><block type=\"placement_biome_filter\"><comment pinned=\"false\" h=\"80\" w=\"160\">Prevents the feature from generating in other biomes</comment></block></next></block></xml>"
+  }
+}

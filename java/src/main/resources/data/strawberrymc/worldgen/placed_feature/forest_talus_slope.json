@@ -1,0 +1,8 @@
+{
+  "feature": "strawberrymc:forest_talus_slope",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -942,12 +942,12 @@
       "registry_name": "palm_log",
       "metadata": {
         "files": [
-          "src/main/java/io/github/strawberrymc/block/PalmLogBlock.java",
-          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_log.json",
           "src/main/resources/assets/strawberrymc/models/item/palm_log.json",
-          "src/main/resources/assets/strawberrymc/items/palm_log.json",
           "src/main/resources/assets/strawberrymc/blockstates/palm_log.json",
-          "src/main/resources/assets/strawberrymc/models/block/palm_log.json"
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_log.json",
+          "src/main/resources/assets/strawberrymc/items/palm_log.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_log.json",
+          "src/main/java/io/github/strawberrymc/block/PalmLogBlock.java"
         ]
       }
     },
@@ -960,10 +960,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/items/palm_wood.json",
-          "src/main/java/io/github/strawberrymc/block/PalmWoodBlock.java",
-          "src/main/resources/assets/strawberrymc/models/block/palm_wood.json",
           "src/main/resources/assets/strawberrymc/models/item/palm_wood.json",
           "src/main/resources/assets/strawberrymc/blockstates/palm_wood.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_wood.json",
+          "src/main/java/io/github/strawberrymc/block/PalmWoodBlock.java",
           "src/main/resources/data/strawberrymc/loot_table/blocks/palm_wood.json"
         ]
       }
@@ -1028,11 +1028,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/models/block/palm_leaves.json",
+          "src/main/java/io/github/strawberrymc/block/PalmLeavesBlock.java",
           "src/main/resources/data/strawberrymc/loot_table/blocks/palm_leaves.json",
           "src/main/resources/assets/strawberrymc/items/palm_leaves.json",
-          "src/main/resources/assets/strawberrymc/models/item/palm_leaves.json",
           "src/main/resources/assets/strawberrymc/blockstates/palm_leaves.json",
-          "src/main/java/io/github/strawberrymc/block/PalmLeavesBlock.java"
+          "src/main/resources/assets/strawberrymc/models/item/palm_leaves.json"
         ]
       }
     },
@@ -2772,7 +2772,7 @@
     {
       "name": "SpawnPalmTreeProcedure",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "spawn_palm_tree_procedure",
       "metadata": {
@@ -2795,11 +2795,28 @@
     {
       "name": "OasisSpawn",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "oasis_spawn",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
           "src/main/java/io/github/strawberrymc/procedures/OasisSpawnProcedure.java"
         ]
@@ -2808,7 +2825,7 @@
     {
       "name": "OasisSpawner",
       "type": "block",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "oasis_spawner",
       "metadata": {
@@ -2856,6 +2873,8 @@
       "~ChorineBlock@CUSTOM:ChorineBlock"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~PalmWood@CUSTOM:PalmWood",
+      "~PalmLog@CUSTOM:PalmLog",
       "~PalmHangingSign@CUSTOM:PalmHangingSign.wall",
       "~PalmHangingSign@CUSTOM:PalmHangingSign",
       "~PalmSign@CUSTOM:PalmSign.wall",
@@ -2871,8 +2890,6 @@
       "~PalmPlanks@CUSTOM:PalmPlanks",
       "~StrippedPalmWood@CUSTOM:StrippedPalmWood",
       "~StrippedPalmLog@CUSTOM:StrippedPalmLog",
-      "~PalmWood@CUSTOM:PalmWood",
-      "~PalmLog@CUSTOM:PalmLog",
       "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign",
       "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign.wall",
       "~EchowoodSign@CUSTOM:EchowoodSign.wall",

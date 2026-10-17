@@ -1472,12 +1472,12 @@
       "registry_name": "dendrite_crystal",
       "metadata": {
         "files": [
-          "src/main/resources/data/strawberrymc/loot_table/blocks/dendrite_crystal.json",
           "src/main/resources/assets/strawberrymc/items/dendrite_crystal.json",
           "src/main/java/io/github/strawberrymc/block/DendriteCrystalBlock.java",
           "src/main/resources/assets/strawberrymc/models/block/dendrite_crystal.json",
+          "src/main/resources/assets/strawberrymc/models/item/dendrite_crystal.json",
           "src/main/resources/assets/strawberrymc/blockstates/dendrite_crystal.json",
-          "src/main/resources/assets/strawberrymc/models/item/dendrite_crystal.json"
+          "src/main/resources/data/strawberrymc/loot_table/blocks/dendrite_crystal.json"
         ]
       }
     },
@@ -1524,11 +1524,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/models/block/garnet_block.json",
-          "src/main/java/io/github/strawberrymc/block/GarnetBlockBlock.java",
           "src/main/resources/assets/strawberrymc/models/item/garnet_block.json",
           "src/main/resources/assets/strawberrymc/blockstates/garnet_block.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/garnet_block.json",
           "src/main/resources/assets/strawberrymc/items/garnet_block.json",
-          "src/main/resources/data/strawberrymc/loot_table/blocks/garnet_block.json"
+          "src/main/java/io/github/strawberrymc/block/GarnetBlockBlock.java"
         ]
       }
     },
@@ -1540,8 +1540,8 @@
       "registry_name": "garnet_nodule",
       "metadata": {
         "files": [
-          "src/main/resources/assets/strawberrymc/items/garnet_nodule.json",
           "src/main/java/io/github/strawberrymc/item/GarnetNoduleItem.java",
+          "src/main/resources/assets/strawberrymc/items/garnet_nodule.json",
           "src/main/resources/assets/strawberrymc/models/item/garnet_nodule.json"
         ]
       }
@@ -1555,8 +1555,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/models/item/garnet.json",
-          "src/main/java/io/github/strawberrymc/item/GarnetItem.java",
-          "src/main/resources/assets/strawberrymc/items/garnet.json"
+          "src/main/resources/assets/strawberrymc/items/garnet.json",
+          "src/main/java/io/github/strawberrymc/item/GarnetItem.java"
         ]
       }
     },
@@ -1581,11 +1581,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/models/item/crystalline_calcite.json",
-          "src/main/resources/assets/strawberrymc/models/block/crystalline_calcite.json",
           "src/main/java/io/github/strawberrymc/block/CrystallineCalciteBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/crystalline_calcite.json",
           "src/main/resources/data/strawberrymc/loot_table/blocks/crystalline_calcite.json",
-          "src/main/resources/assets/strawberrymc/items/crystalline_calcite.json",
-          "src/main/resources/assets/strawberrymc/blockstates/crystalline_calcite.json"
+          "src/main/resources/assets/strawberrymc/blockstates/crystalline_calcite.json",
+          "src/main/resources/assets/strawberrymc/items/crystalline_calcite.json"
         ]
       }
     },
@@ -2838,6 +2838,27 @@
           "src/main/resources/assets/strawberrymc/models/block/oasis_spawner.json"
         ]
       }
+    },
+    {
+      "name": "CloverGlades",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_glades",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/biome/clover_glades.json",
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/clover_glades_tree.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/clover_glades_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "ForestTalusSlope",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forest_talus_slope"
     }
   ],
   "variable_elements": [],
@@ -3108,6 +3129,18 @@
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~VoidDim@CUSTOM:Voidstone"
+    ],
+    "BIOMES:minecraft:has_structure/pillager_outpost": [
+      "~CloverGlades@CUSTOM:CloverGlades"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CloverGlades@CUSTOM:CloverGlades"
+    ],
+    "BIOMES:minecraft:has_structure/buried_treasure": [
+      "~CloverGlades@CUSTOM:CloverGlades"
+    ],
+    "BIOMES:minecraft:has_structure/ruined_portal_swamp": [
+      "~CloverGlades@CUSTOM:CloverGlades"
     ]
   },
   "tab_element_order": {},

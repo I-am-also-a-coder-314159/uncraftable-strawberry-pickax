@@ -420,3 +420,121 @@ WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLoca
 [17Oct2026 10:59:58.769] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
 [17Oct2026 10:59:58.771] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
 [17Oct2026 10:59:58.782] [Server thread/DEBUG] [net.neoforged.neoforge.common.CommonHooks/WP]: Gathered mod list to write to world save New World
+[17Oct2026 11:11:11.163] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 83 advancements
+[17Oct2026 11:11:17.644] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 84 advancements
+[17Oct2026 11:11:49.836] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Oct2026 11:11:49.850] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[17Oct2026 11:11:49.869] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/strawberrymc:void_dim
+[17Oct2026 11:11:49.878] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[17Oct2026 11:11:49.884] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[17Oct2026 11:11:49.904] [Server thread/DEBUG] [net.neoforged.neoforge.common.CommonHooks/WP]: Gathered mod list to write to world save New World
+[17Oct2026 11:11:50.888] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Oct2026 11:11:50.893] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[17Oct2026 11:11:50.900] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/strawberrymc:void_dim
+[17Oct2026 11:11:50.903] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[17Oct2026 11:11:50.903] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[17Oct2026 11:11:50.904] [Server thread/DEBUG] [net.neoforged.neoforge.common.CommonHooks/WP]: Gathered mod list to write to world save New World
+[17Oct2026 11:12:05.440] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has reached the goal [Sky's the Limit]
+[17Oct2026 11:12:05.455] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev has reached the goal [Sky's the Limit]
+[17Oct2026 11:12:05.458] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 89 advancements
+[17Oct2026 11:12:55.287] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Oct2026 11:12:55.311] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[17Oct2026 11:12:55.361] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/strawberrymc:void_dim
+[17Oct2026 11:12:55.363] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[17Oct2026 11:12:55.364] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[17Oct2026 11:12:55.375] [Server thread/DEBUG] [net.neoforged.neoforge.common.CommonHooks/WP]: Gathered mod list to write to world save New World
+[17Oct2026 11:13:01.034] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Oct2026 11:13:01.047] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[17Oct2026 11:13:01.061] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/strawberrymc:void_dim
+[17Oct2026 11:13:01.062] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[17Oct2026 11:13:01.062] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[17Oct2026 11:13:01.063] [Server thread/DEBUG] [net.neoforged.neoforge.common.CommonHooks/WP]: Gathered mod list to write to world save New World
+[17Oct2026 11:13:15.393] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Received passengers for unknown entity
+[17Oct2026 11:13:15.937] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Received passengers for unknown entity
+[17Oct2026 11:13:20.386] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Oct2026 11:13:20.404] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[17Oct2026 11:13:20.428] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/strawberrymc:void_dim
+[17Oct2026 11:13:20.436] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[17Oct2026 11:13:20.437] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[17Oct2026 11:13:20.443] [Server thread/DEBUG] [net.neoforged.neoforge.common.CommonHooks/WP]: Gathered mod list to write to world save New World
+[17Oct2026 11:13:36.585] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Oct2026 11:13:36.594] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[17Oct2026 11:13:36.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/strawberrymc:void_dim
+[17Oct2026 11:13:36.613] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[17Oct2026 11:13:36.613] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[17Oct2026 11:13:36.614] [Server thread/DEBUG] [net.neoforged.neoforge.common.CommonHooks/WP]: Gathered mod list to write to world save New World
+[17Oct2026 11:15:09.640] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
+[17Oct2026 11:15:14.848] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 89 advancements
+[17Oct2026 11:15:15.048] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.tropical_fish.ambient
+[17Oct2026 11:15:35.852] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 107 advancements
+[17Oct2026 11:16:13.563] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied effect Night Vision to Dev]
+[17Oct2026 11:16:13.569] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied effect Night Vision to Dev
+[17Oct2026 11:16:18.490] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 108 advancements
+[17Oct2026 11:17:07.730] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Oct2026 11:17:07.745] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[17Oct2026 11:17:07.756] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/strawberrymc:void_dim
+[17Oct2026 11:17:07.759] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[17Oct2026 11:17:07.767] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[17Oct2026 11:17:07.779] [Server thread/DEBUG] [net.neoforged.neoforge.common.CommonHooks/WP]: Gathered mod list to write to world save New World
+[17Oct2026 11:17:16.799] [Server thread/DEBUG] [net.neoforged.neoforge.common.CommonHooks/WP]: Gathered mod list to write to world save New World
+[17Oct2026 11:17:18.512] [Server thread/INFO] [net.minecraft.server.commands.LocateCommand/]: Locating element minecraft:village_desert took 0 ms
+[17Oct2026 11:17:18.516] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] The nearest minecraft:village_desert is at [6144, ~, 5568] (410 blocks away)
+[17Oct2026 11:17:22.131] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Oct2026 11:17:22.139] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[17Oct2026 11:17:22.157] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/strawberrymc:void_dim
+[17Oct2026 11:17:22.162] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[17Oct2026 11:17:22.162] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[17Oct2026 11:17:22.164] [Server thread/DEBUG] [net.neoforged.neoforge.common.CommonHooks/WP]: Gathered mod list to write to world save New World
+[17Oct2026 11:17:25.693] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Teleported Dev to 6144.500000, 79.603547, 5568.500000]
+[17Oct2026 11:17:25.696] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Teleported Dev to 6144.500000, 79.603547, 5568.500000
+[17Oct2026 11:18:00.338] [Server thread/INFO] [net.minecraft.world.entity.npc.villager.Villager/]: Villager Villager['Armorer'/6136, l='ServerLevel[New World]', x=6141.54, y=85.00, z=5588.69] died, message: 'Armorer was slain by Husk'
+[17Oct2026 11:18:00.356] [Render thread/INFO] [net.minecraft.world.entity.npc.villager.Villager/]: Villager Villager['Armorer'/6136, l='ClientLevel', x=6141.63, y=85.00, z=5589.22] died, message: 'Armorer died'
+[17Oct2026 11:18:18.831] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Received passengers for unknown entity
+[17Oct2026 11:18:20.649] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Unknown or incomplete command. See below for error
+[17Oct2026 11:18:20.650] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] www<--[HERE]
+[17Oct2026 11:18:24.335] [Server thread/INFO] [net.minecraft.world.entity.npc.villager.Villager/]: Villager Villager['Villager'/6151, l='ServerLevel[New World]', x=6149.68, y=72.00, z=5583.42] died, message: 'Villager was slain by Zombie'
+[17Oct2026 11:18:34.287] [Server thread/INFO] [net.minecraft.world.entity.npc.villager.Villager/]: Villager Villager['Villager'/6144, l='ServerLevel[New World]', x=6134.39, y=70.00, z=5551.36] died, message: 'Villager was slain by Zombie Villager'
+[17Oct2026 11:18:53.418] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Villager]
+[17Oct2026 11:18:53.426] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Villager
+[17Oct2026 11:19:07.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Villager]
+[17Oct2026 11:19:07.463] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Villager
+[17Oct2026 11:19:14.527] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Oct2026 11:19:14.540] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[17Oct2026 11:19:14.555] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/strawberrymc:void_dim
+[17Oct2026 11:19:14.556] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[17Oct2026 11:19:14.557] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[17Oct2026 11:19:14.568] [Server thread/DEBUG] [net.neoforged.neoforge.common.CommonHooks/WP]: Gathered mod list to write to world save New World
+[17Oct2026 11:19:58.531] [Server thread/INFO] [net.minecraft.world.entity.npc.villager.Villager/]: Villager Villager['Villager'/6122, l='ServerLevel[New World]', x=6151.86, y=73.45, z=5584.40] died, message: 'Villager was slain by Husk'
+[17Oct2026 11:19:58.538] [Render thread/INFO] [net.minecraft.world.entity.npc.villager.Villager/]: Villager Villager['Villager'/6122, l='ClientLevel', x=6151.87, y=73.35, z=5584.43] died, message: 'Villager died'
+[17Oct2026 11:20:06.027] [Server thread/INFO] [net.minecraft.world.entity.npc.villager.Villager/]: Villager Villager['Villager'/6163, l='ServerLevel[New World]', x=6120.58, y=65.00, z=5580.45] died, message: 'Villager was speared by Husk'
+[17Oct2026 11:20:06.042] [Render thread/INFO] [net.minecraft.world.entity.npc.villager.Villager/]: Villager Villager['Villager'/6163, l='ClientLevel', x=6121.22, y=65.00, z=5580.93] died, message: 'Villager died'
+[17Oct2026 11:20:06.719] [Server thread/INFO] [net.minecraft.server.commands.LocateCommand/]: Locating element minecraft:river took 9 ms
+[17Oct2026 11:20:06.725] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] The nearest minecraft:river is at [6159, 81, 5665] (128 blocks away)
+[17Oct2026 11:20:13.099] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Teleported Dev to 6159.500000, 81.000000, 5665.500000]
+[17Oct2026 11:20:13.105] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Teleported Dev to 6159.500000, 81.000000, 5665.500000
+[17Oct2026 11:20:23.137] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.salmon.ambient
+[17Oct2026 11:20:57.024] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Oct2026 11:20:57.031] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[17Oct2026 11:20:57.049] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/strawberrymc:void_dim
+[17Oct2026 11:20:57.054] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[17Oct2026 11:20:57.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[17Oct2026 11:20:57.067] [Server thread/DEBUG] [net.neoforged.neoforge.common.CommonHooks/WP]: Gathered mod list to write to world save New World
+[17Oct2026 11:20:57.776] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[17Oct2026 11:20:57.776] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[17Oct2026 11:20:57.779] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[17Oct2026 11:20:57.779] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[17Oct2026 11:20:57.783] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[17Oct2026 11:20:57.783] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[17Oct2026 11:20:57.865] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[17Oct2026 11:20:58.223] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/strawberrymc:void_dim
+[17Oct2026 11:20:58.231] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[17Oct2026 11:20:58.239] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[17Oct2026 11:20:58.248] [Server thread/DEBUG] [net.neoforged.neoforge.common.CommonHooks/WP]: Gathered mod list to write to world save New World
+[17Oct2026 11:20:58.249] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17Oct2026 11:20:58.249] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (void_dim): All chunks are saved
+[17Oct2026 11:20:58.249] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17Oct2026 11:20:58.249] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17Oct2026 11:20:58.249] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[17Oct2026 11:20:58.360] [Server thread/DEBUG] [net.neoforged.fml.config.ConfigTracker/CONFIG]: Unloading configs type SERVER
+[17Oct2026 11:20:59.953] [Render thread/DEBUG] [net.neoforged.fml.classloading.transformation.ClassTransformStatistics/]: Transformed/total loaded classes: 443/9659 (4.59%) and 14 parsed for mixin
+[17Oct2026 11:20:59.957] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

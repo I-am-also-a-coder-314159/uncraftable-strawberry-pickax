@@ -27,3 +27,10 @@
 /gamemode c
 /gamemode creative
 /reload
+/effect give @a minecraft:night_vision infinite
+/locate structure minecraft:village_desert
+/tp @s 6144 ~ 5568
+/www
+/summon minecraft:villager
+/locate biome minecraft:river
+/tp @s 6159 81 5665

@@ -67,10 +67,18 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.PALM_TRAPDOOR.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.PALM_PRESSURE_PLATE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.PALM_BUTTON.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.GARNET_BLOCK.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.CRYSTALLINE_CALCITE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.VOIDSTONE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_LEAVES.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.PALM_LEAVES.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.DENDRITE_CRYSTAL.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.GARNET_CRYSTAL.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.GARNET_BLOCK.get().asItem());
+			tabData.accept(StrawberrymcModItems.GARNET_NODULE.get());
+			tabData.accept(StrawberrymcModItems.GARNET.get());
+			tabData.accept(StrawberrymcModBlocks.CRYSTALLINE_CALCITE.get().asItem());
 			tabData.accept(StrawberrymcModItems.GLOWROOT_TUBER.get());
 			tabData.accept(StrawberrymcModBlocks.GLOWROOT.get().asItem());
 			tabData.accept(StrawberrymcModItems.CLOVER_CLUFF.get());
@@ -100,6 +108,8 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_LEGGINGS.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_BOOTS.get());
 			tabData.accept(StrawberrymcModItems.RECOVERY_PEARL.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
+			tabData.accept(StrawberrymcModBlocks.GARNET_BLOCK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
 			if (tabData.hasPermissions()) {
 				tabData.accept(StrawberrymcModBlocks.GLOWROOT_DUMMY_SPAWNER.get().asItem());

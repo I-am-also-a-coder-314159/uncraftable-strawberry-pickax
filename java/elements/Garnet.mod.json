@@ -11,7 +11,9 @@
     "animations": [],
     "name": "Garnet",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      "DECORATIONS"
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,

@@ -50,7 +50,10 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      "BUILDING_BLOCKS",
+      "DECORATIONS"
+    ],
     "destroyTool": "Not specified",
     "customDrop": "",
     "dropAmount": 1,
