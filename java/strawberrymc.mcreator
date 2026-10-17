@@ -2858,7 +2858,14 @@
       "type": "feature",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "forest_talus_slope"
+      "registry_name": "forest_talus_slope",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/forest_talus_slope.json",
+          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/forest_talus_slope_biome_modifier.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/forest_talus_slope.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],

@@ -34,3 +34,17 @@
 /summon minecraft:villager
 /locate biome minecraft:river
 /tp @s 6159 81 5665
+/summon minecraft:sheep
+/setblock ~ ~ ~ strawberrymc:void_tears
+/gamemode s
+/gamemode survival
+/gamemode c
+/gamemode creative
+/locate biome strawberrymc:dry_savanna
+/tp @s -1466 135 1659
+/execute in strawberrymc:void_dim run tp @p 0 50 0
+/effect give @p minecraft:night_vision
+/setblock ~ ~ ~ minecraft:glowstone
+/gamemode survival
+/gamemode creative
+/execute in strawberrymc:void_dim run tp @p 0 100 0

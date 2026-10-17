@@ -1,18 +1,5 @@
 {
   "stats": {
-    "minecraft:crafted": {
-      "minecraft:flint": 1
-    },
-    "minecraft:used": {
-      "minecraft:minecart": 1,
-      "minecraft:elytra": 1,
-      "strawberrymc:fertile_farmland": 1,
-      "minecraft:redstone_torch": 1,
-      "minecraft:powered_rail": 10,
-      "minecraft:crafting_table": 1,
-      "strawberrymc:oasis_spawner": 79,
-      "minecraft:firework_rocket": 10
-    },
     "minecraft:picked_up": {
       "minecraft:dirt": 74,
       "minecraft:cobblestone": 3,
@@ -22,29 +9,47 @@
       "minecraft:dandelion": 1,
       "minecraft:sea_pickle": 2
     },
+    "minecraft:dropped": {
+      "strawberrymc:recovery_pearl": 1,
+      "minecraft:wheat_seeds": 1
+    },
+    "minecraft:crafted": {
+      "minecraft:flint": 1
+    },
     "minecraft:custom": {
       "minecraft:minecart_one_cm": 1043,
       "minecraft:interact_with_crafting_table": 1,
       "minecraft:talked_to_villager": 2,
-      "minecraft:time_since_rest": 26272,
-      "minecraft:walk_one_cm": 7513,
-      "minecraft:leave_game": 11,
+      "minecraft:time_since_rest": 2678,
+      "minecraft:walk_one_cm": 9306,
+      "minecraft:leave_game": 12,
       "minecraft:mob_kills": 2,
-      "minecraft:walk_under_water_one_cm": 25304,
-      "minecraft:damage_taken": 270,
-      "minecraft:play_time": 25281,
-      "minecraft:jump": 64,
-      "minecraft:time_since_death": 13074,
-      "minecraft:aviate_one_cm": 19006,
-      "minecraft:sprint_one_cm": 1284,
+      "minecraft:walk_under_water_one_cm": 30314,
+      "minecraft:damage_taken": 770,
+      "minecraft:play_time": 34773,
+      "minecraft:jump": 82,
+      "minecraft:time_since_death": 1994,
+      "minecraft:aviate_one_cm": 19529,
+      "minecraft:drop": 2,
+      "minecraft:sprint_one_cm": 2046,
       "minecraft:fall_one_cm": 500,
       "minecraft:swim_one_cm": 1661,
-      "minecraft:total_world_time": 70320,
-      "minecraft:fly_one_cm": 338049,
-      "minecraft:walk_on_water_one_cm": 4963,
-      "minecraft:crouch_one_cm": 610,
-      "minecraft:sneak_time": 1880,
-      "minecraft:deaths": 1
+      "minecraft:total_world_time": 83125,
+      "minecraft:fly_one_cm": 398193,
+      "minecraft:walk_on_water_one_cm": 6017,
+      "minecraft:crouch_one_cm": 668,
+      "minecraft:sneak_time": 2363,
+      "minecraft:deaths": 3
+    },
+    "minecraft:used": {
+      "minecraft:minecart": 1,
+      "minecraft:elytra": 1,
+      "strawberrymc:fertile_farmland": 2,
+      "minecraft:redstone_torch": 1,
+      "minecraft:powered_rail": 10,
+      "minecraft:crafting_table": 1,
+      "strawberrymc:oasis_spawner": 83,
+      "minecraft:firework_rocket": 10
     }
   },
   "DataVersion": 4790
