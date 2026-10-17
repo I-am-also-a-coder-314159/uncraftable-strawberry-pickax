@@ -91,6 +91,8 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> POOR_FARMLAND;
 	public static final DeferredItem<Item> FLINT_SHARD;
 	public static final DeferredItem<Item> FARMLAND_STRAWBERRY;
+	public static final DeferredItem<Item> VOIDSTONE;
+	public static final DeferredItem<Item> OASIS_SPAWNER;
 	static {
 		CHORINE = register("chorine", ChorineItem::new);
 		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
@@ -166,6 +168,8 @@ public class StrawberrymcModItems {
 		POOR_FARMLAND = block(StrawberrymcModBlocks.POOR_FARMLAND);
 		FLINT_SHARD = register("flint_shard", FlintShardItem::new);
 		FARMLAND_STRAWBERRY = block(StrawberrymcModBlocks.FARMLAND_STRAWBERRY);
+		VOIDSTONE = block(StrawberrymcModBlocks.VOIDSTONE, new Item.Properties().fireResistant());
+		OASIS_SPAWNER = block(StrawberrymcModBlocks.OASIS_SPAWNER);
 	}
 
 	// Start of user code block custom items

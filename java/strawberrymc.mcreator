@@ -2583,12 +2583,285 @@
           "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlFetchProcedure.java"
         ]
       }
+    },
+    {
+      "name": "SulfurTradeFarmerHoe",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfur_trade_farmer_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/villager_trade/farmer/2/sulfur_trade_farmer_hoe_0.json"
+        ]
+      }
+    },
+    {
+      "name": "SulfurTradeFarmerMelonSeed",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfur_trade_farmer_melon_seed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/villager_trade/farmer/2/sulfur_trade_farmer_melon_seed_0.json"
+        ]
+      }
+    },
+    {
+      "name": "SulfurGet",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfur_get",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/villager_trade/toolsmith/1/sulfur_get_0.json"
+        ]
+      }
+    },
+    {
+      "name": "Dustcloud",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dustcloud",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/client/particle/DustcloudParticle.java",
+          "src/main/resources/assets/strawberrymc/particles/dustcloud.json"
+        ]
+      }
+    },
+    {
+      "name": "IsReinforced",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "is_reinforced",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/IsReinforcedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Voidstone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/voidstone.json",
+          "src/main/java/io/github/strawberrymc/block/VoidstoneBlock.java",
+          "src/main/resources/assets/strawberrymc/items/voidstone.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/voidstone.json",
+          "src/main/resources/assets/strawberrymc/models/item/voidstone.json",
+          "src/main/resources/assets/strawberrymc/models/block/voidstone.json"
+        ]
+      }
+    },
+    {
+      "name": "VoidTearDamage",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_tear_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/damage_type/void_tear_damage.json"
+        ]
+      }
+    },
+    {
+      "name": "VoidTearsDamageApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_tears_damage_apply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/VoidTearsDamageApplyProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "VoidTearHiss",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_tear_hiss",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/VoidTearHissProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "VoidTears",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_tears",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/client/fluid/VoidTearsFluidExtension.java",
+          "src/main/resources/assets/strawberrymc/blockstates/void_tears.json",
+          "src/main/resources/assets/strawberrymc/models/block/void_tears.json",
+          "src/main/java/io/github/strawberrymc/fluid/VoidTearsFluid.java",
+          "src/main/java/io/github/strawberrymc/fluid/types/VoidTearsFluidType.java",
+          "src/main/java/io/github/strawberrymc/block/VoidTearsBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "VoidstonePeaks",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidstone_peaks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/biome/voidstone_peaks.json"
+        ]
+      }
+    },
+    {
+      "name": "VoidDim",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_dim",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/dimension_type/void_dim.json",
+          "src/main/resources/data/strawberrymc/dimension/void_dim.json"
+        ]
+      }
+    },
+    {
+      "name": "SpawnPalmTreeProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spawn_palm_tree_procedure",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/SpawnPalmTreeProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Debug",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "OasisSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "oasis_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/OasisSpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "OasisSpawner",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oasis_spawner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/oasis_spawner.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/oasis_spawner.json",
+          "src/main/resources/assets/strawberrymc/models/item/oasis_spawner.json",
+          "src/main/resources/assets/strawberrymc/blockstates/oasis_spawner.json",
+          "src/main/java/io/github/strawberrymc/block/OasisSpawnerBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/oasis_spawner.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "void_amb_01",
+      "files": [
+        "audiomass-output_1"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "void_amb_02",
+      "files": [
+        "audiomass-output"
+      ],
+      "category": "master",
+      "subtitle": ""
+    }
+  ],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Voidstone@CUSTOM:Voidstone",
       "~ChorineOre@CUSTOM:ChorineOre",
       "~GlowrootTuberStone@CUSTOM:GlowrootTuberStone",
       "~RadoniteOre@CUSTOM:RadoniteOre",
@@ -2819,6 +3092,22 @@
       "CUSTOM:FertileFarmland",
       "CUSTOM:PoorFarmland",
       "CUSTOM:FarmlandStrawberry"
+    ],
+    "VILLAGER_TRADES:minecraft:farmer/level_2": [
+      "~SulfurTradeFarmerMelonSeed@sulfur_trade_farmer_melon_seed_0",
+      "~SulfurTradeFarmerHoe@sulfur_trade_farmer_hoe_0"
+    ],
+    "VILLAGER_TRADES:minecraft:toolsmith/level_1": [
+      "~SulfurGet@sulfur_get_0"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~Voidstone@CUSTOM:Voidstone"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~VoidTears@CUSTOM:VoidTears"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~VoidDim@CUSTOM:Voidstone"
     ]
   },
   "tab_element_order": {},
@@ -2933,7 +3222,19 @@
       "biome.strawberrymc.dry_savanna": "Dry Savanna",
       "item.strawberrymc.poor_farmland": "Poor Farmland",
       "item.strawberrymc.flint_shard": "Flint Shard",
-      "item.strawberrymc.farmland_strawberry": "Farmland real"
+      "item.strawberrymc.farmland_strawberry": "Farmland real",
+      "item.strawberrymc.voidstone": "Voidstone",
+      "subtitles.void_amb_01": "",
+      "subtitles.void_amb_02": "",
+      "death.attack.void_tear_damage": "%1$s disolved in Void Tears",
+      "death.attack.void_tear_damage.item": "%1$s was killed by %2$s using %3$s",
+      "death.attack.void_tear_damage.player": "%1$s died whilst trying to escape %2$s",
+      "fluid_type.strawberrymc.void_tears": "Void Tears",
+      "fluid.strawberrymc.void_tears": "Void Tears",
+      "block.strawberrymc.void_tears": "Void Tears",
+      "biome.strawberrymc.voidstone_peaks": "Voidstone Peaks",
+      "item_group.strawberrymc.debug": "Developer",
+      "item.strawberrymc.oasis_spawner": "Oasis Spawner"
     }
   },
   "metadata": {
@@ -2943,14 +3244,21 @@
       "src/main/java/io/github/strawberrymc/mixin/LevelStorageSourceMixin.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBiomes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModWoodTypes.java",
+      "src/main/java/io/github/strawberrymc/client/StrawberrymcModSkyboxRenderer.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModFluidTypes.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModFluids.java",
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticleTypes.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticles.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModPotions.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlockEntities.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModItems.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntities.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntityRenderers.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModSounds.java",
       "src/main/java/io/github/strawberrymc/StrawberrymcMod.java",
+      "src/main/resources/assets/strawberrymc/sounds.json",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModTabs.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/META-INF/neoforge.mods.toml",

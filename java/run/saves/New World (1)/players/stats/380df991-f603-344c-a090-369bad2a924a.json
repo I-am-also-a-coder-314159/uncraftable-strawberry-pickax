@@ -1,0 +1,21 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 91,
+      "minecraft:time_since_rest": 9384,
+      "minecraft:total_world_time": 22166,
+      "minecraft:leave_game": 4,
+      "minecraft:fly_one_cm": 85920,
+      "minecraft:walk_under_water_one_cm": 177,
+      "minecraft:walk_on_water_one_cm": 803,
+      "minecraft:sneak_time": 478,
+      "minecraft:play_time": 4692,
+      "minecraft:jump": 5,
+      "minecraft:time_since_death": 4692
+    },
+    "minecraft:used": {
+      "strawberrymc:oasis_spawner": 9
+    }
+  },
+  "DataVersion": 4790
+}

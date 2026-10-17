@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "villagertrade",
+  "definition": {
+    "villagerProfession": "FARMER",
+    "trades": [
+      {
+        "price1": "CUSTOM:SulfurSlag",
+        "countPrice1": 4,
+        "price2": "Items.EMERALD",
+        "countPrice2": 2,
+        "offer": "Items.IRON_HOE",
+        "countOffer": 1,
+        "level": 2,
+        "maxTrades": 5,
+        "xp": 6,
+        "priceMultiplier": 0.05
+      }
+    ]
+  }
+}

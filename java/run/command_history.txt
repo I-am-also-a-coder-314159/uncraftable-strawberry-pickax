@@ -15,3 +15,5 @@
 /
 /locate structure minecraft:end_city
 /tp @s 1984 ~ -864
+/locate biome minecraft:desert
+/tp @s -3583 78 -5743

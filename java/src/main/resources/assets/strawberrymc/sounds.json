@@ -1,0 +1,18 @@
+{
+  "void_amb_01": {
+    "sounds": [
+      {
+        "name": "strawberrymc:audiomass-output_1",
+        "stream": false
+      }
+    ]
+  },
+  "void_amb_02": {
+    "sounds": [
+      {
+        "name": "strawberrymc:audiomass-output",
+        "stream": false
+      }
+    ]
+  }
+}

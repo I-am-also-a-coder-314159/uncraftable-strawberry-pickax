@@ -108,5 +108,17 @@
   "biome.strawberrymc.dry_savanna": "Dry Savanna",
   "item.strawberrymc.poor_farmland": "Poor Farmland",
   "item.strawberrymc.flint_shard": "Flint Shard",
-  "item.strawberrymc.farmland_strawberry": "Farmland real"
+  "item.strawberrymc.farmland_strawberry": "Farmland real",
+  "item.strawberrymc.voidstone": "Voidstone",
+  "subtitles.void_amb_01": "",
+  "subtitles.void_amb_02": "",
+  "death.attack.void_tear_damage": "%1$s disolved in Void Tears",
+  "death.attack.void_tear_damage.item": "%1$s was killed by %2$s using %3$s",
+  "death.attack.void_tear_damage.player": "%1$s died whilst trying to escape %2$s",
+  "fluid_type.strawberrymc.void_tears": "Void Tears",
+  "fluid.strawberrymc.void_tears": "Void Tears",
+  "block.strawberrymc.void_tears": "Void Tears",
+  "biome.strawberrymc.voidstone_peaks": "Voidstone Peaks",
+  "item_group.strawberrymc.debug": "Developer",
+  "item.strawberrymc.oasis_spawner": "Oasis Spawner"
 }

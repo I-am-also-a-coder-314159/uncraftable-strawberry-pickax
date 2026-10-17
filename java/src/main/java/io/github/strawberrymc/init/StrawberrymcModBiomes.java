@@ -73,6 +73,8 @@ public class StrawberrymcModBiomes {
 		List<SurfaceRules.RuleSource> customSurfaceRules = new ArrayList<>();
 		customSurfaceRules.add(
 				anySurfaceRule(ResourceKey.create(Registries.BIOME, Identifier.fromNamespaceAndPath("strawberrymc", "crystal_hollows")), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState(), Blocks.GRAVEL.defaultBlockState()));
+		customSurfaceRules.add(anySurfaceRule(ResourceKey.create(Registries.BIOME, Identifier.fromNamespaceAndPath("strawberrymc", "voidstone_peaks")), StrawberrymcModBlocks.VOIDSTONE.get().defaultBlockState(),
+				StrawberrymcModBlocks.VOIDSTONE.get().defaultBlockState(), StrawberrymcModBlocks.VOIDSTONE.get().defaultBlockState()));
 		customSurfaceRules.add(
 				preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, Identifier.fromNamespaceAndPath("strawberrymc", "dry_savanna")), Blocks.COARSE_DIRT.defaultBlockState(), Blocks.SAND.defaultBlockState(), Blocks.GRAVEL.defaultBlockState()));
 		if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
@@ -94,6 +96,8 @@ public class StrawberrymcModBiomes {
 				lookup.apply(ResourceKey.create(Registries.BIOME, Identifier.fromNamespaceAndPath("strawberrymc", "dry_savanna")))));
 		parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 0.4f), Climate.Parameter.span(-0.4f, 2f), Climate.Parameter.span(0.4f, 1.1f),
 				Climate.Parameter.span(0f, 0.9999f), 0), lookup.apply(ResourceKey.create(Registries.BIOME, Identifier.fromNamespaceAndPath("strawberrymc", "crystal_hollows")))));
+		parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.2f, 0.9f),
+				Climate.Parameter.span(-1f, 1f), 0), lookup.apply(ResourceKey.create(Registries.BIOME, Identifier.fromNamespaceAndPath("strawberrymc", "voidstone_peaks")))));
 		return new Climate.ParameterList<>(parameters);
 	}
 

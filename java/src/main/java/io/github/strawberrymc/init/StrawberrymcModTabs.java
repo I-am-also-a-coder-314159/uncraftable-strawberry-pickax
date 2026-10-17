@@ -4,12 +4,16 @@
 package io.github.strawberrymc.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import io.github.strawberrymc.StrawberrymcMod;
@@ -17,6 +21,10 @@ import io.github.strawberrymc.StrawberrymcMod;
 @EventBusSubscriber
 public class StrawberrymcModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, StrawberrymcMod.MODID);
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> DEBUG = REGISTRY.register("debug",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.strawberrymc.debug")).icon(() -> new ItemStack(Blocks.COMMAND_BLOCK)).displayItems((parameters, tabData) -> {
+				tabData.accept(StrawberrymcModBlocks.OASIS_SPAWNER.get().asItem());
+			}).withSearchBar().build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
@@ -59,6 +67,7 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.PALM_TRAPDOOR.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.PALM_PRESSURE_PLATE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.PALM_BUTTON.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.VOIDSTONE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_LEAVES.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.PALM_LEAVES.get().asItem());
@@ -69,6 +78,7 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.FERTILE_FARMLAND.get().asItem());
 			tabData.accept(StrawberrymcModItems.PLANT_FIBER.get());
 			tabData.accept(StrawberrymcModBlocks.POOR_FARMLAND.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.VOIDSTONE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_HANGING_SIGN.get().asItem());

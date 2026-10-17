@@ -1,0 +1,70 @@
+{
+  "_fv": 89,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      "CUSTOM:VoidstonePeaks"
+    ],
+    "biomesInDimensionCaves": [],
+    "worldGenType": "End like gen",
+    "mainFillerBlock": "CUSTOM:Voidstone",
+    "fluidBlock": "CUSTOM:VoidTears",
+    "seaLevel": 0,
+    "generateOreVeins": true,
+    "generateAquifers": true,
+    "horizontalNoiseSize": 2,
+    "verticalNoiseSize": 1,
+    "defaultEffects": "overworld",
+    "useCustomEffects": true,
+    "hasClouds": false,
+    "cloudHeight": 192,
+    "skyType": "END",
+    "airColor": {
+      "value": -16448234,
+      "falpha": 0.0
+    },
+    "sunHeightAffectsFog": false,
+    "canRespawnHere": false,
+    "hasFog": true,
+    "ambientLight": 0.0,
+    "doesWaterVaporize": false,
+    "hasFixedTime": false,
+    "fixedTimeValue": 0,
+    "coordinateScale": 3.0,
+    "infiniburnTag": "minecraft:infiniburn_overworld",
+    "enableCustomSkyboxTextures": true,
+    "skyboxTextureUp": "skybox",
+    "skyboxTextureDown": "skybox",
+    "skyboxTextureNorth": "skybox",
+    "skyboxTextureSouth": "skybox",
+    "skyboxTextureWest": "skybox",
+    "skyboxTextureEast": "skybox",
+    "enableCustomSunMoonTextures": false,
+    "sunTexture": "",
+    "moonTexture": "",
+    "bedWorks": false,
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "piglinSafe": false,
+    "hasRaids": false,
+    "minMonsterSpawnLightLimit": 0,
+    "maxMonsterSpawnLightLimit": 2,
+    "monsterSpawnBlockLightLimit": 0,
+    "portalFrame": "",
+    "portalParticles": "PORTAL",
+    "portalLuminance": 0,
+    "portalSound": "block.portal.ambient",
+    "enableIgniter": true,
+    "igniterName": "Void Dim Portal Igniter",
+    "igniterRarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      "TOOLS"
+    ],
+    "texture": "",
+    "portalTexture": "",
+    "enablePortal": false
+  }
+}
