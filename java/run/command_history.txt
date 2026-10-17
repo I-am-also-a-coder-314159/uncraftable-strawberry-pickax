@@ -17,3 +17,13 @@
 /tp @s 1984 ~ -864
 /locate biome minecraft:desert
 /tp @s -3583 78 -5743
+/summon sheep
+/summon tnt
+/setblock ~ ~ ~ strawberrymc:void_tears
+/gamemode s
+/gamemode survival
+/locate biome minecraft:desert
+/tp @s 5823 68 5849
+/gamemode c
+/gamemode creative
+/reload

@@ -2768,6 +2768,76 @@
           "src/main/resources/data/strawberrymc/dimension/void_dim.json"
         ]
       }
+    },
+    {
+      "name": "SpawnPalmTreeProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spawn_palm_tree_procedure",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/SpawnPalmTreeProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Debug",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "OasisSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "oasis_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/OasisSpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "OasisSpawner",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oasis_spawner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/oasis_spawner.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/oasis_spawner.json",
+          "src/main/resources/assets/strawberrymc/models/item/oasis_spawner.json",
+          "src/main/resources/assets/strawberrymc/blockstates/oasis_spawner.json",
+          "src/main/java/io/github/strawberrymc/block/OasisSpawnerBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/oasis_spawner.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -3162,7 +3232,9 @@
       "fluid_type.strawberrymc.void_tears": "Void Tears",
       "fluid.strawberrymc.void_tears": "Void Tears",
       "block.strawberrymc.void_tears": "Void Tears",
-      "biome.strawberrymc.voidstone_peaks": "Voidstone Peaks"
+      "biome.strawberrymc.voidstone_peaks": "Voidstone Peaks",
+      "item_group.strawberrymc.debug": "Developer",
+      "item.strawberrymc.oasis_spawner": "Oasis Spawner"
     }
   },
   "metadata": {
