@@ -2637,7 +2637,7 @@
       "name": "IsReinforced",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "is_reinforced",
       "metadata": {
         "dependencies": [],
@@ -2741,6 +2741,101 @@
           "src/main/java/io/github/strawberrymc/fluid/VoidTearsFluid.java",
           "src/main/java/io/github/strawberrymc/fluid/types/VoidTearsFluidType.java",
           "src/main/java/io/github/strawberrymc/block/VoidTearsBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "VoidstonePeaks",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidstone_peaks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/biome/voidstone_peaks.json"
+        ]
+      }
+    },
+    {
+      "name": "VoidDim",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_dim",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/dimension_type/void_dim.json",
+          "src/main/resources/data/strawberrymc/dimension/void_dim.json"
+        ]
+      }
+    },
+    {
+      "name": "SpawnPalmTreeProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spawn_palm_tree_procedure",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/SpawnPalmTreeProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Debug",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "OasisSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "oasis_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/OasisSpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "OasisSpawner",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oasis_spawner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/oasis_spawner.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/oasis_spawner.json",
+          "src/main/resources/assets/strawberrymc/models/item/oasis_spawner.json",
+          "src/main/resources/assets/strawberrymc/blockstates/oasis_spawner.json",
+          "src/main/java/io/github/strawberrymc/block/OasisSpawnerBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/oasis_spawner.json"
         ]
       }
     }
@@ -3010,6 +3105,9 @@
     ],
     "BLOCKS:minecraft:replaceable": [
       "~VoidTears@CUSTOM:VoidTears"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~VoidDim@CUSTOM:Voidstone"
     ]
   },
   "tab_element_order": {},
@@ -3133,7 +3231,10 @@
       "death.attack.void_tear_damage.player": "%1$s died whilst trying to escape %2$s",
       "fluid_type.strawberrymc.void_tears": "Void Tears",
       "fluid.strawberrymc.void_tears": "Void Tears",
-      "block.strawberrymc.void_tears": "Void Tears"
+      "block.strawberrymc.void_tears": "Void Tears",
+      "biome.strawberrymc.voidstone_peaks": "Voidstone Peaks",
+      "item_group.strawberrymc.debug": "Developer",
+      "item.strawberrymc.oasis_spawner": "Oasis Spawner"
     }
   },
   "metadata": {
@@ -3143,6 +3244,7 @@
       "src/main/java/io/github/strawberrymc/mixin/LevelStorageSourceMixin.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBiomes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModWoodTypes.java",
+      "src/main/java/io/github/strawberrymc/client/StrawberrymcModSkyboxRenderer.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModFluidTypes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModFluids.java",
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
