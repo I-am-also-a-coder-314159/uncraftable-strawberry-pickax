@@ -8,6 +8,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import io.github.strawberrymc.client.particle.InvulnerabilityParticleParticle;
 import io.github.strawberrymc.client.particle.DustcloudParticle;
 import io.github.strawberrymc.client.particle.CoconutImpactParticle;
 
@@ -17,5 +18,6 @@ public class StrawberrymcModParticles {
 	public static void registerParticles(RegisterParticleProvidersEvent event) {
 		event.registerSpriteSet(StrawberrymcModParticleTypes.DUSTCLOUD.get(), DustcloudParticle::provider);
 		event.registerSpriteSet(StrawberrymcModParticleTypes.COCONUT_IMPACT.get(), CoconutImpactParticle::provider);
+		event.registerSpriteSet(StrawberrymcModParticleTypes.INVULNERABILITY_PARTICLE.get(), InvulnerabilityParticleParticle::provider);
 	}
 }

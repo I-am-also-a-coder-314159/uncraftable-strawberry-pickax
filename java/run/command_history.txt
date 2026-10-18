@@ -1,13 +1,3 @@
-/effect give @s minecraft:night_vision infinite
-/place feature strawberrymc:crystal
-/give @s minecraft:stick
-/enchant @s minecraft:knockback 255
-/place
-/place structure minecraft:end_city
-/w
-/place structure minecraft:end_city
-/
-/locate structure minecraft:end_city
 /tp @s 1984 ~ -864
 /locate biome minecraft:desert
 /tp @s -3583 78 -5743
@@ -48,3 +38,13 @@
 /gamemode creative
 /give @s strawberrymc:clover_mat
 /gamemode survival
+/gamemode creative
+/execute in strawberrymc:void_dim run tp @p 0 100 0
+/execute in minecraft:overworld run tp @s 0 100 0
+/particle strawberrymc:coconut_impact
+/particle strawberrymc:dustcloud
+/locate biome strawberrymc:clover_glades
+/tp @s -9 106 1341
+/time set day
+/effect give @p strawberrymc:invulnerability infinite
+/effect give @p strawberrymc:invulnerability

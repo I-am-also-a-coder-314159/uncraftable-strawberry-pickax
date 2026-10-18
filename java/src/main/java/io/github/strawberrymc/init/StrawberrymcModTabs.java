@@ -90,6 +90,7 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.VOIDSTONE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.PALM_SAPLING.get().asItem());
 			tabData.accept(StrawberrymcModItems.COCONUT.get());
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SAPLING.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_HANGING_SIGN.get().asItem());

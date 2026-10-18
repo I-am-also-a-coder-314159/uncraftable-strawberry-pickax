@@ -3014,6 +3014,139 @@
           "src/main/java/io/github/strawberrymc/procedures/CoconutPlantProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Invulnerability",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invulnerability",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/potion/InvulnerabilityMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodGrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "echowood_grow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/EchowoodGrowProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodSapling",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "echowood_sapling",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/block/EchowoodSaplingBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_sapling.json",
+          "src/main/resources/assets/strawberrymc/items/echowood_sapling.json",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_sapling.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_sapling.json",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_sapling.json"
+        ]
+      }
+    },
+    {
+      "name": "SpawnEchowoodTree",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spawn_echowood_tree",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/SpawnEchowoodTreeProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CloverMatPlacementReturnHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_mat_placement_return_handler",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CloverMatPlacementReturnHandlerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "InvulnerabilityParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invulnerability_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/client/particle/InvulnerabilityParticleParticle.java",
+          "src/main/resources/assets/strawberrymc/particles/invulnerability_particle.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -3441,7 +3574,9 @@
       "item.strawberrymc.oasis_spawner": "Oasis Spawner",
       "subtitles.palm_step": "Palm Sappling",
       "subtitles.palm_break": "Palm Sappling Breaks",
-      "item.strawberrymc.palm_sapling": "Palm Sapling"
+      "item.strawberrymc.palm_sapling": "Palm Sapling",
+      "effect.strawberrymc.invulnerability": "Invulnerability",
+      "item.strawberrymc.echowood_sapling": "Echowood Sapling"
     }
   },
   "metadata": {
@@ -3457,6 +3592,7 @@
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticleTypes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticles.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModMobEffects.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModPotions.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlockEntities.java",

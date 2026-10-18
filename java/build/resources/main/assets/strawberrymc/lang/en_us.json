@@ -123,5 +123,7 @@
   "item.strawberrymc.oasis_spawner": "Oasis Spawner",
   "subtitles.palm_step": "Palm Sappling",
   "subtitles.palm_break": "Palm Sappling Breaks",
-  "item.strawberrymc.palm_sapling": "Palm Sapling"
+  "item.strawberrymc.palm_sapling": "Palm Sapling",
+  "effect.strawberrymc.invulnerability": "Invulnerability",
+  "item.strawberrymc.echowood_sapling": "Echowood Sapling"
 }

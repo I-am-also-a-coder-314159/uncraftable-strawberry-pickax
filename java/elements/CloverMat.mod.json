@@ -97,6 +97,7 @@
     },
     "unbreakable": false,
     "vanillaToolTier": "NONE",
+    "placingCondition": "CloverMatPlacementReturnHandler",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],

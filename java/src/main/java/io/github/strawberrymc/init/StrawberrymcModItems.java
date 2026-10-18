@@ -95,6 +95,7 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> OASIS_SPAWNER;
 	public static final DeferredItem<Item> PALM_SAPLING;
 	public static final DeferredItem<Item> COCONUT;
+	public static final DeferredItem<Item> ECHOWOOD_SAPLING;
 	static {
 		CHORINE = register("chorine", ChorineItem::new);
 		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
@@ -174,6 +175,7 @@ public class StrawberrymcModItems {
 		OASIS_SPAWNER = block(StrawberrymcModBlocks.OASIS_SPAWNER);
 		PALM_SAPLING = block(StrawberrymcModBlocks.PALM_SAPLING);
 		COCONUT = register("coconut", CoconutItem::new);
+		ECHOWOOD_SAPLING = block(StrawberrymcModBlocks.ECHOWOOD_SAPLING);
 	}
 
 	// Start of user code block custom items
