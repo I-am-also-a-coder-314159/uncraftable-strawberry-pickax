@@ -20,9 +20,11 @@ import net.minecraft.core.BlockPos;
 
 public class FarmlandStrawberryBlock extends FarmlandBlock {
 	private static final VoxelShape SHAPE = box(0, 0, 0, 16, 15, 16);
+	public static final IntegerProperty USES = IntegerProperty.create("uses", 0, 4);
 
 	public FarmlandStrawberryBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.GRAVEL).strength(0.6f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(USES, 0));
 	}
 
 	@Override
