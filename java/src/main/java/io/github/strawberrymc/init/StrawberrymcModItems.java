@@ -96,6 +96,24 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> PALM_SAPLING;
 	public static final DeferredItem<Item> COCONUT;
 	public static final DeferredItem<Item> ECHOWOOD_SAPLING;
+	public static final DeferredItem<Item> JUNIPER_LOG;
+	public static final DeferredItem<Item> JUNIPER_WOOD;
+	public static final DeferredItem<Item> STRIPPED_JUNIPER_LOG;
+	public static final DeferredItem<Item> STRIPPED_JUNIPER_WOOD;
+	public static final DeferredItem<Item> JUNIPER_PLANKS;
+	public static final DeferredItem<Item> JUNIPER_LEAVES;
+	public static final DeferredItem<Item> JUNIPER_STAIRS;
+	public static final DeferredItem<Item> JUNIPER_SLAB;
+	public static final DeferredItem<Item> JUNIPER_FENCE;
+	public static final DeferredItem<Item> JUNIPER_FENCE_GATE;
+	public static final DeferredItem<Item> JUNIPER_DOOR;
+	public static final DeferredItem<Item> JUNIPER_TRAPDOOR;
+	public static final DeferredItem<Item> JUNIPER_PRESSURE_PLATE;
+	public static final DeferredItem<Item> JUNIPER_BUTTON;
+	public static final DeferredItem<Item> JUNIPER_SIGN;
+	public static final DeferredItem<Item> JUNIPER_HANGING_SIGN;
+	public static final DeferredItem<Item> JUNIPER_BOAT;
+	public static final DeferredItem<Item> JUNIPER_CHEST_BOAT;
 	static {
 		CHORINE = register("chorine", ChorineItem::new);
 		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
@@ -176,6 +194,24 @@ public class StrawberrymcModItems {
 		PALM_SAPLING = block(StrawberrymcModBlocks.PALM_SAPLING);
 		COCONUT = register("coconut", CoconutItem::new);
 		ECHOWOOD_SAPLING = block(StrawberrymcModBlocks.ECHOWOOD_SAPLING);
+		JUNIPER_LOG = block(StrawberrymcModBlocks.JUNIPER_LOG);
+		JUNIPER_WOOD = block(StrawberrymcModBlocks.JUNIPER_WOOD);
+		STRIPPED_JUNIPER_LOG = block(StrawberrymcModBlocks.STRIPPED_JUNIPER_LOG);
+		STRIPPED_JUNIPER_WOOD = block(StrawberrymcModBlocks.STRIPPED_JUNIPER_WOOD);
+		JUNIPER_PLANKS = block(StrawberrymcModBlocks.JUNIPER_PLANKS);
+		JUNIPER_LEAVES = block(StrawberrymcModBlocks.JUNIPER_LEAVES);
+		JUNIPER_STAIRS = block(StrawberrymcModBlocks.JUNIPER_STAIRS);
+		JUNIPER_SLAB = block(StrawberrymcModBlocks.JUNIPER_SLAB);
+		JUNIPER_FENCE = block(StrawberrymcModBlocks.JUNIPER_FENCE);
+		JUNIPER_FENCE_GATE = block(StrawberrymcModBlocks.JUNIPER_FENCE_GATE);
+		JUNIPER_DOOR = doubleBlock(StrawberrymcModBlocks.JUNIPER_DOOR);
+		JUNIPER_TRAPDOOR = block(StrawberrymcModBlocks.JUNIPER_TRAPDOOR);
+		JUNIPER_PRESSURE_PLATE = block(StrawberrymcModBlocks.JUNIPER_PRESSURE_PLATE);
+		JUNIPER_BUTTON = block(StrawberrymcModBlocks.JUNIPER_BUTTON);
+		JUNIPER_SIGN = signBlock(StrawberrymcModBlocks.JUNIPER_SIGN, StrawberrymcModBlocks.JUNIPER_WALL_SIGN, new Item.Properties().stacksTo(16));
+		JUNIPER_HANGING_SIGN = hangingSignBlock(StrawberrymcModBlocks.JUNIPER_HANGING_SIGN, StrawberrymcModBlocks.JUNIPER_WALL_HANGING_SIGN, new Item.Properties().stacksTo(16));
+		JUNIPER_BOAT = register("juniper_boat", properties -> new BoatItem(StrawberrymcModEntities.JUNIPER_BOAT.get(), properties.stacksTo(1)));
+		JUNIPER_CHEST_BOAT = register("juniper_chest_boat", properties -> new BoatItem(StrawberrymcModEntities.JUNIPER_CHEST_BOAT.get(), properties.stacksTo(1)));
 	}
 
 	// Start of user code block custom items

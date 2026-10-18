@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    "#strawberrymc:juniper_logs"
+  ],
+  "result": {
+    "id": "strawberrymc:juniper_planks",
+    "count": 4
+  }
+}

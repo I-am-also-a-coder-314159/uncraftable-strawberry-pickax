@@ -30,6 +30,10 @@ public class StrawberrymcModEntities {
 			EntityType.Builder.<RecoveryPearlProjectileEntity>of(RecoveryPearlProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CoconutProjectileEntity>> COCONUT_PROJECTILE = register("coconut_projectile",
 			EntityType.Builder.<CoconutProjectileEntity>of(CoconutProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<JuniperBoatEntity>> JUNIPER_BOAT = register("juniper_boat",
+			EntityType.Builder.<JuniperBoatEntity>of(JuniperBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<JuniperChestBoatEntity>> JUNIPER_CHEST_BOAT = register("juniper_chest_boat",
+			EntityType.Builder.<JuniperChestBoatEntity>of(JuniperChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

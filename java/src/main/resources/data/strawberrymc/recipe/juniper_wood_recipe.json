@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "strawberrymc:juniper_log"
+  },
+  "result": {
+    "id": "strawberrymc:juniper_wood",
+    "count": 3
+  }
+}

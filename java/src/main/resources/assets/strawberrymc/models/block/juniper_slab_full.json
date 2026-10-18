@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "strawberrymc:block/juniper_planks",
+    "bottom": "strawberrymc:block/juniper_planks",
+    "top": "strawberrymc:block/juniper_planks",
+    "side": "strawberrymc:block/juniper_planks"
+  }
+}

@@ -71,6 +71,19 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.GARNET_BLOCK.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.CRYSTALLINE_CALCITE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.VOIDSTONE.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.JUNIPER_LOG.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.JUNIPER_WOOD.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.STRIPPED_JUNIPER_LOG.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.STRIPPED_JUNIPER_WOOD.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.JUNIPER_PLANKS.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.JUNIPER_STAIRS.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.JUNIPER_SLAB.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.JUNIPER_FENCE.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.JUNIPER_FENCE_GATE.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.JUNIPER_DOOR.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.JUNIPER_TRAPDOOR.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.JUNIPER_PRESSURE_PLATE.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.JUNIPER_BUTTON.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_LEAVES.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.PALM_LEAVES.get().asItem());
@@ -91,11 +104,14 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.PALM_SAPLING.get().asItem());
 			tabData.accept(StrawberrymcModItems.COCONUT.get());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SAPLING.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.JUNIPER_LEAVES.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_HANGING_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.PALM_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.PALM_HANGING_SIGN.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.JUNIPER_SIGN.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.JUNIPER_HANGING_SIGN.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(StrawberrymcModItems.ECHOWOOD_BOAT.get());
 			tabData.accept(StrawberrymcModItems.ECHOWOOD_CHEST_BOAT.get());
@@ -105,6 +121,8 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.RADONITE_HOE.get());
 			tabData.accept(StrawberrymcModItems.PALM_BOAT.get());
 			tabData.accept(StrawberrymcModItems.PALM_CHEST_BOAT.get());
+			tabData.accept(StrawberrymcModItems.JUNIPER_BOAT.get());
+			tabData.accept(StrawberrymcModItems.JUNIPER_CHEST_BOAT.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(StrawberrymcModItems.RADONITE_SWORD.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_HELMET.get());

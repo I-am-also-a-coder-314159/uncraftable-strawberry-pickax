@@ -19,6 +19,8 @@ public class StrawberrymcModDispenseBehaviors {
 			DispenserBlock.registerBehavior(StrawberrymcModItems.ECHOWOOD_CHEST_BOAT.get(), new BoatDispenseItemBehavior(StrawberrymcModEntities.ECHOWOOD_CHEST_BOAT.get()));
 			DispenserBlock.registerBehavior(StrawberrymcModItems.PALM_BOAT.get(), new BoatDispenseItemBehavior(StrawberrymcModEntities.PALM_BOAT.get()));
 			DispenserBlock.registerBehavior(StrawberrymcModItems.PALM_CHEST_BOAT.get(), new BoatDispenseItemBehavior(StrawberrymcModEntities.PALM_CHEST_BOAT.get()));
+			DispenserBlock.registerBehavior(StrawberrymcModItems.JUNIPER_BOAT.get(), new BoatDispenseItemBehavior(StrawberrymcModEntities.JUNIPER_BOAT.get()));
+			DispenserBlock.registerBehavior(StrawberrymcModItems.JUNIPER_CHEST_BOAT.get(), new BoatDispenseItemBehavior(StrawberrymcModEntities.JUNIPER_CHEST_BOAT.get()));
 		});
 	}
 }

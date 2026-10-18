@@ -23,5 +23,7 @@ public class StrawberrymcModEntityRenderers {
 		event.registerEntityRenderer(StrawberrymcModEntities.PALM_CHEST_BOAT.get(), context -> new BoatRenderer(context, StrawberrymcModModels.PALM_CHEST_BOAT_LAYER_LOCATION));
 		event.registerEntityRenderer(StrawberrymcModEntities.RECOVERY_PEARL_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(StrawberrymcModEntities.COCONUT_PROJECTILE.get(), CoconutProjectileRenderer::new);
+		event.registerEntityRenderer(StrawberrymcModEntities.JUNIPER_BOAT.get(), context -> new BoatRenderer(context, StrawberrymcModModels.JUNIPER_BOAT_LAYER_LOCATION));
+		event.registerEntityRenderer(StrawberrymcModEntities.JUNIPER_CHEST_BOAT.get(), context -> new BoatRenderer(context, StrawberrymcModModels.JUNIPER_CHEST_BOAT_LAYER_LOCATION));
 	}
 }

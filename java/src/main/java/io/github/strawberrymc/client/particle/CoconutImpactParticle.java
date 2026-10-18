@@ -32,7 +32,7 @@ public class CoconutImpactParticle extends SingleQuadParticle {
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
 		this.lifetime = 7;
-		this.gravity = 0f;
+		this.gravity = 0.7f;
 		this.hasPhysics = true;
 		this.xd = vx * 1;
 		this.yd = vy * 1;

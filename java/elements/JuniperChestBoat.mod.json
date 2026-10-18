@@ -1,0 +1,14 @@
+{
+  "_fv": 89,
+  "_type": "specialentity",
+  "definition": {
+    "entityType": "ChestBoat",
+    "name": "Juniper Boat with Chest",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      "TOOLS"
+    ],
+    "entityTexture": "juniper_chest_boat",
+    "itemTexture": "juniper_chest_boat"
+  }
+}

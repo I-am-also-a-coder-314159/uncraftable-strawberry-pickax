@@ -12,7 +12,7 @@
     },
     "fixedScale": false,
     "speedFactor": 1.0,
-    "gravity": 0.0,
+    "gravity": 0.7,
     "maxAge": 7,
     "maxAgeDiff": 0,
     "angularVelocity": 0.0,

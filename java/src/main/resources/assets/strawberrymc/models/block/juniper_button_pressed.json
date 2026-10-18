@@ -1,0 +1,7 @@
+{
+  "parent": "block/button_pressed",
+  "textures": {
+    "texture": "strawberrymc:block/juniper_planks",
+    "particle": "strawberrymc:block/juniper_planks"
+  }
+}
