@@ -120,5 +120,8 @@
   "block.strawberrymc.void_tears": "Void Tears",
   "biome.strawberrymc.voidstone_peaks": "Voidstone Peaks",
   "item_group.strawberrymc.debug": "Developer",
-  "item.strawberrymc.oasis_spawner": "Oasis Spawner"
+  "item.strawberrymc.oasis_spawner": "Oasis Spawner",
+  "subtitles.palm_step": "Palm Sappling",
+  "subtitles.palm_break": "Palm Sappling Breaks",
+  "item.strawberrymc.palm_sapling": "Palm Sapling"
 }
