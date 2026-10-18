@@ -79,6 +79,7 @@ public class StrawberrymcModBlocks {
 	public static final DeferredBlock<Block> VOIDSTONE;
 	public static final DeferredBlock<Block> VOID_TEARS;
 	public static final DeferredBlock<Block> OASIS_SPAWNER;
+	public static final DeferredBlock<Block> PALM_SAPLING;
 	static {
 		CHORINE_ORE = register("chorine_ore", ChorineOreBlock::new);
 		CHORINE_BLOCK = register("chorine_block", ChorineBlockBlock::new);
@@ -135,6 +136,7 @@ public class StrawberrymcModBlocks {
 		VOIDSTONE = register("voidstone", VoidstoneBlock::new);
 		VOID_TEARS = register("void_tears", VoidTearsBlock::new);
 		OASIS_SPAWNER = register("oasis_spawner", OasisSpawnerBlock::new);
+		PALM_SAPLING = register("palm_sapling", PalmSaplingBlock::new);
 	}
 
 	// Start of user code block custom blocks

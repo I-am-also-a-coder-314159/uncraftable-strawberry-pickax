@@ -9,11 +9,13 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import io.github.strawberrymc.client.particle.DustcloudParticle;
+import io.github.strawberrymc.client.particle.CoconutImpactParticle;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class StrawberrymcModParticles {
 	@SubscribeEvent
 	public static void registerParticles(RegisterParticleProvidersEvent event) {
 		event.registerSpriteSet(StrawberrymcModParticleTypes.DUSTCLOUD.get(), DustcloudParticle::provider);
+		event.registerSpriteSet(StrawberrymcModParticleTypes.COCONUT_IMPACT.get(), CoconutImpactParticle::provider);
 	}
 }

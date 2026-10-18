@@ -389,5 +389,23 @@
     },
     "done": true
   },
+  "strawberrymc:recipes/echowood_wood_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-10-17 15:15:36 -0700"
+    },
+    "done": true
+  },
+  "strawberrymc:recipes/echowood_planks_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2026-10-17 15:15:36 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2026-10-17 15:15:36 -0700"
+    },
+    "done": true
+  },
   "DataVersion": 4790
 }

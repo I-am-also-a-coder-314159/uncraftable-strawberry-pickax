@@ -1,0 +1,20 @@
+{
+  "_fv": 89,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": "CUSTOM:Coconut",
+    "showParticles": true,
+    "actionSound": "entity.arrow.shoot",
+    "igniteFire": false,
+    "disableGravity": false,
+    "disableDiscarding": false,
+    "power": 1.3,
+    "damage": 5.0,
+    "knockback": 6,
+    "entityModel": "Modelcoconut_model_Converted",
+    "customModelTexture": "palm_chest_boat.png",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5,
+    "onHitsBlock": "CoconutImpactParticleHandler"
+  }
+}

@@ -2866,6 +2866,154 @@
           "src/main/resources/data/strawberrymc/worldgen/configured_feature/forest_talus_slope.json"
         ]
       }
+    },
+    {
+      "name": "PalmGrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_grow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/PalmGrowProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PalmSapling",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_sapling",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/palm_sapling.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_sapling.json",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_sapling.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_sapling.json",
+          "src/main/resources/assets/strawberrymc/items/palm_sapling.json",
+          "src/main/java/io/github/strawberrymc/block/PalmSaplingBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Coconut",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/CoconutItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/coconut.json",
+          "src/main/resources/assets/strawberrymc/items/coconut.json"
+        ]
+      }
+    },
+    {
+      "name": "CoconutImpact",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_impact",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/particles/coconut_impact.json",
+          "src/main/java/io/github/strawberrymc/client/particle/CoconutImpactParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutImpactParticleHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_impact_particle_handler",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CoconutImpactParticleHandlerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/client/renderer/CoconutProjectileRenderer.java",
+          "src/main/java/io/github/strawberrymc/entity/CoconutProjectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutPlant",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_plant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CoconutPlantProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2885,6 +3033,22 @@
       ],
       "category": "master",
       "subtitle": ""
+    },
+    {
+      "name": "palm_step",
+      "files": [
+        "palm"
+      ],
+      "category": "block",
+      "subtitle": "Palm Sappling"
+    },
+    {
+      "name": "palm_break",
+      "files": [
+        "palm2"
+      ],
+      "category": "neutral",
+      "subtitle": "Palm Sappling Breaks"
     }
   ],
   "tag_elements": {
@@ -3274,7 +3438,10 @@
       "block.strawberrymc.void_tears": "Void Tears",
       "biome.strawberrymc.voidstone_peaks": "Voidstone Peaks",
       "item_group.strawberrymc.debug": "Developer",
-      "item.strawberrymc.oasis_spawner": "Oasis Spawner"
+      "item.strawberrymc.oasis_spawner": "Oasis Spawner",
+      "subtitles.palm_step": "Palm Sappling",
+      "subtitles.palm_break": "Palm Sappling Breaks",
+      "item.strawberrymc.palm_sapling": "Palm Sapling"
     }
   },
   "metadata": {

@@ -16,4 +16,6 @@ public class StrawberrymcModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(Registries.SOUND_EVENT, StrawberrymcMod.MODID);
 	public static final DeferredHolder<SoundEvent, SoundEvent> VOID_AMB_01 = REGISTRY.register("void_amb_01", () -> SoundEvent.createVariableRangeEvent(Identifier.fromNamespaceAndPath("strawberrymc", "void_amb_01")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> VOID_AMB_02 = REGISTRY.register("void_amb_02", () -> SoundEvent.createVariableRangeEvent(Identifier.fromNamespaceAndPath("strawberrymc", "void_amb_02")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> PALM_STEP = REGISTRY.register("palm_step", () -> SoundEvent.createVariableRangeEvent(Identifier.fromNamespaceAndPath("strawberrymc", "palm_step")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> PALM_BREAK = REGISTRY.register("palm_break", () -> SoundEvent.createVariableRangeEvent(Identifier.fromNamespaceAndPath("strawberrymc", "palm_break")));
 }

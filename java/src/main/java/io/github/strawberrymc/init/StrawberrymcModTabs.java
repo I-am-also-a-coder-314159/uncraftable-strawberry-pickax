@@ -36,6 +36,7 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.RARE_CLOVER_CLUFF.get());
 			tabData.accept(StrawberrymcModItems.PLANT_FIBER.get());
 			tabData.accept(StrawberrymcModItems.FLINT_SHARD.get());
+			tabData.accept(StrawberrymcModItems.COCONUT.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.CHORINE_ORE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.CHORINE_BLOCK.get().asItem());
@@ -87,6 +88,8 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.PLANT_FIBER.get());
 			tabData.accept(StrawberrymcModBlocks.POOR_FARMLAND.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.VOIDSTONE.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.PALM_SAPLING.get().asItem());
+			tabData.accept(StrawberrymcModItems.COCONUT.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_HANGING_SIGN.get().asItem());
@@ -114,6 +117,8 @@ public class StrawberrymcModTabs {
 			if (tabData.hasPermissions()) {
 				tabData.accept(StrawberrymcModBlocks.GLOWROOT_DUMMY_SPAWNER.get().asItem());
 			}
+		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+			tabData.accept(StrawberrymcModItems.COCONUT.get());
 		}
 	}
 }

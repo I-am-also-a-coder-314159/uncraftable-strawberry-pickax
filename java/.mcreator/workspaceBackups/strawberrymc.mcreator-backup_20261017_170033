@@ -942,12 +942,12 @@
       "registry_name": "palm_log",
       "metadata": {
         "files": [
-          "src/main/java/io/github/strawberrymc/block/PalmLogBlock.java",
-          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_log.json",
           "src/main/resources/assets/strawberrymc/models/item/palm_log.json",
-          "src/main/resources/assets/strawberrymc/items/palm_log.json",
           "src/main/resources/assets/strawberrymc/blockstates/palm_log.json",
-          "src/main/resources/assets/strawberrymc/models/block/palm_log.json"
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_log.json",
+          "src/main/resources/assets/strawberrymc/items/palm_log.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_log.json",
+          "src/main/java/io/github/strawberrymc/block/PalmLogBlock.java"
         ]
       }
     },
@@ -960,10 +960,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/items/palm_wood.json",
-          "src/main/java/io/github/strawberrymc/block/PalmWoodBlock.java",
-          "src/main/resources/assets/strawberrymc/models/block/palm_wood.json",
           "src/main/resources/assets/strawberrymc/models/item/palm_wood.json",
           "src/main/resources/assets/strawberrymc/blockstates/palm_wood.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_wood.json",
+          "src/main/java/io/github/strawberrymc/block/PalmWoodBlock.java",
           "src/main/resources/data/strawberrymc/loot_table/blocks/palm_wood.json"
         ]
       }
@@ -1028,11 +1028,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/models/block/palm_leaves.json",
+          "src/main/java/io/github/strawberrymc/block/PalmLeavesBlock.java",
           "src/main/resources/data/strawberrymc/loot_table/blocks/palm_leaves.json",
           "src/main/resources/assets/strawberrymc/items/palm_leaves.json",
-          "src/main/resources/assets/strawberrymc/models/item/palm_leaves.json",
           "src/main/resources/assets/strawberrymc/blockstates/palm_leaves.json",
-          "src/main/java/io/github/strawberrymc/block/PalmLeavesBlock.java"
+          "src/main/resources/assets/strawberrymc/models/item/palm_leaves.json"
         ]
       }
     },
@@ -1472,12 +1472,12 @@
       "registry_name": "dendrite_crystal",
       "metadata": {
         "files": [
-          "src/main/resources/data/strawberrymc/loot_table/blocks/dendrite_crystal.json",
           "src/main/resources/assets/strawberrymc/items/dendrite_crystal.json",
           "src/main/java/io/github/strawberrymc/block/DendriteCrystalBlock.java",
           "src/main/resources/assets/strawberrymc/models/block/dendrite_crystal.json",
+          "src/main/resources/assets/strawberrymc/models/item/dendrite_crystal.json",
           "src/main/resources/assets/strawberrymc/blockstates/dendrite_crystal.json",
-          "src/main/resources/assets/strawberrymc/models/item/dendrite_crystal.json"
+          "src/main/resources/data/strawberrymc/loot_table/blocks/dendrite_crystal.json"
         ]
       }
     },
@@ -1524,11 +1524,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/models/block/garnet_block.json",
-          "src/main/java/io/github/strawberrymc/block/GarnetBlockBlock.java",
           "src/main/resources/assets/strawberrymc/models/item/garnet_block.json",
           "src/main/resources/assets/strawberrymc/blockstates/garnet_block.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/garnet_block.json",
           "src/main/resources/assets/strawberrymc/items/garnet_block.json",
-          "src/main/resources/data/strawberrymc/loot_table/blocks/garnet_block.json"
+          "src/main/java/io/github/strawberrymc/block/GarnetBlockBlock.java"
         ]
       }
     },
@@ -1540,8 +1540,8 @@
       "registry_name": "garnet_nodule",
       "metadata": {
         "files": [
-          "src/main/resources/assets/strawberrymc/items/garnet_nodule.json",
           "src/main/java/io/github/strawberrymc/item/GarnetNoduleItem.java",
+          "src/main/resources/assets/strawberrymc/items/garnet_nodule.json",
           "src/main/resources/assets/strawberrymc/models/item/garnet_nodule.json"
         ]
       }
@@ -1555,8 +1555,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/models/item/garnet.json",
-          "src/main/java/io/github/strawberrymc/item/GarnetItem.java",
-          "src/main/resources/assets/strawberrymc/items/garnet.json"
+          "src/main/resources/assets/strawberrymc/items/garnet.json",
+          "src/main/java/io/github/strawberrymc/item/GarnetItem.java"
         ]
       }
     },
@@ -1581,11 +1581,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/models/item/crystalline_calcite.json",
-          "src/main/resources/assets/strawberrymc/models/block/crystalline_calcite.json",
           "src/main/java/io/github/strawberrymc/block/CrystallineCalciteBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/crystalline_calcite.json",
           "src/main/resources/data/strawberrymc/loot_table/blocks/crystalline_calcite.json",
-          "src/main/resources/assets/strawberrymc/items/crystalline_calcite.json",
-          "src/main/resources/assets/strawberrymc/blockstates/crystalline_calcite.json"
+          "src/main/resources/assets/strawberrymc/blockstates/crystalline_calcite.json",
+          "src/main/resources/assets/strawberrymc/items/crystalline_calcite.json"
         ]
       }
     },
@@ -2838,6 +2838,65 @@
           "src/main/resources/assets/strawberrymc/models/block/oasis_spawner.json"
         ]
       }
+    },
+    {
+      "name": "CloverGlades",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_glades",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/biome/clover_glades.json",
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/clover_glades_tree.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/clover_glades_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "ForestTalusSlope",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forest_talus_slope",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/forest_talus_slope.json",
+          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/forest_talus_slope_biome_modifier.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/forest_talus_slope.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmGrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_grow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/PalmGrowProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2873,6 +2932,8 @@
       "~ChorineBlock@CUSTOM:ChorineBlock"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~PalmWood@CUSTOM:PalmWood",
+      "~PalmLog@CUSTOM:PalmLog",
       "~PalmHangingSign@CUSTOM:PalmHangingSign.wall",
       "~PalmHangingSign@CUSTOM:PalmHangingSign",
       "~PalmSign@CUSTOM:PalmSign.wall",
@@ -2888,8 +2949,6 @@
       "~PalmPlanks@CUSTOM:PalmPlanks",
       "~StrippedPalmWood@CUSTOM:StrippedPalmWood",
       "~StrippedPalmLog@CUSTOM:StrippedPalmLog",
-      "~PalmWood@CUSTOM:PalmWood",
-      "~PalmLog@CUSTOM:PalmLog",
       "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign",
       "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign.wall",
       "~EchowoodSign@CUSTOM:EchowoodSign.wall",
@@ -3108,6 +3167,18 @@
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~VoidDim@CUSTOM:Voidstone"
+    ],
+    "BIOMES:minecraft:has_structure/pillager_outpost": [
+      "~CloverGlades@CUSTOM:CloverGlades"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CloverGlades@CUSTOM:CloverGlades"
+    ],
+    "BIOMES:minecraft:has_structure/buried_treasure": [
+      "~CloverGlades@CUSTOM:CloverGlades"
+    ],
+    "BIOMES:minecraft:has_structure/ruined_portal_swamp": [
+      "~CloverGlades@CUSTOM:CloverGlades"
     ]
   },
   "tab_element_order": {},
