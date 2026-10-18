@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "strawberrymc:juniper_slab",
     "strawberrymc:palm_slab",
     "strawberrymc:echowood_slab"
   ]

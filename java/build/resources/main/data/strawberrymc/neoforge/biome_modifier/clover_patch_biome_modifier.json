@@ -1,8 +1,6 @@
 {
   "type": "neoforge:add_features",
-  "biomes": {
-    "type": "neoforge:any"
-  },
+  "biomes": "strawberrymc:clover_glades",
   "features": "strawberrymc:clover_patch",
-  "step": "surface_structures"
+  "step": "vegetal_decoration"
 }

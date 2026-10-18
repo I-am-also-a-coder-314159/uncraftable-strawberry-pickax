@@ -1,36 +1,8 @@
 {
   "stats": {
-    "minecraft:custom": {
-      "minecraft:minecart_one_cm": 1043,
-      "minecraft:interact_with_crafting_table": 1,
-      "minecraft:talked_to_villager": 2,
-      "minecraft:time_since_rest": 38275,
-      "minecraft:walk_one_cm": 14351,
-      "minecraft:leave_game": 16,
-      "minecraft:walk_under_water_one_cm": 35415,
-      "minecraft:mob_kills": 2,
-      "minecraft:damage_taken": 770,
-      "minecraft:play_time": 53442,
-      "minecraft:jump": 118,
-      "minecraft:time_since_death": 20663,
-      "minecraft:aviate_one_cm": 19529,
-      "minecraft:drop": 2,
-      "minecraft:sprint_one_cm": 3321,
-      "minecraft:fall_one_cm": 500,
-      "minecraft:total_world_time": 132832,
-      "minecraft:swim_one_cm": 1661,
-      "minecraft:fly_one_cm": 553358,
-      "minecraft:walk_on_water_one_cm": 6765,
-      "minecraft:crouch_one_cm": 691,
-      "minecraft:sneak_time": 2713,
-      "minecraft:deaths": 3
-    },
-    "minecraft:dropped": {
-      "strawberrymc:recovery_pearl": 1,
-      "minecraft:wheat_seeds": 1
-    },
-    "minecraft:crafted": {
-      "minecraft:flint": 1
+    "minecraft:mined": {
+      "minecraft:fern": 1,
+      "strawberrymc:clover_mat": 4
     },
     "minecraft:picked_up": {
       "strawberrymc:rare_clover_cluff": 4,
@@ -42,31 +14,63 @@
       "minecraft:sand": 1,
       "minecraft:dandelion": 1,
       "minecraft:sea_pickle": 2,
-      "strawberrymc:plant_fiber": 1
+      "strawberrymc:plant_fiber": 2
+    },
+    "minecraft:dropped": {
+      "strawberrymc:recovery_pearl": 1,
+      "minecraft:wheat_seeds": 1
+    },
+    "minecraft:custom": {
+      "minecraft:minecart_one_cm": 1043,
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:talked_to_villager": 2,
+      "minecraft:time_since_rest": 44137,
+      "minecraft:walk_one_cm": 17700,
+      "minecraft:leave_game": 17,
+      "minecraft:walk_under_water_one_cm": 35415,
+      "minecraft:mob_kills": 2,
+      "minecraft:damage_taken": 770,
+      "minecraft:play_time": 56373,
+      "minecraft:jump": 139,
+      "minecraft:time_since_death": 23594,
+      "minecraft:aviate_one_cm": 19529,
+      "minecraft:drop": 2,
+      "minecraft:sprint_one_cm": 4479,
+      "minecraft:fall_one_cm": 500,
+      "minecraft:total_world_time": 135910,
+      "minecraft:swim_one_cm": 1661,
+      "minecraft:fly_one_cm": 558406,
+      "minecraft:walk_on_water_one_cm": 6765,
+      "minecraft:crouch_one_cm": 691,
+      "minecraft:sneak_time": 2754,
+      "minecraft:deaths": 3
+    },
+    "minecraft:crafted": {
+      "minecraft:flint": 1
     },
     "minecraft:used": {
       "minecraft:minecart": 1,
+      "minecraft:sand": 2,
       "strawberrymc:echowood_sign": 1,
+      "strawberrymc:coconut": 10,
       "strawberrymc:oasis_spawner": 83,
       "minecraft:end_stone": 31,
       "strawberrymc:echowood_log": 1,
       "minecraft:firework_rocket": 10,
+      "minecraft:oak_log": 2,
       "minecraft:elytra": 1,
       "strawberrymc:fertile_farmland": 2,
       "minecraft:bone_meal": 51,
       "minecraft:redstone_torch": 1,
       "minecraft:crafting_table": 1,
       "minecraft:powered_rail": 10,
-      "minecraft:splash_potion": 12,
+      "minecraft:splash_potion": 28,
       "strawberrymc:echowood_leaves": 10,
       "strawberrymc:clover_mat": 5,
+      "strawberrymc:juniper_log": 2,
       "minecraft:honey_bottle": 1,
       "strawberrymc:palm_sapling": 3,
       "strawberrymc:echowood_sapling": 8
-    },
-    "minecraft:mined": {
-      "minecraft:fern": 1,
-      "strawberrymc:clover_mat": 4
     }
   },
   "DataVersion": 4790

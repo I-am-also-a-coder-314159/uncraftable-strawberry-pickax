@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "strawberrymc:juniper_pressure_plate",
     "strawberrymc:echowood_pressure_plate",
     "strawberrymc:palm_pressure_plate"
   ]

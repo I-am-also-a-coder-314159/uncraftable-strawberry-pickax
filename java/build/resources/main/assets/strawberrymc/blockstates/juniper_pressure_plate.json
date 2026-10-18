@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "strawberrymc:block/juniper_pressure_plate"
+    },
+    "powered=true": {
+      "model": "strawberrymc:block/juniper_pressure_plate_down"
+    }
+  }
+}

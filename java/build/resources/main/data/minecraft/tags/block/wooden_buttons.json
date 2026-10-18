@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "strawberrymc:juniper_button",
     "strawberrymc:palm_button",
     "strawberrymc:echowood_button"
   ]

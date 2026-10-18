@@ -5,8 +5,8 @@
       "type": "minecraft:count",
       "count": {
         "type": "uniform",
-        "min_inclusive": 1,
-        "max_inclusive": 4
+        "min_inclusive": 15,
+        "max_inclusive": 35
       }
     },
     {
@@ -15,15 +15,6 @@
     {
       "type": "minecraft:heightmap",
       "heightmap": "OCEAN_FLOOR_WG"
-    },
-    {
-      "type": "minecraft:block_predicate_filter",
-      "predicate": {
-        "type": "minecraft:would_survive",
-        "state": {
-          "Name": "minecraft:cactus"
-        }
-      }
     },
     {
       "type": "minecraft:block_predicate_filter",
@@ -47,9 +38,6 @@
           0
         ]
       }
-    },
-    {
-      "type": "minecraft:biome"
     }
   ]
 }
