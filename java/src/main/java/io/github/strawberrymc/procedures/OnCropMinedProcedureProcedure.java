@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import io.github.strawberrymc.init.StrawberrymcModBlocks;
 import io.github.strawberrymc.block.FarmlandStrawberryBlock;
+import io.github.strawberrymc.block.FertileFarmlandBlock;
 
 @EventBusSubscriber
 public class OnCropMinedProcedureProcedure {
@@ -26,7 +27,7 @@ public class OnCropMinedProcedureProcedure {
 				int currentState = farmlandState.getValue(FarmlandStrawberryBlock.USES);
 				int nextStage = currentState < 5 ? currentState + 1 : 0;
 
-				world.setBlock(farmlandPos, state.setValue(FarmlandStrawberryBlock.USES, nextStage), 3);
+				world.setBlock(farmlandPos, farmlandState.setValue(FarmlandStrawberryBlock.USES, nextStage), 3);
 				if (currentState == 5) {
 					world.setBlock(farmlandPos, StrawberrymcModBlocks.POOR_FARMLAND.get().defaultBlockState(), 3);
 				}
@@ -35,7 +36,7 @@ public class OnCropMinedProcedureProcedure {
 				int currentState = farmlandState.getValue(FertileFarmlandBlock.USES);
 				int nextStage = currentState < 5 ? currentState + 1 : 0;
 
-				world.setBlock(farmlandPos, state.setValue(UsedFarmlandBlock.STAGE, nextStage), 3);
+				world.setBlock(farmlandPos, farmlandState.setValue(FarmlandStrawberryBlock.USES, nextStage), 3);
 				if (currentState == 5) {
 					world.setBlock(farmlandPos, StrawberrymcModBlocks.POOR_FARMLAND.get().defaultBlockState(), 3);
 				}
