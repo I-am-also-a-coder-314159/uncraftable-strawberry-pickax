@@ -35,9 +35,9 @@
   "coordinate_scale": 3,
   "ambient_light": 0,
   "infiniburn": "#minecraft:infiniburn_overworld",
-  "min_y": 0,
-  "height": 256,
-  "logical_height": 256,
+  "min_y": -64,
+  "height": 384,
+  "logical_height": 384,
   "monster_spawn_light_level": {
     "type": "minecraft:uniform",
     "min_inclusive": 0,

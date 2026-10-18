@@ -4010,9 +4010,6 @@
     "BLOCKS:minecraft:replaceable": [
       "~VoidTears@CUSTOM:VoidTears"
     ],
-    "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~VoidDim@CUSTOM:Voidstone"
-    ],
     "BIOMES:minecraft:has_structure/pillager_outpost": [
       "~CloverGlades@CUSTOM:CloverGlades"
     ],
@@ -4036,6 +4033,9 @@
       "CUSTOM:JuniperWood",
       "CUSTOM:StrippedJuniperLog",
       "CUSTOM:StrippedJuniperWood"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~VoidDim@CUSTOM:Voidstone"
     ]
   },
   "tab_element_order": {},
