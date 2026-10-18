@@ -4,6 +4,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -26,6 +27,12 @@ public class FarmlandStrawberryBlock extends FarmlandBlock {
 	public FarmlandStrawberryBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.GRAVEL).strength(0.6f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(USES, 0));
+	}
+
+	@Override
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		super.createBlockStateDefinition(builder);
+		builder.add(USES);
 	}
 
 	@Override

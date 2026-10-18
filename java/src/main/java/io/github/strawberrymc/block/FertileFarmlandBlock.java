@@ -5,6 +5,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -27,6 +28,12 @@ public class FertileFarmlandBlock extends FarmlandBlock {
 	public FertileFarmlandBlock(BlockBehaviour.Properties properties) {
 		super(properties.mapColor(MapColor.DIRT).sound(SoundType.GRAVEL).strength(0.6f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(USES, 0));
+	}
+
+	@Override
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		super.createBlockStateDefinition(builder);
+		builder.add(USES);
 	}
 
 	@Override

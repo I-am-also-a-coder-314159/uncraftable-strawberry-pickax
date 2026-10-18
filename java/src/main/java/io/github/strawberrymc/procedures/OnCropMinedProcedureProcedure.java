@@ -2,7 +2,6 @@ package io.github.strawberrymc.procedures;
 
 import net.neoforged.neoforge.event.level.block.BreakBlockEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
@@ -14,7 +13,6 @@ import io.github.strawberrymc.block.FertileFarmlandBlock;
 
 @EventBusSubscriber
 public class OnCropMinedProcedureProcedure {
-	@SubscribeEvent
 	public void onBlockBreak(BreakBlockEvent event) {
 		if (event.getState().is(Blocks.CARROTS) || event.getState().is(Blocks.POTATOES) || event.getState().is(Blocks.WHEAT) || event.getState().is(Blocks.BEETROOTS) || event.getState().is(Blocks.TORCHFLOWER_CROP) || event.getState().is(Blocks.PITCHER_CROP)) {
 			BlockPos farmlandPos = new BlockPos(event.getPos().getX(), event.getPos().getY()-1, event.getPos().getZ());

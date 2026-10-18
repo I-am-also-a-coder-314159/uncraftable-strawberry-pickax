@@ -1,50 +1,50 @@
-/tp @s 1984 ~ -864
-/locate biome minecraft:desert
-/tp @s -3583 78 -5743
-/summon sheep
-/summon tnt
-/setblock ~ ~ ~ strawberrymc:void_tears
-/gamemode s
-/gamemode survival
-/locate biome minecraft:desert
-/tp @s 5823 68 5849
-/gamemode c
-/gamemode creative
-/reload
-/effect give @a minecraft:night_vision infinite
-/locate structure minecraft:village_desert
-/tp @s 6144 ~ 5568
-/www
-/summon minecraft:villager
-/locate biome minecraft:river
-/tp @s 6159 81 5665
-/summon minecraft:sheep
-/setblock ~ ~ ~ strawberrymc:void_tears
-/gamemode s
-/gamemode survival
-/gamemode c
-/gamemode creative
-/locate biome strawberrymc:dry_savanna
-/tp @s -1466 135 1659
-/execute in strawberrymc:void_dim run tp @p 0 50 0
-/effect give @p minecraft:night_vision
-/setblock ~ ~ ~ minecraft:glowstone
-/gamemode survival
-/gamemode creative
-/execute in strawberrymc:void_dim run tp @p 0 100 0
-/execute in minecraft:overworld run tp @p 0 100 0
-/time set day
-/gamemode survival
-/gamemode creative
-/give @s strawberrymc:clover_mat
-/gamemode survival
-/gamemode creative
-/execute in strawberrymc:void_dim run tp @p 0 100 0
-/execute in minecraft:overworld run tp @s 0 100 0
-/particle strawberrymc:coconut_impact
-/particle strawberrymc:dustcloud
-/locate biome strawberrymc:clover_glades
-/tp @s -9 106 1341
-/time set day
-/effect give @p strawberrymc:invulnerability infinite
-/effect give @p strawberrymc:invulnerability
+/give @s minecraft:bone_meal
+/setblock ~ ~ ~ strawberrymc:palm_sapling
+/give @s strawberrymc:echowood_sapling 64
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0, ignited:1b}
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:100, ignited:1b}
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/locate structure minecraft:mansion
+/tp @s 352 200 2064
+/effect give @s minecraft:night_vision infinite
+/locate structure minecraft:mansion
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/locate structure minecraft:mansion
+/locate structure minecraft:trial_chambers
+/tp @s 0 ~ 1728
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/gamemode spectator
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/place structure minecraft:mansion
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/ww
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/locate structure minecraft:village_plains
+/tp @s 1120 ~ 2976
+/locate structure minecraft:village_plains
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/place structure minecraft:mansion
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/place structure minecraft:mansion
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/locate structure minecraft:desert_pyramid
+/tp @s 816 ~ 7008
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:1, Fuse:0}
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/place structure minecraft:desert_pyramid
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}w
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/place structure minecraft:village_desert
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/place structure minecraft:village_desert
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/execute in strawberrymc:void_dim run tp @s ~ ~ ~
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
