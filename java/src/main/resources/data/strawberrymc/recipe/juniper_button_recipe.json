@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    "strawberrymc:juniper_planks"
+  ],
+  "result": {
+    "id": "strawberrymc:juniper_button",
+    "count": 1
+  }
+}

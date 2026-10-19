@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "wooden_trapdoor",
+    "unlockingItems": [
+      "CUSTOM:JuniperPlanks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:JuniperPlanks",
+      "CUSTOM:JuniperPlanks",
+      "CUSTOM:JuniperPlanks",
+      "CUSTOM:JuniperPlanks",
+      "CUSTOM:JuniperPlanks",
+      "CUSTOM:JuniperPlanks",
+      "",
+      "",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:JuniperTrapdoor",
+    "name": "juniper_trapdoor_recipe",
+    "namespace": "mod"
+  }
+}

@@ -76,6 +76,30 @@ public class StrawberrymcModBlocks {
 	public static final DeferredBlock<Block> FERTILE_FARMLAND;
 	public static final DeferredBlock<Block> POOR_FARMLAND;
 	public static final DeferredBlock<Block> FARMLAND_STRAWBERRY;
+	public static final DeferredBlock<Block> VOIDSTONE;
+	public static final DeferredBlock<Block> VOID_TEARS;
+	public static final DeferredBlock<Block> OASIS_SPAWNER;
+	public static final DeferredBlock<Block> PALM_SAPLING;
+	public static final DeferredBlock<Block> ECHOWOOD_SAPLING;
+	public static final DeferredBlock<Block> JUNIPER_LOG;
+	public static final DeferredBlock<Block> JUNIPER_WOOD;
+	public static final DeferredBlock<Block> STRIPPED_JUNIPER_LOG;
+	public static final DeferredBlock<Block> STRIPPED_JUNIPER_WOOD;
+	public static final DeferredBlock<Block> JUNIPER_PLANKS;
+	public static final DeferredBlock<Block> JUNIPER_LEAVES;
+	public static final DeferredBlock<Block> JUNIPER_STAIRS;
+	public static final DeferredBlock<Block> JUNIPER_SLAB;
+	public static final DeferredBlock<Block> JUNIPER_FENCE;
+	public static final DeferredBlock<Block> JUNIPER_FENCE_GATE;
+	public static final DeferredBlock<Block> JUNIPER_DOOR;
+	public static final DeferredBlock<Block> JUNIPER_TRAPDOOR;
+	public static final DeferredBlock<Block> JUNIPER_PRESSURE_PLATE;
+	public static final DeferredBlock<Block> JUNIPER_BUTTON;
+	public static final DeferredBlock<Block> JUNIPER_SIGN;
+	public static final DeferredBlock<Block> JUNIPER_WALL_SIGN;
+	public static final DeferredBlock<Block> JUNIPER_HANGING_SIGN;
+	public static final DeferredBlock<Block> JUNIPER_WALL_HANGING_SIGN;
+	public static final DeferredBlock<Block> CHISELED_CAULDRON;
 	static {
 		CHORINE_ORE = register("chorine_ore", ChorineOreBlock::new);
 		CHORINE_BLOCK = register("chorine_block", ChorineBlockBlock::new);
@@ -129,6 +153,30 @@ public class StrawberrymcModBlocks {
 		FERTILE_FARMLAND = register("fertile_farmland", FertileFarmlandBlock::new);
 		POOR_FARMLAND = register("poor_farmland", PoorFarmlandBlock::new);
 		FARMLAND_STRAWBERRY = register("farmland_strawberry", FarmlandStrawberryBlock::new);
+		VOIDSTONE = register("voidstone", VoidstoneBlock::new);
+		VOID_TEARS = register("void_tears", VoidTearsBlock::new);
+		OASIS_SPAWNER = register("oasis_spawner", OasisSpawnerBlock::new);
+		PALM_SAPLING = register("palm_sapling", PalmSaplingBlock::new);
+		ECHOWOOD_SAPLING = register("echowood_sapling", EchowoodSaplingBlock::new);
+		JUNIPER_LOG = register("juniper_log", JuniperLogBlock::new);
+		JUNIPER_WOOD = register("juniper_wood", JuniperWoodBlock::new);
+		STRIPPED_JUNIPER_LOG = register("stripped_juniper_log", StrippedJuniperLogBlock::new);
+		STRIPPED_JUNIPER_WOOD = register("stripped_juniper_wood", StrippedJuniperWoodBlock::new);
+		JUNIPER_PLANKS = register("juniper_planks", JuniperPlanksBlock::new);
+		JUNIPER_LEAVES = register("juniper_leaves", JuniperLeavesBlock::new);
+		JUNIPER_STAIRS = register("juniper_stairs", JuniperStairsBlock::new);
+		JUNIPER_SLAB = register("juniper_slab", JuniperSlabBlock::new);
+		JUNIPER_FENCE = register("juniper_fence", JuniperFenceBlock::new);
+		JUNIPER_FENCE_GATE = register("juniper_fence_gate", JuniperFenceGateBlock::new);
+		JUNIPER_DOOR = register("juniper_door", JuniperDoorBlock::new);
+		JUNIPER_TRAPDOOR = register("juniper_trapdoor", JuniperTrapdoorBlock::new);
+		JUNIPER_PRESSURE_PLATE = register("juniper_pressure_plate", JuniperPressurePlateBlock::new);
+		JUNIPER_BUTTON = register("juniper_button", JuniperButtonBlock::new);
+		JUNIPER_SIGN = register("juniper_sign", JuniperSignBlock::new);
+		JUNIPER_WALL_SIGN = register("juniper_wall_sign", JuniperWallSignBlock::new);
+		JUNIPER_HANGING_SIGN = register("juniper_hanging_sign", JuniperHangingSignBlock::new);
+		JUNIPER_WALL_HANGING_SIGN = register("juniper_wall_hanging_sign", JuniperWallHangingSignBlock::new);
+		CHISELED_CAULDRON = register("chiseled_cauldron", ChiseledCauldronBlock::new);
 	}
 
 	// Start of user code block custom blocks
@@ -145,6 +193,8 @@ public class StrawberrymcModBlocks {
 			Sheets.addWoodType(StrawberrymcModWoodTypes.ECHOWOOD_HANGING_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(StrawberrymcModWoodTypes.PALM_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(StrawberrymcModWoodTypes.PALM_HANGING_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(StrawberrymcModWoodTypes.JUNIPER_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(StrawberrymcModWoodTypes.JUNIPER_HANGING_SIGN_WOOD_TYPE);
 		}
 	}
 
@@ -154,5 +204,7 @@ public class StrawberrymcModBlocks {
 		event.modify(BlockEntityType.HANGING_SIGN, ECHOWOOD_HANGING_SIGN.get(), ECHOWOOD_WALL_HANGING_SIGN.get());
 		event.modify(BlockEntityType.SIGN, PALM_SIGN.get(), PALM_WALL_SIGN.get());
 		event.modify(BlockEntityType.HANGING_SIGN, PALM_HANGING_SIGN.get(), PALM_WALL_HANGING_SIGN.get());
+		event.modify(BlockEntityType.SIGN, JUNIPER_SIGN.get(), JUNIPER_WALL_SIGN.get());
+		event.modify(BlockEntityType.HANGING_SIGN, JUNIPER_HANGING_SIGN.get(), JUNIPER_WALL_HANGING_SIGN.get());
 	}
 }

@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     {
+      "id": "#strawberrymc:juniper_logs",
+      "required": false
+    },
+    {
       "id": "#strawberrymc:echowood_logs",
       "required": false
     },

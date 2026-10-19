@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "wooden_door",
+    "unlockingItems": [
+      "CUSTOM:JuniperPlanks"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:JuniperPlanks",
+      "CUSTOM:JuniperPlanks",
+      "",
+      "CUSTOM:JuniperPlanks",
+      "CUSTOM:JuniperPlanks",
+      "",
+      "CUSTOM:JuniperPlanks",
+      "CUSTOM:JuniperPlanks",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:JuniperDoor",
+    "name": "juniper_door_recipe",
+    "namespace": "mod"
+  }
+}

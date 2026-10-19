@@ -50,7 +50,11 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      "BUILDING_BLOCKS",
+      "BREWING",
+      "DECORATIONS"
+    ],
     "destroyTool": "Not specified",
     "customDrop": "",
     "dropAmount": 1,

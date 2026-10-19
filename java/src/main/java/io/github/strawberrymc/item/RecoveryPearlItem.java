@@ -2,6 +2,7 @@ package io.github.strawberrymc.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ProjectileWeaponItem;
+import net.minecraft.world.item.ItemUseAnimation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
@@ -17,6 +18,11 @@ import io.github.strawberrymc.entity.RecoveryPearlProjectileEntity;
 public class RecoveryPearlItem extends Item {
 	public RecoveryPearlItem(Item.Properties properties) {
 		super(properties.stacksTo(16));
+	}
+
+	@Override
+	public ItemUseAnimation getUseAnimation(ItemStack itemstack) {
+		return ItemUseAnimation.BLOCK;
 	}
 
 	@Override

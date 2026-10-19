@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "strawberrymc:block/juniper_planks",
+    "bottom": "strawberrymc:block/juniper_planks",
+    "top": "strawberrymc:block/juniper_planks",
+    "side": "strawberrymc:block/juniper_planks"
+  }
+}

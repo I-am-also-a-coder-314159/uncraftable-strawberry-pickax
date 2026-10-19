@@ -57,7 +57,7 @@
             "type": "item",
             "item": "CUSTOM:RareCloverCluff",
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,

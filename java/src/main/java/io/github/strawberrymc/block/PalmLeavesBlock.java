@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class PalmLeavesBlock extends UntintedParticleLeavesBlock {
 	public PalmLeavesBlock(BlockBehaviour.Properties properties) {
-		super(0f, ColorParticleOption.create(ParticleTypes.TINTED_LEAVES, -8618884),
+		super(0f, ColorParticleOption.create(ParticleTypes.TINTED_LEAVES, -12526269),
 				properties.sound(SoundType.GRASS).strength(0.2f).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).ignitedByLava().isSuffocating((bs, br, bp) -> false).isViewBlocking((bs, br, bp) -> false));
 	}
 

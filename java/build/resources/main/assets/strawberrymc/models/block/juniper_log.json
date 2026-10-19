@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "strawberrymc:block/juniper_log_top",
+    "up": "strawberrymc:block/juniper_log_top",
+    "north": "strawberrymc:block/juniper_log",
+    "east": "strawberrymc:block/juniper_log",
+    "south": "strawberrymc:block/juniper_log",
+    "west": "strawberrymc:block/juniper_log",
+    "particle": "strawberrymc:block/juniper_log"
+  }
+}

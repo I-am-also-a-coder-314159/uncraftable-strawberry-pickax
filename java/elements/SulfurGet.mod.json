@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "villagertrade",
+  "definition": {
+    "villagerProfession": "TOOLSMITH",
+    "trades": [
+      {
+        "price1": "Items.EMERALD",
+        "countPrice1": 1,
+        "price2": "",
+        "countPrice2": 1,
+        "offer": "CUSTOM:SulfurSlag",
+        "countOffer": 2,
+        "level": 1,
+        "maxTrades": 15,
+        "xp": 2,
+        "priceMultiplier": 0.05
+      }
+    ]
+  }
+}

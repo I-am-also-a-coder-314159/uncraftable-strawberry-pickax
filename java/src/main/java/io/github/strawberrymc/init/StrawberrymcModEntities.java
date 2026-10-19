@@ -13,11 +13,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 
-import io.github.strawberrymc.entity.RecoveryPearlProjectileEntity;
-import io.github.strawberrymc.entity.PalmChestBoatEntity;
-import io.github.strawberrymc.entity.PalmBoatEntity;
-import io.github.strawberrymc.entity.EchowoodChestBoatEntity;
-import io.github.strawberrymc.entity.EchowoodBoatEntity;
+import io.github.strawberrymc.entity.*;
 import io.github.strawberrymc.StrawberrymcMod;
 
 public class StrawberrymcModEntities {
@@ -32,6 +28,12 @@ public class StrawberrymcModEntities {
 			EntityType.Builder.<PalmChestBoatEntity>of(PalmChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
 	public static final DeferredHolder<EntityType<?>, EntityType<RecoveryPearlProjectileEntity>> RECOVERY_PEARL_PROJECTILE = register("recovery_pearl_projectile",
 			EntityType.Builder.<RecoveryPearlProjectileEntity>of(RecoveryPearlProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<CoconutProjectileEntity>> COCONUT_PROJECTILE = register("coconut_projectile",
+			EntityType.Builder.<CoconutProjectileEntity>of(CoconutProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<JuniperBoatEntity>> JUNIPER_BOAT = register("juniper_boat",
+			EntityType.Builder.<JuniperBoatEntity>of(JuniperBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<JuniperChestBoatEntity>> JUNIPER_CHEST_BOAT = register("juniper_chest_boat",
+			EntityType.Builder.<JuniperChestBoatEntity>of(JuniperChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

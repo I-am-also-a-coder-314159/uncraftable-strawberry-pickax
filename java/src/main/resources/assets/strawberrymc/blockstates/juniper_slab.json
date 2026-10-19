@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "strawberrymc:block/juniper_slab"
+    },
+    "type=top": {
+      "model": "strawberrymc:block/juniper_slab_top"
+    },
+    "type=double": {
+      "model": "strawberrymc:block/juniper_slab_full"
+    }
+  }
+}

@@ -1,17 +1,50 @@
-/place feature minecraft:pale_oak_creaking
-/place feature strawberrymc:crystal
-/tp @p ~~10~
-/give @s minecraft:ender_pearl
-/place feature strawberrymc:crystal
-/effect give @s minecraft:night_vision
+/give @s minecraft:bone_meal
+/setblock ~ ~ ~ strawberrymc:palm_sapling
+/give @s strawberrymc:echowood_sapling 64
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0, ignited:1b}
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:100, ignited:1b}
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/locate structure minecraft:mansion
+/tp @s 352 200 2064
 /effect give @s minecraft:night_vision infinite
-/place feature strawberrymc:crystal
-/give @s minecraft:stick
-/enchant @s minecraft:knockback 255
-/place
-/place structure minecraft:end_city
-/w
-/place structure minecraft:end_city
+/locate structure minecraft:mansion
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/locate structure minecraft:mansion
+/locate structure minecraft:trial_chambers
+/tp @s 0 ~ 1728
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/gamemode spectator
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
 /
-/locate structure minecraft:end_city
-/tp @s 1984 ~ -864
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/place structure minecraft:mansion
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/ww
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/locate structure minecraft:village_plains
+/tp @s 1120 ~ 2976
+/locate structure minecraft:village_plains
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/place structure minecraft:mansion
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/place structure minecraft:mansion
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/locate structure minecraft:desert_pyramid
+/tp @s 816 ~ 7008
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:1, Fuse:0}
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/place structure minecraft:desert_pyramid
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}w
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/place structure minecraft:village_desert
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/place structure minecraft:village_desert
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/execute in strawberrymc:void_dim run tp @s ~ ~ ~
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/
+/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}

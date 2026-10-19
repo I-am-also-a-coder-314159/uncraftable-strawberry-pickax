@@ -7,9 +7,17 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.ScheduledTickAccess;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.util.RandomSource;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+
+import io.github.strawberrymc.procedures.CloverMatPlacementReturnHandlerProcedure;
 
 public class CloverMatBlock extends Block {
 	private static final VoxelShape SHAPE = box(0, 0, 0, 16, 2, 16);
@@ -36,5 +44,21 @@ public class CloverMatBlock extends Block {
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
+	}
+
+	@Override
+	public boolean canSurvive(BlockState blockstate, LevelReader worldIn, BlockPos pos) {
+		if (worldIn instanceof LevelAccessor world) {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return CloverMatPlacementReturnHandlerProcedure.execute(world, x, y, z);
+		}
+		return super.canSurvive(blockstate, worldIn, pos);
+	}
+
+	@Override
+	public BlockState updateShape(BlockState state, LevelReader world, ScheduledTickAccess scheduledTickAccess, BlockPos currentPos, Direction facing, BlockPos facingPos, BlockState facingState, RandomSource random) {
+		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, world, scheduledTickAccess, currentPos, facing, facingPos, facingState, random);
 	}
 }

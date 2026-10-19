@@ -942,12 +942,12 @@
       "registry_name": "palm_log",
       "metadata": {
         "files": [
-          "src/main/java/io/github/strawberrymc/block/PalmLogBlock.java",
-          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_log.json",
           "src/main/resources/assets/strawberrymc/models/item/palm_log.json",
-          "src/main/resources/assets/strawberrymc/items/palm_log.json",
           "src/main/resources/assets/strawberrymc/blockstates/palm_log.json",
-          "src/main/resources/assets/strawberrymc/models/block/palm_log.json"
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_log.json",
+          "src/main/resources/assets/strawberrymc/items/palm_log.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_log.json",
+          "src/main/java/io/github/strawberrymc/block/PalmLogBlock.java"
         ]
       }
     },
@@ -960,10 +960,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/items/palm_wood.json",
-          "src/main/java/io/github/strawberrymc/block/PalmWoodBlock.java",
-          "src/main/resources/assets/strawberrymc/models/block/palm_wood.json",
           "src/main/resources/assets/strawberrymc/models/item/palm_wood.json",
           "src/main/resources/assets/strawberrymc/blockstates/palm_wood.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_wood.json",
+          "src/main/java/io/github/strawberrymc/block/PalmWoodBlock.java",
           "src/main/resources/data/strawberrymc/loot_table/blocks/palm_wood.json"
         ]
       }
@@ -1028,11 +1028,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/models/block/palm_leaves.json",
-          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_leaves.json",
+          "src/main/java/io/github/strawberrymc/block/PalmLeavesBlock.java",
           "src/main/resources/assets/strawberrymc/items/palm_leaves.json",
-          "src/main/resources/assets/strawberrymc/models/item/palm_leaves.json",
           "src/main/resources/assets/strawberrymc/blockstates/palm_leaves.json",
-          "src/main/java/io/github/strawberrymc/block/PalmLeavesBlock.java"
+          "src/main/resources/assets/strawberrymc/models/item/palm_leaves.json"
         ]
       }
     },
@@ -1472,12 +1471,12 @@
       "registry_name": "dendrite_crystal",
       "metadata": {
         "files": [
-          "src/main/resources/data/strawberrymc/loot_table/blocks/dendrite_crystal.json",
           "src/main/resources/assets/strawberrymc/items/dendrite_crystal.json",
           "src/main/java/io/github/strawberrymc/block/DendriteCrystalBlock.java",
           "src/main/resources/assets/strawberrymc/models/block/dendrite_crystal.json",
+          "src/main/resources/assets/strawberrymc/models/item/dendrite_crystal.json",
           "src/main/resources/assets/strawberrymc/blockstates/dendrite_crystal.json",
-          "src/main/resources/assets/strawberrymc/models/item/dendrite_crystal.json"
+          "src/main/resources/data/strawberrymc/loot_table/blocks/dendrite_crystal.json"
         ]
       }
     },
@@ -1524,11 +1523,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/models/block/garnet_block.json",
-          "src/main/java/io/github/strawberrymc/block/GarnetBlockBlock.java",
           "src/main/resources/assets/strawberrymc/models/item/garnet_block.json",
           "src/main/resources/assets/strawberrymc/blockstates/garnet_block.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/garnet_block.json",
           "src/main/resources/assets/strawberrymc/items/garnet_block.json",
-          "src/main/resources/data/strawberrymc/loot_table/blocks/garnet_block.json"
+          "src/main/java/io/github/strawberrymc/block/GarnetBlockBlock.java"
         ]
       }
     },
@@ -1540,8 +1539,8 @@
       "registry_name": "garnet_nodule",
       "metadata": {
         "files": [
-          "src/main/resources/assets/strawberrymc/items/garnet_nodule.json",
           "src/main/java/io/github/strawberrymc/item/GarnetNoduleItem.java",
+          "src/main/resources/assets/strawberrymc/items/garnet_nodule.json",
           "src/main/resources/assets/strawberrymc/models/item/garnet_nodule.json"
         ]
       }
@@ -1555,8 +1554,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/models/item/garnet.json",
-          "src/main/java/io/github/strawberrymc/item/GarnetItem.java",
-          "src/main/resources/assets/strawberrymc/items/garnet.json"
+          "src/main/resources/assets/strawberrymc/items/garnet.json",
+          "src/main/java/io/github/strawberrymc/item/GarnetItem.java"
         ]
       }
     },
@@ -1581,11 +1580,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/strawberrymc/models/item/crystalline_calcite.json",
-          "src/main/resources/assets/strawberrymc/models/block/crystalline_calcite.json",
           "src/main/java/io/github/strawberrymc/block/CrystallineCalciteBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/crystalline_calcite.json",
           "src/main/resources/data/strawberrymc/loot_table/blocks/crystalline_calcite.json",
-          "src/main/resources/assets/strawberrymc/items/crystalline_calcite.json",
-          "src/main/resources/assets/strawberrymc/blockstates/crystalline_calcite.json"
+          "src/main/resources/assets/strawberrymc/blockstates/crystalline_calcite.json",
+          "src/main/resources/assets/strawberrymc/items/crystalline_calcite.json"
         ]
       }
     },
@@ -2583,12 +2582,1240 @@
           "src/main/java/io/github/strawberrymc/procedures/RecoveryPearlFetchProcedure.java"
         ]
       }
+    },
+    {
+      "name": "SulfurTradeFarmerHoe",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfur_trade_farmer_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/villager_trade/farmer/2/sulfur_trade_farmer_hoe_0.json"
+        ]
+      }
+    },
+    {
+      "name": "SulfurTradeFarmerMelonSeed",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfur_trade_farmer_melon_seed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/villager_trade/farmer/2/sulfur_trade_farmer_melon_seed_0.json"
+        ]
+      }
+    },
+    {
+      "name": "SulfurGet",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfur_get",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/villager_trade/toolsmith/1/sulfur_get_0.json"
+        ]
+      }
+    },
+    {
+      "name": "Dustcloud",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dustcloud",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/client/particle/DustcloudParticle.java",
+          "src/main/resources/assets/strawberrymc/particles/dustcloud.json"
+        ]
+      }
+    },
+    {
+      "name": "IsReinforced",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "is_reinforced",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/IsReinforcedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Voidstone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/voidstone.json",
+          "src/main/java/io/github/strawberrymc/block/VoidstoneBlock.java",
+          "src/main/resources/assets/strawberrymc/items/voidstone.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/voidstone.json",
+          "src/main/resources/assets/strawberrymc/models/item/voidstone.json",
+          "src/main/resources/assets/strawberrymc/models/block/voidstone.json"
+        ]
+      }
+    },
+    {
+      "name": "VoidTearDamage",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_tear_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/damage_type/void_tear_damage.json"
+        ]
+      }
+    },
+    {
+      "name": "VoidTearsDamageApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_tears_damage_apply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/VoidTearsDamageApplyProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "VoidTearHiss",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_tear_hiss",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/VoidTearHissProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "VoidTears",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_tears",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/client/fluid/VoidTearsFluidExtension.java",
+          "src/main/resources/assets/strawberrymc/blockstates/void_tears.json",
+          "src/main/resources/assets/strawberrymc/models/block/void_tears.json",
+          "src/main/java/io/github/strawberrymc/fluid/VoidTearsFluid.java",
+          "src/main/java/io/github/strawberrymc/fluid/types/VoidTearsFluidType.java",
+          "src/main/java/io/github/strawberrymc/block/VoidTearsBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "VoidstonePeaks",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidstone_peaks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/biome/voidstone_peaks.json"
+        ]
+      }
+    },
+    {
+      "name": "VoidDim",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_dim",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/dimension_type/void_dim.json",
+          "src/main/resources/data/strawberrymc/dimension/void_dim.json"
+        ]
+      }
+    },
+    {
+      "name": "SpawnPalmTreeProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spawn_palm_tree_procedure",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/SpawnPalmTreeProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Debug",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "OasisSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "oasis_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/OasisSpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "OasisSpawner",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oasis_spawner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/oasis_spawner.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/oasis_spawner.json",
+          "src/main/resources/assets/strawberrymc/models/item/oasis_spawner.json",
+          "src/main/resources/assets/strawberrymc/blockstates/oasis_spawner.json",
+          "src/main/java/io/github/strawberrymc/block/OasisSpawnerBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/oasis_spawner.json"
+        ]
+      }
+    },
+    {
+      "name": "CloverGlades",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_glades",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/biome/clover_glades.json",
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/clover_glades_tree.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/clover_glades_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "ForestTalusSlope",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forest_talus_slope",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/forest_talus_slope.json",
+          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/forest_talus_slope_biome_modifier.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/forest_talus_slope.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmGrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_grow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/PalmGrowProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PalmSapling",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_sapling",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/palm_sapling.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_sapling.json",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_sapling.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_sapling.json",
+          "src/main/resources/assets/strawberrymc/items/palm_sapling.json",
+          "src/main/java/io/github/strawberrymc/block/PalmSaplingBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Coconut",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/CoconutItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/coconut.json",
+          "src/main/resources/assets/strawberrymc/items/coconut.json"
+        ]
+      }
+    },
+    {
+      "name": "CoconutImpact",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_impact",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/particles/coconut_impact.json",
+          "src/main/java/io/github/strawberrymc/client/particle/CoconutImpactParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutImpactParticleHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_impact_particle_handler",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CoconutImpactParticleHandlerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/client/renderer/CoconutProjectileRenderer.java",
+          "src/main/java/io/github/strawberrymc/entity/CoconutProjectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutPlant",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_plant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CoconutPlantProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Invulnerability",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invulnerability",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/potion/InvulnerabilityMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodGrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "echowood_grow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/EchowoodGrowProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodSapling",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "echowood_sapling",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/block/EchowoodSaplingBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_sapling.json",
+          "src/main/resources/assets/strawberrymc/items/echowood_sapling.json",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_sapling.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_sapling.json",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_sapling.json"
+        ]
+      }
+    },
+    {
+      "name": "SpawnEchowoodTree",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spawn_echowood_tree",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/SpawnEchowoodTreeProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CloverMatPlacementReturnHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clover_mat_placement_return_handler",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CloverMatPlacementReturnHandlerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "InvulnerabilityParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invulnerability_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/client/particle/InvulnerabilityParticleParticle.java",
+          "src/main/resources/assets/strawberrymc/particles/invulnerability_particle.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/juniper_log.json",
+          "src/main/resources/assets/strawberrymc/items/juniper_log.json",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_log.json",
+          "src/main/java/io/github/strawberrymc/block/JuniperLogBlock.java",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/juniper_log.json",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_log.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_wood",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/block/JuniperWoodBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_wood.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_wood.json",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_wood.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/juniper_wood.json",
+          "src/main/resources/assets/strawberrymc/items/juniper_wood.json"
+        ]
+      }
+    },
+    {
+      "name": "StrippedJuniperLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_juniper_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/stripped_juniper_log.json",
+          "src/main/resources/assets/strawberrymc/models/item/stripped_juniper_log.json",
+          "src/main/resources/assets/strawberrymc/blockstates/stripped_juniper_log.json",
+          "src/main/java/io/github/strawberrymc/block/StrippedJuniperLogBlock.java",
+          "src/main/resources/assets/strawberrymc/items/stripped_juniper_log.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/stripped_juniper_log.json"
+        ]
+      }
+    },
+    {
+      "name": "StrippedJuniperWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_juniper_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/stripped_juniper_wood.json",
+          "src/main/java/io/github/strawberrymc/block/StrippedJuniperWoodBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/stripped_juniper_wood.json",
+          "src/main/resources/assets/strawberrymc/items/stripped_juniper_wood.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/stripped_juniper_wood.json",
+          "src/main/resources/assets/strawberrymc/models/block/stripped_juniper_wood.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperPlanks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/juniper_planks.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_planks.json",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_planks.json",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_planks.json",
+          "src/main/java/io/github/strawberrymc/block/JuniperPlanksBlock.java",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/juniper_planks.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/loot_table/blocks/juniper_leaves.json",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_leaves.json",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_leaves.json",
+          "src/main/resources/assets/strawberrymc/items/juniper_leaves.json",
+          "src/main/java/io/github/strawberrymc/block/JuniperLeavesBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_leaves.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/block/JuniperStairsBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_stairs_outer.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/juniper_stairs.json",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_stairs.json",
+          "src/main/resources/assets/strawberrymc/items/juniper_stairs.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_stairs.json",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_stairs.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_stairs_inner.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/juniper_slab.json",
+          "src/main/java/io/github/strawberrymc/block/JuniperSlabBlock.java",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/juniper_slab.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_slab_full.json",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_slab.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_slab_top.json",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_slab.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_slab.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperFence",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/juniper_fence.json",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_fence.json",
+          "src/main/resources/assets/strawberrymc/items/juniper_fence.json",
+          "src/main/java/io/github/strawberrymc/block/JuniperFenceBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_fence.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_fence_post.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_fence_inventory.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/juniper_fence.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperFenceGate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/juniper_fence_gate_wall_open.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_fence_gate_open.json",
+          "src/main/resources/assets/strawberrymc/items/juniper_fence_gate.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_fence_gate.json",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_fence_gate.json",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_fence_gate.json",
+          "src/main/java/io/github/strawberrymc/block/JuniperFenceGateBlock.java",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/juniper_fence_gate.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_fence_gate_wall.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/juniper_door_bottom_left.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_door_bottom_right.json",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_door.json",
+          "src/main/java/io/github/strawberrymc/block/JuniperDoorBlock.java",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/juniper_door.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_door_top_right.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_door_top_right_open.json",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_door.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_door_bottom_right_open.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_door_top_left.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_door_bottom_left_open.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_door_top_left_open.json",
+          "src/main/resources/assets/strawberrymc/items/juniper_door.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperTrapdoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/juniper_trapdoor.json",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_trapdoor.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_trapdoor_top.json",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_trapdoor.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/juniper_trapdoor.json",
+          "src/main/java/io/github/strawberrymc/block/JuniperTrapdoorBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_trapdoor_open.json",
+          "src/main/resources/assets/strawberrymc/items/juniper_trapdoor.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperPressurePlate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/block/JuniperPressurePlateBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_pressure_plate.json",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_pressure_plate.json",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_pressure_plate.json",
+          "src/main/resources/assets/strawberrymc/items/juniper_pressure_plate.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/juniper_pressure_plate.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_pressure_plate_down.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperButton",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/juniper_button.json",
+          "src/main/resources/assets/strawberrymc/items/juniper_button.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_button.json",
+          "src/main/java/io/github/strawberrymc/block/JuniperButtonBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_button.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_button_pressed.json",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_button_inventory.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/juniper_button.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperSign",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_sign",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/juniper_sign.json",
+          "src/main/java/io/github/strawberrymc/block/JuniperWallSignBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_sign.json",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_sign.json",
+          "src/main/java/io/github/strawberrymc/block/JuniperSignBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_sign.json",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_wall_sign.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/juniper_sign.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperHangingSign",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_hanging_sign",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_wall_hanging_sign.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/juniper_hanging_sign.json",
+          "src/main/java/io/github/strawberrymc/block/JuniperWallHangingSignBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/juniper_hanging_sign.json",
+          "src/main/java/io/github/strawberrymc/block/JuniperHangingSignBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_hanging_sign.json",
+          "src/main/resources/assets/strawberrymc/items/juniper_hanging_sign.json",
+          "src/main/resources/assets/strawberrymc/blockstates/juniper_hanging_sign.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperBoat",
+      "type": "specialentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_boat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/juniper_boat.json",
+          "src/main/java/io/github/strawberrymc/entity/JuniperBoatEntity.java",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_boat.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperChestBoat",
+      "type": "specialentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_chest_boat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/juniper_chest_boat.json",
+          "src/main/java/io/github/strawberrymc/entity/JuniperChestBoatEntity.java",
+          "src/main/resources/assets/strawberrymc/models/item/juniper_chest_boat.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperLeavesComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_leaves_composting",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "JuniperWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/juniper_wood_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/juniper_wood_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "StrippedJuniperWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_juniper_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/stripped_juniper_wood_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/stripped_juniper_wood_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperPlanksRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_planks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/juniper_planks_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/juniper_planks_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/juniper_stairs_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/juniper_stairs_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/juniper_slab_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/juniper_slab_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperFenceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/juniper_fence_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/juniper_fence_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperFenceGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/juniper_fence_gate_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/juniper_fence_gate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperDoorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_door_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/juniper_door_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/juniper_door_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperTrapdoorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_trapdoor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/juniper_trapdoor_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/juniper_trapdoor_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperPressurePlateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/juniper_pressure_plate_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/juniper_pressure_plate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperButtonRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/juniper_button_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/juniper_button_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/juniper_sign_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/juniper_sign_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/juniper_hanging_sign_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/juniper_hanging_sign_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperBoatRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_boat_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/juniper_boat_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/juniper_boat_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JuniperChestBoatRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juniper_chest_boat_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/juniper_chest_boat_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/juniper_chest_boat_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmCoconut",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_coconut",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_leaves.json"
+        ]
+      }
+    },
+    {
+      "name": "SmiteHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smite_handler",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/SmiteHandlerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AmbientParticleEnchant",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ambient_particle_enchant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/AmbientParticleEnchantProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ChiseledCauldron",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_cauldron",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/loot_table/blocks/chiseled_cauldron.json",
+          "src/main/resources/assets/strawberrymc/blockstates/chiseled_cauldron.json",
+          "src/main/java/io/github/strawberrymc/block/ChiseledCauldronBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/chiseled_cauldron.json",
+          "src/main/resources/assets/strawberrymc/items/chiseled_cauldron.json",
+          "src/main/resources/assets/strawberrymc/models/block/chiseled_cauldron.json"
+        ]
+      }
+    },
+    {
+      "name": "SmiteVial",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smite_vial"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "void_amb_01",
+      "files": [
+        "audiomass-output_1"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "void_amb_02",
+      "files": [
+        "audiomass-output"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "palm_step",
+      "files": [
+        "palm"
+      ],
+      "category": "block",
+      "subtitle": "Palm Sappling"
+    },
+    {
+      "name": "palm_break",
+      "files": [
+        "palm2"
+      ],
+      "category": "neutral",
+      "subtitle": "Palm Sappling Breaks"
+    }
+  ],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Voidstone@CUSTOM:Voidstone",
       "~ChorineOre@CUSTOM:ChorineOre",
       "~GlowrootTuberStone@CUSTOM:GlowrootTuberStone",
       "~RadoniteOre@CUSTOM:RadoniteOre",
@@ -2600,6 +3827,25 @@
       "~ChorineBlock@CUSTOM:ChorineBlock"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~JuniperHangingSign@CUSTOM:JuniperHangingSign.wall",
+      "~JuniperHangingSign@CUSTOM:JuniperHangingSign",
+      "~JuniperSign@CUSTOM:JuniperSign.wall",
+      "~JuniperSign@CUSTOM:JuniperSign",
+      "~JuniperButton@CUSTOM:JuniperButton",
+      "~JuniperPressurePlate@CUSTOM:JuniperPressurePlate",
+      "~JuniperTrapdoor@CUSTOM:JuniperTrapdoor",
+      "~JuniperDoor@CUSTOM:JuniperDoor",
+      "~JuniperFenceGate@CUSTOM:JuniperFenceGate",
+      "~JuniperFence@CUSTOM:JuniperFence",
+      "~JuniperSlab@CUSTOM:JuniperSlab",
+      "~JuniperStairs@CUSTOM:JuniperStairs",
+      "~JuniperPlanks@CUSTOM:JuniperPlanks",
+      "~StrippedJuniperWood@CUSTOM:StrippedJuniperWood",
+      "~StrippedJuniperLog@CUSTOM:StrippedJuniperLog",
+      "~JuniperWood@CUSTOM:JuniperWood",
+      "~JuniperLog@CUSTOM:JuniperLog",
+      "~PalmWood@CUSTOM:PalmWood",
+      "~PalmLog@CUSTOM:PalmLog",
       "~PalmHangingSign@CUSTOM:PalmHangingSign.wall",
       "~PalmHangingSign@CUSTOM:PalmHangingSign",
       "~PalmSign@CUSTOM:PalmSign.wall",
@@ -2615,8 +3861,6 @@
       "~PalmPlanks@CUSTOM:PalmPlanks",
       "~StrippedPalmWood@CUSTOM:StrippedPalmWood",
       "~StrippedPalmLog@CUSTOM:StrippedPalmLog",
-      "~PalmWood@CUSTOM:PalmWood",
-      "~PalmLog@CUSTOM:PalmLog",
       "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign",
       "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign.wall",
       "~EchowoodSign@CUSTOM:EchowoodSign.wall",
@@ -2643,11 +3887,13 @@
     ],
     "BLOCKS:minecraft:logs_that_burn": [
       "TAG:mod:echowood_logs",
-      "TAG:mod:palm_logs"
+      "TAG:mod:palm_logs",
+      "TAG:mod:juniper_logs"
     ],
     "BLOCKS:minecraft:planks": [
       "CUSTOM:EchowoodPlanks",
-      "CUSTOM:PalmPlanks"
+      "CUSTOM:PalmPlanks",
+      "CUSTOM:JuniperPlanks"
     ],
     "ITEMS:mod:echowood_logs": [
       "CUSTOM:EchowoodLog",
@@ -2657,77 +3903,96 @@
     ],
     "ITEMS:minecraft:logs_that_burn": [
       "TAG:mod:echowood_logs",
-      "TAG:mod:palm_logs"
+      "TAG:mod:palm_logs",
+      "TAG:mod:juniper_logs"
     ],
     "ITEMS:minecraft:planks": [
       "CUSTOM:EchowoodPlanks",
-      "CUSTOM:PalmPlanks"
+      "CUSTOM:PalmPlanks",
+      "CUSTOM:JuniperPlanks"
     ],
     "BLOCKS:minecraft:mineable/hoe": [
       "~PalmLeaves@CUSTOM:PalmLeaves",
+      "~JuniperLeaves@CUSTOM:JuniperLeaves",
       "~EchowoodLeaves@CUSTOM:EchowoodLeaves"
     ],
     "BLOCKS:minecraft:leaves": [
       "~PalmLeaves@CUSTOM:PalmLeaves",
+      "~JuniperLeaves@CUSTOM:JuniperLeaves",
       "~EchowoodLeaves@CUSTOM:EchowoodLeaves"
     ],
     "BLOCKS:minecraft:stairs": [
+      "~JuniperStairs@CUSTOM:JuniperStairs",
       "~PalmStairs@CUSTOM:PalmStairs",
       "~EchowoodStairs@CUSTOM:EchowoodStairs"
     ],
     "BLOCKS:minecraft:slabs": [
+      "~JuniperSlab@CUSTOM:JuniperSlab",
       "~PalmSlab@CUSTOM:PalmSlab",
       "~EchowoodSlab@CUSTOM:EchowoodSlab"
     ],
     "BLOCKS:minecraft:wooden_fences": [
+      "~JuniperFence@CUSTOM:JuniperFence",
       "~PalmFence@CUSTOM:PalmFence",
       "~EchowoodFence@CUSTOM:EchowoodFence"
     ],
     "BLOCKS:minecraft:wooden_doors": [
+      "~JuniperDoor@CUSTOM:JuniperDoor",
       "~PalmDoor@CUSTOM:PalmDoor",
       "~EchowoodDoor@CUSTOM:EchowoodDoor"
     ],
     "BLOCKS:minecraft:wooden_trapdoors": [
+      "~JuniperTrapdoor@CUSTOM:JuniperTrapdoor",
       "~PalmTrapdoor@CUSTOM:PalmTrapdoor",
       "~EchowoodTrapdoor@CUSTOM:EchowoodTrapdoor"
     ],
     "BLOCKS:minecraft:wooden_pressure_plates": [
+      "~JuniperPressurePlate@CUSTOM:JuniperPressurePlate",
       "~PalmPressurePlate@CUSTOM:PalmPressurePlate",
       "~EchowoodPressurePlate@CUSTOM:EchowoodPressurePlate"
     ],
     "BLOCKS:minecraft:wooden_buttons": [
+      "~JuniperButton@CUSTOM:JuniperButton",
       "~PalmButton@CUSTOM:PalmButton",
       "~EchowoodButton@CUSTOM:EchowoodButton"
     ],
     "BLOCKS:minecraft:standing_signs": [
+      "~JuniperSign@CUSTOM:JuniperSign",
       "~PalmSign@CUSTOM:PalmSign",
       "~EchowoodSign@CUSTOM:EchowoodSign"
     ],
     "BLOCKS:minecraft:wall_signs": [
+      "~JuniperSign@CUSTOM:JuniperSign.wall",
       "~PalmSign@CUSTOM:PalmSign.wall",
       "~EchowoodSign@CUSTOM:EchowoodSign.wall"
     ],
     "BLOCKS:minecraft:ceiling_hanging_signs": [
+      "~JuniperHangingSign@CUSTOM:JuniperHangingSign",
       "~PalmHangingSign@CUSTOM:PalmHangingSign",
       "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign"
     ],
     "BLOCKS:minecraft:wall_hanging_signs": [
+      "~JuniperHangingSign@CUSTOM:JuniperHangingSign.wall",
       "~PalmHangingSign@CUSTOM:PalmHangingSign.wall",
       "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign.wall"
     ],
     "ENTITIES:minecraft:boat": [
+      "~JuniperBoat@CUSTOM:JuniperBoat",
       "~PalmBoat@CUSTOM:PalmBoat",
       "~EchowoodBoat@CUSTOM:EchowoodBoat"
     ],
     "ITEMS:minecraft:boats": [
+      "~JuniperBoat@CUSTOM:JuniperBoat",
       "~PalmBoat@CUSTOM:PalmBoat",
       "~EchowoodBoat@CUSTOM:EchowoodBoat"
     ],
     "ENTITIES:c:boats": [
+      "~JuniperChestBoat@CUSTOM:JuniperChestBoat",
       "~PalmChestBoat@CUSTOM:PalmChestBoat",
       "~EchowoodChestBoat@CUSTOM:EchowoodChestBoat"
     ],
     "ITEMS:minecraft:chest_boats": [
+      "~JuniperChestBoat@CUSTOM:JuniperChestBoat",
       "~PalmChestBoat@CUSTOM:PalmChestBoat",
       "~EchowoodChestBoat@CUSTOM:EchowoodChestBoat"
     ],
@@ -2819,6 +4084,46 @@
       "CUSTOM:FertileFarmland",
       "CUSTOM:PoorFarmland",
       "CUSTOM:FarmlandStrawberry"
+    ],
+    "VILLAGER_TRADES:minecraft:farmer/level_2": [
+      "~SulfurTradeFarmerMelonSeed@sulfur_trade_farmer_melon_seed_0",
+      "~SulfurTradeFarmerHoe@sulfur_trade_farmer_hoe_0"
+    ],
+    "VILLAGER_TRADES:minecraft:toolsmith/level_1": [
+      "~SulfurGet@sulfur_get_0"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~Voidstone@CUSTOM:Voidstone"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~VoidTears@CUSTOM:VoidTears"
+    ],
+    "BIOMES:minecraft:has_structure/pillager_outpost": [
+      "~CloverGlades@CUSTOM:CloverGlades"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CloverGlades@CUSTOM:CloverGlades"
+    ],
+    "BIOMES:minecraft:has_structure/buried_treasure": [
+      "~CloverGlades@CUSTOM:CloverGlades"
+    ],
+    "BIOMES:minecraft:has_structure/ruined_portal_swamp": [
+      "~CloverGlades@CUSTOM:CloverGlades"
+    ],
+    "BLOCKS:mod:juniper_logs": [
+      "CUSTOM:JuniperLog",
+      "CUSTOM:JuniperWood",
+      "CUSTOM:StrippedJuniperLog",
+      "CUSTOM:StrippedJuniperWood"
+    ],
+    "ITEMS:mod:juniper_logs": [
+      "CUSTOM:JuniperLog",
+      "CUSTOM:JuniperWood",
+      "CUSTOM:StrippedJuniperLog",
+      "CUSTOM:StrippedJuniperWood"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~VoidDim@CUSTOM:Voidstone"
     ]
   },
   "tab_element_order": {},
@@ -2933,7 +4238,45 @@
       "biome.strawberrymc.dry_savanna": "Dry Savanna",
       "item.strawberrymc.poor_farmland": "Poor Farmland",
       "item.strawberrymc.flint_shard": "Flint Shard",
-      "item.strawberrymc.farmland_strawberry": "Farmland real"
+      "item.strawberrymc.farmland_strawberry": "Farmland real",
+      "item.strawberrymc.voidstone": "Voidstone",
+      "subtitles.void_amb_01": "",
+      "subtitles.void_amb_02": "",
+      "death.attack.void_tear_damage": "%1$s disolved in Void Tears",
+      "death.attack.void_tear_damage.item": "%1$s was killed by %2$s using %3$s",
+      "death.attack.void_tear_damage.player": "%1$s died whilst trying to escape %2$s",
+      "fluid_type.strawberrymc.void_tears": "Void Tears",
+      "fluid.strawberrymc.void_tears": "Void Tears",
+      "block.strawberrymc.void_tears": "Void Tears",
+      "biome.strawberrymc.voidstone_peaks": "Voidstone Peaks",
+      "item_group.strawberrymc.debug": "Developer",
+      "item.strawberrymc.oasis_spawner": "Oasis Spawner",
+      "subtitles.palm_step": "Palm Sappling",
+      "subtitles.palm_break": "Palm Sappling Breaks",
+      "item.strawberrymc.palm_sapling": "Palm Sapling",
+      "effect.strawberrymc.invulnerability": "Invulnerability",
+      "item.strawberrymc.echowood_sapling": "Echowood Sapling",
+      "item.strawberrymc.juniper_log": "Juniper Log",
+      "item.strawberrymc.juniper_wood": "Juniper Wood",
+      "item.strawberrymc.stripped_juniper_log": "Stripped Juniper Log",
+      "item.strawberrymc.stripped_juniper_wood": "Stripped Juniper Wood",
+      "item.strawberrymc.juniper_planks": "Juniper Planks",
+      "item.strawberrymc.juniper_leaves": "Juniper Leaves",
+      "item.strawberrymc.juniper_stairs": "Juniper Stairs",
+      "item.strawberrymc.juniper_slab": "Juniper Slab",
+      "item.strawberrymc.juniper_fence": "Juniper Fence",
+      "item.strawberrymc.juniper_fence_gate": "Juniper Fence Gate",
+      "item.strawberrymc.juniper_door": "Juniper Door",
+      "item.strawberrymc.juniper_trapdoor": "Juniper Trapdoor",
+      "item.strawberrymc.juniper_pressure_plate": "Juniper Pressure Plate",
+      "item.strawberrymc.juniper_button": "Juniper Button",
+      "item.strawberrymc.juniper_sign": "Juniper Sign",
+      "item.strawberrymc.juniper_hanging_sign": "Juniper Hanging Sign",
+      "item.strawberrymc.juniper_boat": "Juniper Boat",
+      "entity.strawberrymc.juniper_boat": "Juniper Boat",
+      "item.strawberrymc.juniper_chest_boat": "Juniper Boat with Chest",
+      "entity.strawberrymc.juniper_chest_boat": "Juniper Boat with Chest",
+      "item.strawberrymc.chiseled_cauldron": "Chiseled Cauldron"
     }
   },
   "metadata": {
@@ -2943,14 +4286,22 @@
       "src/main/java/io/github/strawberrymc/mixin/LevelStorageSourceMixin.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBiomes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModWoodTypes.java",
+      "src/main/java/io/github/strawberrymc/client/StrawberrymcModSkyboxRenderer.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModFluidTypes.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModFluids.java",
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticleTypes.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticles.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModMobEffects.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModPotions.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModBlockEntities.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModItems.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntities.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModEntityRenderers.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModSounds.java",
       "src/main/java/io/github/strawberrymc/StrawberrymcMod.java",
+      "src/main/resources/assets/strawberrymc/sounds.json",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModTabs.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/META-INF/neoforge.mods.toml",

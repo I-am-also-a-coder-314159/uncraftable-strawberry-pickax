@@ -1,0 +1,7 @@
+{
+  "parent": "block/pressure_plate_up",
+  "textures": {
+    "texture": "strawberrymc:block/juniper_planks",
+    "particle": "strawberrymc:block/juniper_planks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "strawberrymc:block/juniper_planks",
+    "particle": "strawberrymc:block/juniper_planks"
+  }
+}

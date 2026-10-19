@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "strawberrymc:stripped_juniper_log",
+    "strawberrymc:juniper_wood",
+    "strawberrymc:stripped_juniper_wood",
+    "strawberrymc:juniper_log"
+  ]
+}

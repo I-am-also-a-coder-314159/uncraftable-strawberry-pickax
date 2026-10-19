@@ -1,0 +1,16 @@
+{
+  "wants": {
+    "id": "strawberrymc:sulfur_slag",
+    "count": 4
+  },
+  "additional_wants": {
+    "id": "minecraft:emerald",
+    "count": 2
+  },
+  "gives": {
+    "id": "minecraft:iron_hoe"
+  },
+  "max_uses": 5,
+  "xp": 6,
+  "reputation_discount": 0.05
+}

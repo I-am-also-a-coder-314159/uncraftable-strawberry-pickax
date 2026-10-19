@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:any"
+  },
+  "features": "strawberrymc:forest_talus_slope",
+  "step": "surface_structures"
+}

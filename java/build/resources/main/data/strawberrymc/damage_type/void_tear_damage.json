@@ -1,0 +1,6 @@
+{
+  "exhaustion": 0.2,
+  "message_id": "void_tear_damage",
+  "scaling": "never",
+  "effects": "drowning"
+}

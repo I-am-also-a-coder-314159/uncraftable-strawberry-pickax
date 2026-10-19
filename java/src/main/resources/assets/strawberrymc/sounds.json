@@ -1,0 +1,36 @@
+{
+  "void_amb_01": {
+    "sounds": [
+      {
+        "name": "strawberrymc:audiomass-output_1",
+        "stream": false
+      }
+    ]
+  },
+  "void_amb_02": {
+    "sounds": [
+      {
+        "name": "strawberrymc:audiomass-output",
+        "stream": false
+      }
+    ]
+  },
+  "palm_step": {
+    "subtitle": "subtitles.palm_step",
+    "sounds": [
+      {
+        "name": "strawberrymc:palm",
+        "stream": false
+      }
+    ]
+  },
+  "palm_break": {
+    "subtitle": "subtitles.palm_break",
+    "sounds": [
+      {
+        "name": "strawberrymc:palm2",
+        "stream": false
+      }
+    ]
+  }
+}

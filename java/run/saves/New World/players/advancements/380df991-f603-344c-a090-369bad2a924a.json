@@ -5,17 +5,17 @@
     },
     "done": true
   },
-  "minecraft:adventure/root": {
-    "criteria": {
-      "killed_something": "2026-10-14 21:22:04 -0700"
-    },
-    "done": true
-  },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:savanna_plateau": "2026-10-14 21:20:58 -0700"
     },
     "done": false
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2026-10-14 21:22:04 -0700"
+    },
+    "done": true
   },
   "DataVersion": 4790
 }

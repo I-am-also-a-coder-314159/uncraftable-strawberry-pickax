@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 50,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "tag_match",
+          "tag": "ore"
+        },
+        "state": {
+          "Name": "minecraft:cobblestone"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "tag_match",
+          "tag": "ore"
+        },
+        "state": {
+          "Name": "minecraft:gravel"
+        }
+      }
+    ]
+  }
+}

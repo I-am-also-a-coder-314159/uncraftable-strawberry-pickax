@@ -8,6 +8,9 @@
     },
     "strawberrymc:clover_cluff": {
       "chance": 0.5
+    },
+    "strawberrymc:juniper_leaves": {
+      "chance": 0.3
     }
   }
 }
