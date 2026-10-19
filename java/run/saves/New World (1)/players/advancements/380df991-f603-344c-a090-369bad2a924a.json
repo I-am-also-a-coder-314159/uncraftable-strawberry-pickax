@@ -507,9 +507,21 @@
     },
     "done": true
   },
-  "minecraft:adventure/minecraft_trials_edition": {
+  "minecraft:recipes/transportation/activator_rail": {
     "criteria": {
-      "minecraft_trials_edition": "2026-10-18 12:15:25 -0700"
+      "has_rail": "2026-10-18 12:10:10 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/detector_rail": {
+    "criteria": {
+      "has_rail": "2026-10-18 12:10:10 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/powered_rail": {
+    "criteria": {
+      "has_rail": "2026-10-18 12:10:10 -0700"
     },
     "done": true
   },
@@ -522,18 +534,6 @@
   "minecraft:recipes/redstone/oak_trapdoor": {
     "criteria": {
       "has_planks": "2026-10-18 12:12:25 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/bow": {
-    "criteria": {
-      "has_string": "2026-10-18 12:12:38 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/fishing_rod": {
-    "criteria": {
-      "has_string": "2026-10-18 12:12:38 -0700"
     },
     "done": true
   },
@@ -552,6 +552,54 @@
   "minecraft:recipes/decorations/oak_fence": {
     "criteria": {
       "has_planks": "2026-10-18 12:12:25 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_button": {
+    "criteria": {
+      "has_planks": "2026-10-18 12:12:25 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_slab": {
+    "criteria": {
+      "has_planks": "2026-10-18 12:12:25 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-10-18 12:12:25 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-10-18 12:12:25 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_door": {
+    "criteria": {
+      "has_planks": "2026-10-18 12:12:25 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_planks": "2026-10-18 12:12:25 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/bow": {
+    "criteria": {
+      "has_string": "2026-10-18 12:12:38 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/fishing_rod": {
+    "criteria": {
+      "has_string": "2026-10-18 12:12:38 -0700"
     },
     "done": true
   },
@@ -585,63 +633,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/transportation/activator_rail": {
-    "criteria": {
-      "has_rail": "2026-10-18 12:10:10 -0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/tools/lead": {
     "criteria": {
       "has_string": "2026-10-18 12:12:38 -0700"
     },
     "done": true
   },
-  "minecraft:recipes/redstone/oak_button": {
-    "criteria": {
-      "has_planks": "2026-10-18 12:12:25 -0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/resin_block": {
     "criteria": {
       "has_resin_clump": "2026-10-18 12:12:38 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/detector_rail": {
-    "criteria": {
-      "has_rail": "2026-10-18 12:10:10 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/oak_slab": {
-    "criteria": {
-      "has_planks": "2026-10-18 12:12:25 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/oak_fence_gate": {
-    "criteria": {
-      "has_planks": "2026-10-18 12:12:25 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/oak_pressure_plate": {
-    "criteria": {
-      "has_planks": "2026-10-18 12:12:25 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/oak_door": {
-    "criteria": {
-      "has_planks": "2026-10-18 12:12:25 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/brewing/cauldron": {
-    "criteria": {
-      "has_water_bucket": "2026-10-18 12:15:48 -0700"
     },
     "done": true
   },
@@ -654,12 +654,6 @@
   "minecraft:recipes/combat/crossbow": {
     "criteria": {
       "has_string": "2026-10-18 12:12:38 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/barrel": {
-    "criteria": {
-      "has_planks": "2026-10-18 12:12:25 -0700"
     },
     "done": true
   },
@@ -687,9 +681,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/transportation/powered_rail": {
+  "minecraft:adventure/minecraft_trials_edition": {
     "criteria": {
-      "has_rail": "2026-10-18 12:10:10 -0700"
+      "minecraft_trials_edition": "2026-10-18 12:15:25 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2026-10-18 12:15:48 -0700"
     },
     "done": true
   },

@@ -99,6 +99,7 @@ public class StrawberrymcModBlocks {
 	public static final DeferredBlock<Block> JUNIPER_WALL_SIGN;
 	public static final DeferredBlock<Block> JUNIPER_HANGING_SIGN;
 	public static final DeferredBlock<Block> JUNIPER_WALL_HANGING_SIGN;
+	public static final DeferredBlock<Block> CHISELED_CAULDRON;
 	static {
 		CHORINE_ORE = register("chorine_ore", ChorineOreBlock::new);
 		CHORINE_BLOCK = register("chorine_block", ChorineBlockBlock::new);
@@ -175,6 +176,7 @@ public class StrawberrymcModBlocks {
 		JUNIPER_WALL_SIGN = register("juniper_wall_sign", JuniperWallSignBlock::new);
 		JUNIPER_HANGING_SIGN = register("juniper_hanging_sign", JuniperHangingSignBlock::new);
 		JUNIPER_WALL_HANGING_SIGN = register("juniper_wall_hanging_sign", JuniperWallHangingSignBlock::new);
+		CHISELED_CAULDRON = register("chiseled_cauldron", ChiseledCauldronBlock::new);
 	}
 
 	// Start of user code block custom blocks

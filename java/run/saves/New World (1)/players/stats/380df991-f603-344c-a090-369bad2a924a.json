@@ -1,33 +1,8 @@
 {
   "stats": {
-    "minecraft:custom": {
-      "minecraft:minecart_one_cm": 1043,
-      "minecraft:interact_with_crafting_table": 1,
-      "minecraft:talked_to_villager": 2,
-      "minecraft:time_since_rest": 139357,
-      "minecraft:walk_one_cm": 24258,
-      "minecraft:leave_game": 18,
-      "minecraft:walk_under_water_one_cm": 91165,
-      "minecraft:mob_kills": 2,
-      "minecraft:damage_taken": 770,
-      "minecraft:play_time": 107054,
-      "minecraft:jump": 167,
-      "minecraft:time_since_death": 74275,
-      "minecraft:aviate_one_cm": 19529,
-      "minecraft:drop": 37,
-      "minecraft:sprint_one_cm": 6310,
-      "minecraft:open_chest": 1,
-      "minecraft:fall_one_cm": 500,
-      "minecraft:total_world_time": 187126,
-      "minecraft:swim_one_cm": 1661,
-      "minecraft:fly_one_cm": 1811224,
-      "minecraft:walk_on_water_one_cm": 64222,
-      "minecraft:crouch_one_cm": 854,
-      "minecraft:sneak_time": 7639,
-      "minecraft:deaths": 3
-    },
-    "minecraft:crafted": {
-      "minecraft:flint": 1
+    "minecraft:mined": {
+      "minecraft:fern": 1,
+      "strawberrymc:clover_mat": 12
     },
     "minecraft:picked_up": {
       "minecraft:dirt": 74,
@@ -53,6 +28,20 @@
       "minecraft:golden_apple": 1,
       "minecraft:sea_pickle": 2
     },
+    "minecraft:crafted": {
+      "minecraft:flint": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:red_carpet": 24,
+      "strawberrymc:recovery_pearl": 1,
+      "minecraft:wheat_seeds": 1,
+      "minecraft:oak_planks": 1,
+      "minecraft:coarse_dirt": 1,
+      "minecraft:water_bucket": 1,
+      "minecraft:grass_block": 1,
+      "minecraft:string": 6,
+      "minecraft:rail": 1
+    },
     "minecraft:used": {
       "minecraft:minecart": 1,
       "minecraft:sand": 2,
@@ -77,20 +66,31 @@
       "strawberrymc:palm_sapling": 4,
       "strawberrymc:echowood_sapling": 13
     },
-    "minecraft:dropped": {
-      "minecraft:red_carpet": 24,
-      "strawberrymc:recovery_pearl": 1,
-      "minecraft:wheat_seeds": 1,
-      "minecraft:oak_planks": 1,
-      "minecraft:coarse_dirt": 1,
-      "minecraft:water_bucket": 1,
-      "minecraft:grass_block": 1,
-      "minecraft:string": 6,
-      "minecraft:rail": 1
-    },
-    "minecraft:mined": {
-      "minecraft:fern": 1,
-      "strawberrymc:clover_mat": 12
+    "minecraft:custom": {
+      "minecraft:minecart_one_cm": 1043,
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:talked_to_villager": 2,
+      "minecraft:time_since_rest": 140187,
+      "minecraft:walk_one_cm": 24258,
+      "minecraft:leave_game": 19,
+      "minecraft:walk_under_water_one_cm": 91165,
+      "minecraft:mob_kills": 2,
+      "minecraft:damage_taken": 770,
+      "minecraft:play_time": 107884,
+      "minecraft:jump": 167,
+      "minecraft:time_since_death": 75105,
+      "minecraft:aviate_one_cm": 19529,
+      "minecraft:drop": 37,
+      "minecraft:sprint_one_cm": 6310,
+      "minecraft:open_chest": 1,
+      "minecraft:fall_one_cm": 500,
+      "minecraft:total_world_time": 191085,
+      "minecraft:swim_one_cm": 1661,
+      "minecraft:fly_one_cm": 1849215,
+      "minecraft:walk_on_water_one_cm": 64222,
+      "minecraft:crouch_one_cm": 854,
+      "minecraft:sneak_time": 7795,
+      "minecraft:deaths": 3
     }
   },
   "DataVersion": 4790

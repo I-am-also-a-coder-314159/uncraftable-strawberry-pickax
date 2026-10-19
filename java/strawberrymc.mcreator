@@ -3688,6 +3688,94 @@
           "src/main/resources/data/strawberrymc/loot_table/blocks/palm_leaves.json"
         ]
       }
+    },
+    {
+      "name": "SmiteHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smite_handler",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/SmiteHandlerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AmbientParticleEnchant",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ambient_particle_enchant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/AmbientParticleEnchantProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ChiseledCauldron",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_cauldron",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/loot_table/blocks/chiseled_cauldron.json",
+          "src/main/resources/assets/strawberrymc/blockstates/chiseled_cauldron.json",
+          "src/main/java/io/github/strawberrymc/block/ChiseledCauldronBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/chiseled_cauldron.json",
+          "src/main/resources/assets/strawberrymc/items/chiseled_cauldron.json",
+          "src/main/resources/assets/strawberrymc/models/block/chiseled_cauldron.json"
+        ]
+      }
+    },
+    {
+      "name": "SmiteVial",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smite_vial"
     }
   ],
   "variable_elements": [],
@@ -4187,7 +4275,8 @@
       "item.strawberrymc.juniper_boat": "Juniper Boat",
       "entity.strawberrymc.juniper_boat": "Juniper Boat",
       "item.strawberrymc.juniper_chest_boat": "Juniper Boat with Chest",
-      "entity.strawberrymc.juniper_chest_boat": "Juniper Boat with Chest"
+      "entity.strawberrymc.juniper_chest_boat": "Juniper Boat with Chest",
+      "item.strawberrymc.chiseled_cauldron": "Chiseled Cauldron"
     }
   },
   "metadata": {

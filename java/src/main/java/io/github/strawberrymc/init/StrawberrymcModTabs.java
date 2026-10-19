@@ -24,6 +24,7 @@ public class StrawberrymcModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> DEBUG = REGISTRY.register("debug",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.strawberrymc.debug")).icon(() -> new ItemStack(Blocks.COMMAND_BLOCK)).displayItems((parameters, tabData) -> {
 				tabData.accept(StrawberrymcModBlocks.OASIS_SPAWNER.get().asItem());
+				tabData.accept(StrawberrymcModBlocks.CHISELED_CAULDRON.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -37,6 +38,7 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.PLANT_FIBER.get());
 			tabData.accept(StrawberrymcModItems.FLINT_SHARD.get());
 			tabData.accept(StrawberrymcModItems.COCONUT.get());
+			tabData.accept(StrawberrymcModItems.SMITE_VIAL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.CHORINE_ORE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.CHORINE_BLOCK.get().asItem());
@@ -112,6 +114,7 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.PALM_HANGING_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.JUNIPER_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.JUNIPER_HANGING_SIGN.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.CHISELED_CAULDRON.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(StrawberrymcModItems.ECHOWOOD_BOAT.get());
 			tabData.accept(StrawberrymcModItems.ECHOWOOD_CHEST_BOAT.get());
@@ -130,11 +133,13 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_LEGGINGS.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_BOOTS.get());
 			tabData.accept(StrawberrymcModItems.RECOVERY_PEARL.get());
+			tabData.accept(StrawberrymcModItems.SMITE_VIAL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.GARNET_BLOCK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
 			if (tabData.hasPermissions()) {
 				tabData.accept(StrawberrymcModBlocks.GLOWROOT_DUMMY_SPAWNER.get().asItem());
+				tabData.accept(StrawberrymcModBlocks.CHISELED_CAULDRON.get().asItem());
 			}
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(StrawberrymcModItems.COCONUT.get());
