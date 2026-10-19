@@ -25,6 +25,7 @@ public class StrawberrymcModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.strawberrymc.debug")).icon(() -> new ItemStack(Blocks.COMMAND_BLOCK)).displayItems((parameters, tabData) -> {
 				tabData.accept(StrawberrymcModBlocks.OASIS_SPAWNER.get().asItem());
 				tabData.accept(StrawberrymcModBlocks.CHISELED_CAULDRON.get().asItem());
+				tabData.accept(StrawberrymcModBlocks.TALL_FIRE.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

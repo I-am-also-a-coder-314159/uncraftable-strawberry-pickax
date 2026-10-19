@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:leaf_litter",
+    "minecraft:bamboo_sapling",
+    "minecraft:tall_dry_grass",
+    "minecraft:short_dry_grass",
+    "minecraft:hay_block"
+  ]
+}

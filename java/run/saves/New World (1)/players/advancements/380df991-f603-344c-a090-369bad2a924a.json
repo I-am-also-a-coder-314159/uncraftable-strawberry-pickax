@@ -15,6 +15,7 @@
       "minecraft:lukewarm_ocean": "2026-10-18 12:36:42 -0700",
       "minecraft:stony_shore": "2026-10-18 12:30:03 -0700",
       "minecraft:lush_caves": "2026-10-18 12:15:17 -0700",
+      "minecraft:old_growth_birch_forest": "2026-10-18 20:06:02 -0700",
       "minecraft:eroded_badlands": "2026-10-16 21:07:56 -0700",
       "minecraft:desert": "2026-10-16 21:02:48 -0700",
       "minecraft:ocean": "2026-10-18 12:14:56 -0700",
@@ -690,6 +691,54 @@
   "minecraft:recipes/brewing/cauldron": {
     "criteria": {
       "has_water_bucket": "2026-10-18 12:15:48 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ladder": {
+    "criteria": {
+      "has_stick": "2026-10-18 20:08:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_axe": {
+    "criteria": {
+      "has_stick": "2026-10-18 20:08:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wooden_spear": {
+    "criteria": {
+      "has_stick": "2026-10-18 20:08:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_stick": "2026-10-18 20:08:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_hoe": {
+    "criteria": {
+      "has_stick": "2026-10-18 20:08:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_pickaxe": {
+    "criteria": {
+      "has_stick": "2026-10-18 20:08:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_shovel": {
+    "criteria": {
+      "has_stick": "2026-10-18 20:08:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wooden_sword": {
+    "criteria": {
+      "has_stick": "2026-10-18 20:08:23 -0700"
     },
     "done": true
   },

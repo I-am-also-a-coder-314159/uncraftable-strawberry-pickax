@@ -145,5 +145,8 @@
   "item.strawberrymc.juniper_boat": "Juniper Boat",
   "entity.strawberrymc.juniper_boat": "Juniper Boat",
   "item.strawberrymc.juniper_chest_boat": "Juniper Boat with Chest",
-  "entity.strawberrymc.juniper_chest_boat": "Juniper Boat with Chest"
+  "entity.strawberrymc.juniper_chest_boat": "Juniper Boat with Chest",
+  "item.strawberrymc.chiseled_cauldron": "Chiseled Cauldron",
+  "item.strawberrymc.smite_vial": "Smite Vial",
+  "item.strawberrymc.tall_fire": "Tall Fire"
 }

@@ -3702,6 +3702,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -3775,7 +3779,211 @@
       "type": "item",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "smite_vial"
+      "registry_name": "smite_vial",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/SmiteVialItem.java",
+          "src/main/resources/assets/strawberrymc/items/smite_vial.json",
+          "src/main/resources/assets/strawberrymc/models/item/smite_vial.json"
+        ]
+      }
+    },
+    {
+      "name": "TallFire",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_fire",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/loot_table/blocks/tall_fire.json",
+          "src/main/resources/assets/strawberrymc/models/block/tall_fire.json",
+          "src/main/java/io/github/strawberrymc/block/TallFireBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/tall_fire.json",
+          "src/main/resources/assets/strawberrymc/blockstates/tall_fire.json",
+          "src/main/resources/assets/strawberrymc/items/tall_fire.json"
+        ]
+      }
+    },
+    {
+      "name": "TallFireIgniteHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_fire_ignite_handler",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TallFireIgniteHandlerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TallFireNaturalIgniter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_fire_natural_igniter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TallFireNaturalIgniterProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TallFireTicking",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_fire_ticking",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TallFireTickingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TallFireExtinguish",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_fire_extinguish",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TallFireExtinguishProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TallFireParticleEmitter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_fire_particle_emitter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TallFireParticleEmitterProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TallFireDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_fire_damage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TallFireDamageProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -4096,6 +4304,7 @@
       "~Voidstone@CUSTOM:Voidstone"
     ],
     "BLOCKS:minecraft:replaceable": [
+      "~TallFire@CUSTOM:TallFire",
       "~VoidTears@CUSTOM:VoidTears"
     ],
     "BIOMES:minecraft:has_structure/pillager_outpost": [
@@ -4124,6 +4333,13 @@
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~VoidDim@CUSTOM:Voidstone"
+    ],
+    "BLOCKS:mod:dry_ignition": [
+      "Blocks.SHORT_DRY_GRASS",
+      "Blocks.TALL_DRY_GRASS",
+      "Blocks.LEAF_LITTER",
+      "Blocks.HAY_BLOCK",
+      "Blocks.BAMBOO_SAPLING"
     ]
   },
   "tab_element_order": {},
@@ -4276,7 +4492,9 @@
       "entity.strawberrymc.juniper_boat": "Juniper Boat",
       "item.strawberrymc.juniper_chest_boat": "Juniper Boat with Chest",
       "entity.strawberrymc.juniper_chest_boat": "Juniper Boat with Chest",
-      "item.strawberrymc.chiseled_cauldron": "Chiseled Cauldron"
+      "item.strawberrymc.chiseled_cauldron": "Chiseled Cauldron",
+      "item.strawberrymc.smite_vial": "Smite Vial",
+      "item.strawberrymc.tall_fire": "Tall Fire"
     }
   },
   "metadata": {

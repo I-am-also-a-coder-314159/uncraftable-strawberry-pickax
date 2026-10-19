@@ -116,6 +116,7 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> JUNIPER_CHEST_BOAT;
 	public static final DeferredItem<Item> CHISELED_CAULDRON;
 	public static final DeferredItem<Item> SMITE_VIAL;
+	public static final DeferredItem<Item> TALL_FIRE;
 	static {
 		CHORINE = register("chorine", ChorineItem::new);
 		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
@@ -216,6 +217,7 @@ public class StrawberrymcModItems {
 		JUNIPER_CHEST_BOAT = register("juniper_chest_boat", properties -> new BoatItem(StrawberrymcModEntities.JUNIPER_CHEST_BOAT.get(), properties.stacksTo(1)));
 		CHISELED_CAULDRON = block(StrawberrymcModBlocks.CHISELED_CAULDRON, new Item.Properties().stacksTo(1).rarity(Rarity.RARE));
 		SMITE_VIAL = register("smite_vial", SmiteVialItem::new);
+		TALL_FIRE = block(StrawberrymcModBlocks.TALL_FIRE);
 	}
 
 	// Start of user code block custom items
