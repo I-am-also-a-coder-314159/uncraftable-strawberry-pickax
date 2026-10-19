@@ -171,3 +171,19 @@ WARNING: Could not find vertex shader attribute 'UV2' to match BindAttributeLoca
 [19Oct2026 15:24:38.193] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
 [19Oct2026 15:24:38.194] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
 [19Oct2026 15:24:38.196] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/strawberrymc:void_dim
+[19Oct2026 15:32:37.614] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[19Oct2026 15:32:37.675] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[19Oct2026 15:32:37.676] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[19Oct2026 15:32:37.690] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[19Oct2026 15:32:37.691] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[19Oct2026 15:32:37.704] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[19Oct2026 15:32:37.705] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[19Oct2026 15:32:37.854] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[19Oct2026 15:32:38.128] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[19Oct2026 15:32:38.138] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[19Oct2026 15:32:38.147] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/strawberrymc:void_dim
+[19Oct2026 15:32:38.156] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19Oct2026 15:32:38.156] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19Oct2026 15:32:38.156] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19Oct2026 15:32:38.156] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (void_dim): All chunks are saved
+[19Oct2026 15:32:38.156] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved

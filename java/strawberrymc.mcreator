@@ -4331,15 +4331,15 @@
       "CUSTOM:StrippedJuniperLog",
       "CUSTOM:StrippedJuniperWood"
     ],
-    "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~VoidDim@CUSTOM:Voidstone"
-    ],
     "BLOCKS:mod:dry_ignition": [
       "Blocks.SHORT_DRY_GRASS",
       "Blocks.TALL_DRY_GRASS",
       "Blocks.LEAF_LITTER",
       "Blocks.HAY_BLOCK",
       "Blocks.BAMBOO_SAPLING"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~VoidDim@CUSTOM:Voidstone"
     ]
   },
   "tab_element_order": {},
