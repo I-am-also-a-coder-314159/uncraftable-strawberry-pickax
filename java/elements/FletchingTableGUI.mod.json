@@ -75,6 +75,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": "ShrinkFletchingTableIngredients",
           "x": 243,
           "y": 74,
           "locked": false

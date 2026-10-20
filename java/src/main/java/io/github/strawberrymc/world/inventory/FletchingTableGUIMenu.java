@@ -9,6 +9,7 @@ import net.neoforged.neoforge.transfer.item.ItemResource;
 import net.neoforged.neoforge.transfer.access.ItemAccess;
 import net.neoforged.neoforge.transfer.ResourceHandler;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -34,6 +35,7 @@ import java.util.HashMap;
 import java.util.Collections;
 
 import io.github.strawberrymc.procedures.CalcFletchingProcedure;
+import io.github.strawberrymc.network.FletchingTableGUISlotMessage;
 import io.github.strawberrymc.init.StrawberrymcModMenus;
 
 @EventBusSubscriber
@@ -117,6 +119,12 @@ public class FletchingTableGUIMenu extends AbstractContainerMenu implements Stra
 			private final int slot = 3;
 			private int x = FletchingTableGUIMenu.this.x;
 			private int y = FletchingTableGUIMenu.this.y;
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(3, 1, stack.getCount());
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -272,6 +280,13 @@ public class FletchingTableGUIMenu extends AbstractContainerMenu implements Stra
 					setItemInSlot(i, ItemResource.EMPTY, 0);
 				}
 			}
+		}
+	}
+
+	private void slotChanged(int slotid, int ctype, int meta) {
+		if (this.world != null && this.world.isClientSide()) {
+			ClientPacketDistributor.sendToServer(new FletchingTableGUISlotMessage(slotid, x, y, z, ctype, meta));
+			FletchingTableGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 
