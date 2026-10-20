@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "strawberrymc:coconut",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "strawberrymc:coconut_oil",
+    "count": 1
+  }
+}

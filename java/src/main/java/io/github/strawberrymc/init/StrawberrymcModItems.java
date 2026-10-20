@@ -117,6 +117,9 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> CHISELED_CAULDRON;
 	public static final DeferredItem<Item> SMITE_VIAL;
 	public static final DeferredItem<Item> TALL_FIRE;
+	public static final DeferredItem<Item> GREEN_BERYL;
+	public static final DeferredItem<Item> COCONUT_OIL;
+	public static final DeferredItem<Item> IRON_BOW;
 	static {
 		CHORINE = register("chorine", ChorineItem::new);
 		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
@@ -218,6 +221,9 @@ public class StrawberrymcModItems {
 		CHISELED_CAULDRON = block(StrawberrymcModBlocks.CHISELED_CAULDRON, new Item.Properties().stacksTo(1).rarity(Rarity.RARE));
 		SMITE_VIAL = register("smite_vial", SmiteVialItem::new);
 		TALL_FIRE = block(StrawberrymcModBlocks.TALL_FIRE);
+		GREEN_BERYL = register("green_beryl", GreenBerylItem::new);
+		COCONUT_OIL = register("coconut_oil", CoconutOilItem::new);
+		IRON_BOW = register("iron_bow", IronBowItem::new);
 	}
 
 	// Start of user code block custom items
