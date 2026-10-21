@@ -45,6 +45,7 @@
     "rangedItemChargesPower": true,
     "projectile": "Arrow",
     "projectileDisableAmmoCheck": false,
+    "onRangedItemUsed": "ArrowImpactEffects",
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

@@ -20,6 +20,8 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
 
+import io.github.strawberrymc.procedures.ArrowImpactEffectsProcedure;
+
 public class IronBowItem extends Item {
 	public IronBowItem(Item.Properties properties) {
 		super(properties.durability(384).enchantable(1));
@@ -69,6 +71,7 @@ public class IronBowItem extends Item {
 						stack.shrink(1);
 					}
 				}
+				ArrowImpactEffectsProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 			}
 		}
 		return super.releaseUsing(itemstack, world, entity, time);

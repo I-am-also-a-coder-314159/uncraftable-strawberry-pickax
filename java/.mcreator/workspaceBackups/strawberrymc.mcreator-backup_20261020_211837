@@ -4091,7 +4091,8 @@
       "metadata": {
         "files": [
           "src/main/java/io/github/strawberrymc/client/gui/FletchingTableGUIScreen.java",
-          "src/main/java/io/github/strawberrymc/world/inventory/FletchingTableGUIMenu.java"
+          "src/main/java/io/github/strawberrymc/world/inventory/FletchingTableGUIMenu.java",
+          "src/main/java/io/github/strawberrymc/network/FletchingTableGUISlotMessage.java"
         ]
       }
     },
@@ -4126,6 +4127,78 @@
         ],
         "files": [
           "src/main/java/io/github/strawberrymc/procedures/OpenFletchingTableGUIProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "IronBow",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_bow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/iron_bow.json",
+          "src/main/resources/assets/strawberrymc/models/item/iron_bow.json",
+          "src/main/java/io/github/strawberrymc/item/IronBowItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CalcFletching",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calc_fletching",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CalcFletchingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ShrinkFletchingTableIngredients",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shrink_fletching_table_ingredients",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/ShrinkFletchingTableIngredientsProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ArrowImpactEffects",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_impact_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/ArrowImpactEffectsProcedure.java"
         ]
       }
     }
@@ -4484,6 +4557,9 @@
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~VoidDim@CUSTOM:Voidstone"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~IronBow@CUSTOM:IronBow"
     ]
   },
   "tab_element_order": {},
@@ -4641,7 +4717,8 @@
       "item.strawberrymc.tall_fire": "Tall Fire",
       "advancements.luck_based.title": "Luck Based",
       "advancements.luck_based.descr": "Obtain a 4-Leaf Clover",
-      "gui.strawberrymc.fletching_table_gui.label_empty": "\u003d\u003d\u003e"
+      "gui.strawberrymc.fletching_table_gui.label_empty": "\u003d\u003d\u003e",
+      "item.strawberrymc.iron_bow": "Iron Bow"
     }
   },
   "metadata": {

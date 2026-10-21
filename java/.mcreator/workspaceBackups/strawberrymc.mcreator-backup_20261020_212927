@@ -4021,6 +4021,198 @@
           "src/main/resources/data/strawberrymc/recipe/coconut_oil_recipe.json"
         ]
       }
+    },
+    {
+      "name": "CalcGemcutterOutput",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calc_gemcutter_output",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CalcGemcutterOutputProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Gemcutter",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gemcutter",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/world/inventory/GemcutterMenu.java",
+          "src/main/java/io/github/strawberrymc/network/GemcutterSlotMessage.java",
+          "src/main/java/io/github/strawberrymc/client/gui/GemcutterScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "LuckBased",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "luck_based",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/luck_based.json"
+        ]
+      }
+    },
+    {
+      "name": "FletchingTableGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fletching_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/client/gui/FletchingTableGUIScreen.java",
+          "src/main/java/io/github/strawberrymc/world/inventory/FletchingTableGUIMenu.java",
+          "src/main/java/io/github/strawberrymc/network/FletchingTableGUISlotMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenFletchingTableGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_fletching_table_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/OpenFletchingTableGUIProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "IronBow",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_bow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/iron_bow.json",
+          "src/main/resources/assets/strawberrymc/models/item/iron_bow.json",
+          "src/main/java/io/github/strawberrymc/item/IronBowItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CalcFletching",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calc_fletching",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CalcFletchingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ShrinkFletchingTableIngredients",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shrink_fletching_table_ingredients",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/ShrinkFletchingTableIngredientsProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ArrowImpactEffects",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_impact_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/ArrowImpactEffectsProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -4377,6 +4569,9 @@
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~VoidDim@CUSTOM:Voidstone"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~IronBow@CUSTOM:IronBow"
     ]
   },
   "tab_element_order": {},
@@ -4450,7 +4645,7 @@
       "item.strawberrymc.recovery_pearl": "Recovery Pearl",
       "item.strawberrymc.coconut": "Coconut",
       "item.strawberrymc.palm_seedling": "Palm Seedling",
-      "advancements.crystal_hollows_here.title": "Crystal Hollows Here",
+      "advancements.crystal_hollows_here.title": "Crystal Hollows Here!",
       "advancements.crystal_hollows_here.descr": "not a lush cave....",
       "death.attack.shocking.item": "%1$s was shocked by %2$s using %3$s",
       "death.attack.shocking": "%1$s was electricuted",
@@ -4469,7 +4664,7 @@
       "item.strawberrymc.green_beryl": "Green Beryl",
       "item.strawberrymc.raw_diamond": "Raw Diamond",
       "item.strawberrymc.lazurite": "Lazurite",
-      "gui.strawberrymc.gemcutter.label_empty": "\u003d\u003e",
+      "gui.strawberrymc.gemcutter.label_empty": "\u003d\u003d\u003e",
       "gui.strawberrymc.gemcutter.label_gemcutter": "Gemcutter",
       "gui.strawberrymc.gemcutter.label_lubricant": "Lubricant",
       "item.minecraft.lingering_potion.effect.herb": "Lingering Potion of Herb",
@@ -4531,7 +4726,11 @@
       "entity.strawberrymc.juniper_chest_boat": "Juniper Boat with Chest",
       "item.strawberrymc.chiseled_cauldron": "Chiseled Cauldron",
       "item.strawberrymc.smite_vial": "Smite Vial",
-      "item.strawberrymc.tall_fire": "Tall Fire"
+      "item.strawberrymc.tall_fire": "Tall Fire",
+      "advancements.luck_based.title": "Luck Based",
+      "advancements.luck_based.descr": "Obtain a 4-Leaf Clover",
+      "gui.strawberrymc.fletching_table_gui.label_empty": "\u003d\u003d\u003e",
+      "item.strawberrymc.iron_bow": "Iron Bow"
     }
   },
   "metadata": {
@@ -4544,6 +4743,9 @@
       "src/main/java/io/github/strawberrymc/client/StrawberrymcModSkyboxRenderer.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModFluidTypes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModFluids.java",
+      "src/main/java/io/github/strawberrymc/network/MenuStateUpdateMessage.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModMenus.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModScreens.java",
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticleTypes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticles.java",

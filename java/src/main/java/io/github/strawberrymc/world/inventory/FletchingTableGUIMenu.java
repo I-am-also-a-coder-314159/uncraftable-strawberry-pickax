@@ -127,6 +127,12 @@ public class FletchingTableGUIMenu extends AbstractContainerMenu implements Stra
 			}
 
 			@Override
+			public void onQuickCraft(ItemStack a, ItemStack b) {
+				super.onQuickCraft(a, b);
+				slotChanged(3, 2, b.getCount() - a.getCount());
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
