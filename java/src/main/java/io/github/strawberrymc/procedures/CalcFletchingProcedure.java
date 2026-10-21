@@ -22,23 +22,30 @@ public class CalcFletchingProcedure {
 		var_shaft = "";
 		var_fletching = "";
 		output_arrow = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu0 ? _menu0.getSlots().get(4).getItem() : ItemStack.EMPTY).copy();
-		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu1 ? _menu1.getSlots().get(4).getItem() : ItemStack.EMPTY).getItem() == Items.ARROW) {
-			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu3 ? _menu3.getSlots().get(0).getItem() : ItemStack.EMPTY).getItem() == Items.PRISMARINE_SHARD) {
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu1 ? _menu1.getSlots().get(4).getItem() : ItemStack.EMPTY).getItem() == Items.ARROW
+				&& getAmountInGUISlot(entity, 4) >= 5) {
+			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu4 ? _menu4.getSlots().get(4).getItem() : ItemStack.EMPTY).getItem() == Items.PRISMARINE_SHARD
+					&& getAmountInGUISlot(entity, 4) >= 5) {
 				var_tip = "prismarine";
 			}
-			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu5 ? _menu5.getSlots().get(0).getItem() : ItemStack.EMPTY).getItem() == Items.ECHO_SHARD) {
+			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu7 ? _menu7.getSlots().get(4).getItem() : ItemStack.EMPTY).getItem() == Items.ECHO_SHARD
+					&& getAmountInGUISlot(entity, 4) >= 5) {
 				var_tip = "echo";
 			}
-			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu7 ? _menu7.getSlots().get(0).getItem() : ItemStack.EMPTY).getItem() == Items.AMETHYST_SHARD) {
-				var_tip = "am";
+			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu10 ? _menu10.getSlots().get(4).getItem() : ItemStack.EMPTY).getItem() == Items.AMETHYST_SHARD
+					&& getAmountInGUISlot(entity, 4) >= 5) {
+				var_tip = "amethyst";
 			}
-			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu9 ? _menu9.getSlots().get(1).getItem() : ItemStack.EMPTY).getItem() == Items.BLAZE_ROD) {
+			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu13 ? _menu13.getSlots().get(4).getItem() : ItemStack.EMPTY).getItem() == Items.BLAZE_ROD
+					&& getAmountInGUISlot(entity, 4) >= 5) {
 				var_shaft = "blaze";
 			}
-			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu11 ? _menu11.getSlots().get(1).getItem() : ItemStack.EMPTY).getItem() == Items.BREEZE_ROD) {
+			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu16 ? _menu16.getSlots().get(4).getItem() : ItemStack.EMPTY).getItem() == Items.BREEZE_ROD
+					&& getAmountInGUISlot(entity, 4) >= 5) {
 				var_shaft = "breeze";
 			}
-			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu13 ? _menu13.getSlots().get(2).getItem() : ItemStack.EMPTY).getItem() == Items.PHANTOM_MEMBRANE) {
+			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu19 ? _menu19.getSlots().get(4).getItem() : ItemStack.EMPTY).getItem() == Items.PHANTOM_MEMBRANE
+					&& getAmountInGUISlot(entity, 4) >= 5) {
 				var_fletching = "phantom";
 			}
 			if (!(var_tip).equals("") || !(var_shaft).equals("") || !(var_fletching).equals("")) {
@@ -58,16 +65,16 @@ public class CalcFletchingProcedure {
 					CustomData.update(DataComponents.CUSTOM_DATA, output_arrow, tag -> tag.putString(_tagName, _tagValue));
 				}
 				if (entity instanceof Player _player && _player.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu) {
-					ItemStack _setstack19 = output_arrow.copy();
-					_setstack19.setCount(getAmountInGUISlot(entity, 4));
-					_menu.getSlots().get(3).set(_setstack19);
+					ItemStack _setstack25 = output_arrow.copy();
+					_setstack25.setCount(5);
+					_menu.getSlots().get(3).set(_setstack25);
 					_player.containerMenu.broadcastChanges();
 				}
 			} else {
 				if (entity instanceof Player _player && _player.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu) {
-					ItemStack _setstack20 = new ItemStack(Blocks.AIR).copy();
-					_setstack20.setCount(1);
-					_menu.getSlots().get(3).set(_setstack20);
+					ItemStack _setstack26 = new ItemStack(Blocks.AIR).copy();
+					_setstack26.setCount(1);
+					_menu.getSlots().get(3).set(_setstack26);
 					_player.containerMenu.broadcastChanges();
 				}
 			}

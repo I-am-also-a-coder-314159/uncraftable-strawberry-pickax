@@ -10,10 +10,10 @@ public class ShrinkFletchingTableIngredientsProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player && _player.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu) {
-			_menu.getSlots().get(0).remove(1);
-			_menu.getSlots().get(1).remove(1);
-			_menu.getSlots().get(2).remove(1);
-			_menu.getSlots().get(4).remove(1);
+			_menu.getSlots().get(0).remove(5);
+			_menu.getSlots().get(1).remove(5);
+			_menu.getSlots().get(2).remove(5);
+			_menu.getSlots().get(4).remove(5);
 			_player.containerMenu.broadcastChanges();
 		}
 	}
