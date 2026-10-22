@@ -4091,7 +4091,8 @@
       "metadata": {
         "files": [
           "src/main/java/io/github/strawberrymc/client/gui/FletchingTableGUIScreen.java",
-          "src/main/java/io/github/strawberrymc/world/inventory/FletchingTableGUIMenu.java"
+          "src/main/java/io/github/strawberrymc/world/inventory/FletchingTableGUIMenu.java",
+          "src/main/java/io/github/strawberrymc/network/FletchingTableGUISlotMessage.java"
         ]
       }
     },
@@ -4158,6 +4159,58 @@
         ],
         "files": [
           "src/main/java/io/github/strawberrymc/procedures/CalcFletchingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ShrinkFletchingTableIngredients",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shrink_fletching_table_ingredients",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/ShrinkFletchingTableIngredientsProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ArrowImpactEffects",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_impact_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/ArrowImpactEffectsProcedure.java"
         ]
       }
     }

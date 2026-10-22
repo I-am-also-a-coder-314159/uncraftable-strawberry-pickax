@@ -1,6 +1,4 @@
 /summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/ww
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
 /locate structure minecraft:village_plains
 /tp @s 1120 ~ 2976
 /locate structure minecraft:village_plains
@@ -47,4 +45,6 @@
 /gamemode creative
 /data get entity @e[type=arrow,distance=..5,limit=1,sort=nearest]
 /gamemode creative
+/data get entity @p SelectedItem
+/data get entity
 /data get entity @p SelectedItem

@@ -54,11 +54,6 @@ public record FletchingTableGUISlotMessage(int slotID, int x, int y, int z, int 
 
 			ShrinkFletchingTableIngredientsProcedure.execute(entity);
 		}
-		if (slot == 3 && changeType == 2) {
-			int amount = meta;
-
-			ShrinkFletchingTableIngredientsProcedure.execute(entity);
-		}
 	}
 
 	@SubscribeEvent

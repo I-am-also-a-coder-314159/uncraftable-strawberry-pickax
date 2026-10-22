@@ -76,7 +76,6 @@
           },
           "dropItemsWhenNotBound": true,
           "onTakenFromSlot": "ShrinkFletchingTableIngredients",
-          "onStackTransfer": "ShrinkFletchingTableIngredients",
           "x": 243,
           "y": 74,
           "locked": false
