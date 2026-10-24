@@ -4213,6 +4213,116 @@
           "src/main/java/io/github/strawberrymc/procedures/ArrowImpactEffectsProcedure.java"
         ]
       }
+    },
+    {
+      "name": "ArrowEffectExecuter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_effect_executer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/ArrowEffectExecuterProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TriggerEntityHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trigger_entity_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TriggerEntityHitProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ArrowFlightVisuals",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_flight_visuals",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/ArrowFlightVisualsProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -4572,6 +4682,34 @@
     ],
     "ITEMS:minecraft:enchantable/durability": [
       "~IronBow@CUSTOM:IronBow"
+    ],
+    "BLOCKS:mod:amethyst_shard_pierceable": [
+      "Blocks.DECORATED_POT",
+      "Blocks.BAMBOO_SAPLING",
+      "Blocks.LANTERN",
+      "Blocks.FLOWER_POT",
+      "Blocks.POINTED_DRIPSTONE",
+      "TAG:minecraft:leaves",
+      "TAG:minecraft:impermeable",
+      "Blocks.GLASS_PANE",
+      "Blocks.MOSS_BLOCK",
+      "Blocks.AZALEA",
+      "Blocks.FLOWERING_AZALEA",
+      "Blocks.BIG_DRIPLEAF",
+      "Blocks.BIG_DRIPLEAF_STEM",
+      "Blocks.SMALL_DRIPLEAF",
+      "Blocks.WATERLILY"
+    ],
+    "BLOCKS:mod:vegetation": [
+      "Blocks.BIG_DRIPLEAF",
+      "Blocks.BIG_DRIPLEAF_STEM",
+      "Blocks.SMALL_DRIPLEAF",
+      "Blocks.WATERLILY",
+      "TAG:minecraft:leaves",
+      "Blocks.BAMBOO_SAPLING",
+      "Blocks.CAVE_VINES_PLANT",
+      "Blocks.AZALEA",
+      "Blocks.FLOWERING_AZALEA"
     ]
   },
   "tab_element_order": {},

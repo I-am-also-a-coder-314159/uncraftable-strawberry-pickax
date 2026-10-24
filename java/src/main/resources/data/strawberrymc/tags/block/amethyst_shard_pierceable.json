@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:big_dripleaf",
+    "minecraft:decorated_pot",
+    {
+      "id": "#minecraft:impermeable",
+      "required": false
+    },
+    "minecraft:bamboo_sapling",
+    "minecraft:flower_pot",
+    {
+      "id": "#minecraft:leaves",
+      "required": false
+    },
+    "minecraft:azalea",
+    "minecraft:flowering_azalea",
+    "minecraft:small_dripleaf",
+    "minecraft:pointed_dripstone",
+    "minecraft:lily_pad",
+    "minecraft:lantern",
+    "minecraft:glass_pane",
+    "minecraft:moss_block",
+    "minecraft:big_dripleaf_stem"
+  ]
+}

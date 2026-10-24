@@ -1,17 +1,4 @@
 /summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/locate structure minecraft:village_plains
-/tp @s 1120 ~ 2976
-/locate structure minecraft:village_plains
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/place structure minecraft:mansion
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/place structure minecraft:mansion
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/locate structure minecraft:desert_pyramid
-/tp @s 816 ~ 7008
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:1, Fuse:0}
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
 /place structure minecraft:desert_pyramid
 /summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
 /summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}w
@@ -48,3 +35,16 @@
 /data get entity @p SelectedItem
 /data get entity
 /data get entity @p SelectedItem
+/setblock ~ ~ ~ strawberrymc:oasis_spawner
+/locate biome strawberrymc:clover_glades
+/tp @s -1819 83 -450
+/setblock ~ ~ ~ minecraft:fletching_table
+/data get entity @p SelectedItem
+/gamemode survival
+/gamemode creative
+/setblock ~ ~ ~ minecraft:fletching_table
+/give @s minecraft:breeze_rod 60
+/give @s minecraft:arrow 10
+/summon turtle
+/give @s minecraft:arrow 10
+/summon minecraft:sheep
