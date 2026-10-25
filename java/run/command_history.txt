@@ -1,50 +1,50 @@
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/place structure minecraft:desert_pyramid
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}w
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/place structure minecraft:village_desert
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/place structure minecraft:village_desert
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/execute in strawberrymc:void_dim run tp @s ~ ~ ~
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/execute in minecraft:overworld run tp @p 0 100 0
-/gamemode creative
-/summon sheep
-/difficulty hard
-/locate biome minecraft:old_growth_birch_forest
-/tp @s -541 88 -425
-/locate biome minecraft:dark_forest
-/tp @s -1262 91 -716
-/weather clear
-/setblock ~ ~ ~ strawberrymc:tall_fire
-/setblock ~ ~ ~ minecraft:hay_block
-/setblock ~ ~ ~ strawberrymc:tall_fire
+/give @s minecraft:phantom_membrane 10
+/give @s minecraft:echo_shard 10
+/give @s strawberrymc:iron_bow
 /data get entity @p SelectedItem
-/data get entity @p selectedItem
-/data get entity @p SelectedItem
-/gamemode survival
-/gamemode creative
-/data get entity @e[type=arrow,distance=..5,limit=1,sort=nearest]
-/gamemode creative
-/data get entity @p SelectedItem
-/data get entity
-/data get entity @p SelectedItem
-/setblock ~ ~ ~ strawberrymc:oasis_spawner
-/locate biome strawberrymc:clover_glades
-/tp @s -1819 83 -450
-/setblock ~ ~ ~ minecraft:fletching_table
-/data get entity @p SelectedItem
-/gamemode survival
-/gamemode creative
-/setblock ~ ~ ~ minecraft:fletching_table
-/give @s minecraft:breeze_rod 60
-/give @s minecraft:arrow 10
-/summon turtle
-/give @s minecraft:arrow 10
+/data get entity @s SelectedItem
+/give @s minecraft:echo_shard 10
 /summon minecraft:sheep
+/clear
+/give @s strawberrymc:iron_bow
+/give @s minecraft:arrow 10
+/give @s minecraft:sponge 10
+/fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace water
+/give 2
+/give @s minecraft:gunpowder 10
+/give @s minecraft:arrow 10
+/data get entity @s SelectedItem
+/fill ~-20 ~ ~-20 ~20 ~ ~20 minecraft:dirt
+/setblock ~ ~ ~ minecraft:structure_block
+/weather clear
+/locate biome strawberrymc:alpine_meadow
+/tp @s -2919 148 -1708
+/place feature strawberrymc:alpine_meadow_tree
+/place feature strawberrymc:fir
+/gamemode spectator
+/tp @p 1000 100 1000
+/locate biome strawberrymc:alpine_meadow
+/tp @s -2904 100 -1688
+/gamemode creative
+/setblock ~ ~ ~ minecraft:structure_block
+/locate biome strawberrymc:alpine_meadow
+/tp @s 342 2 -2535
+/gamemode creative
+/gamemode spectator
+/gamemode creative
+/setblock ~ ~ ~ minecraft:structure_block
+/give @s strawberrymc:fir_tree_spawner
+/time set minecraft:day
+/setblock ~ ~ ~ minecraft:fletching_table
+/give @s minecraft:arrow 100
+/give @s minecraft:gold_ingot 100
+/give @s minecraft:blaze_rod 100
+/give @s strawberrymc:iron_bow
+/setblock ~ ~ ~ minecraft:fletching_table
+/give @s minecraft:breeze_rod 100
+/give @s minecraft:arrow 100
+/give @s arrow 10
+/summon minecraft:warden
+/time set minecraft:day
+/give @s strawberrymc:fir_tree_spawner
+/setblock ~ ~ ~ minecraft:structure_block

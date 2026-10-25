@@ -4323,6 +4323,147 @@
           "src/main/java/io/github/strawberrymc/procedures/ArrowFlightVisualsProcedure.java"
         ]
       }
+    },
+    {
+      "name": "EchoShardAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echo_shard_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/echo_shard_advancement.json"
+        ]
+      }
+    },
+    {
+      "name": "MontaneJungle",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "montane_jungle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/montane_jungle_tree.json",
+          "src/main/resources/data/strawberrymc/worldgen/biome/montane_jungle.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/montane_jungle_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "AlpineMeadow",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alpine_meadow",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/biome/alpine_meadow.json"
+        ]
+      }
+    },
+    {
+      "name": "FirGeneration",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fir_generation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/FirGenerationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "FirTreeSpawner",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fir_tree_spawner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/fir_tree_spawner.json",
+          "src/main/java/io/github/strawberrymc/block/FirTreeSpawnerBlock.java",
+          "src/main/resources/assets/strawberrymc/items/fir_tree_spawner.json",
+          "src/main/resources/assets/strawberrymc/models/block/fir_tree_spawner.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/fir_tree_spawner.json",
+          "src/main/resources/assets/strawberrymc/models/item/fir_tree_spawner.json"
+        ]
+      }
+    },
+    {
+      "name": "DeadFirGeneration",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dead_fir_generation",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/DeadFirGenerationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "FirSnagGeneration",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fir_snag_generation",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/FirSnagGenerationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DetermineRandFir",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "determine_rand_fir",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/DetermineRandFirProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -4362,8 +4503,8 @@
   ],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~Voidstone@CUSTOM:Voidstone",
       "~ChorineOre@CUSTOM:ChorineOre",
+      "~Voidstone@CUSTOM:Voidstone",
       "~GlowrootTuberStone@CUSTOM:GlowrootTuberStone",
       "~RadoniteOre@CUSTOM:RadoniteOre",
       "~RadoniteBlock@CUSTOM:RadoniteBlock",
@@ -4710,6 +4851,9 @@
       "Blocks.CAVE_VINES_PLANT",
       "Blocks.AZALEA",
       "Blocks.FLOWERING_AZALEA"
+    ],
+    "BIOMES:minecraft:has_structure/jungle_temple": [
+      "~MontaneJungle@CUSTOM:MontaneJungle"
     ]
   },
   "tab_element_order": {},
@@ -4868,7 +5012,12 @@
       "advancements.luck_based.title": "Luck Based",
       "advancements.luck_based.descr": "Obtain a 4-Leaf Clover",
       "gui.strawberrymc.fletching_table_gui.label_empty": "\u003d\u003d\u003e",
-      "item.strawberrymc.iron_bow": "Iron Bow"
+      "item.strawberrymc.iron_bow": "Iron Bow",
+      "advancements.echo_shard_advancement.title": "Take (Auto) Aim",
+      "advancements.echo_shard_advancement.descr": "I SWEAR IM NOT CHEATING",
+      "biome.strawberrymc.montane_jungle": "Montane Jungle",
+      "biome.strawberrymc.alpine_meadow": "Alpine Meadow",
+      "item.strawberrymc.fir_tree_spawner": "Fir Tree Spawner"
     }
   },
   "metadata": {

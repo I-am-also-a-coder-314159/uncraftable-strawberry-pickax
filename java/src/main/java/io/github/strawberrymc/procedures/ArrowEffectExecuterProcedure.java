@@ -30,6 +30,7 @@ public class ArrowEffectExecuterProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity) {
 		if (entity == null || immediatesourceentity == null)
 			return;
+		Entity arrow_applier = null;
 		if ((immediatesourceentity.getPersistentData().getStringOr("tip", "")).equals("amethyst")) {
 			if (entity instanceof LivingEntity) {
 				{
@@ -63,16 +64,44 @@ public class ArrowEffectExecuterProcedure {
 				}
 			}
 		}
-		if ((entity.getPersistentData().getStringOr("tip", "")).equals("prismarine")) {
+		if ((immediatesourceentity.getPersistentData().getStringOr("tip", "")).equals("gunpowder")) {
+			if (world instanceof Level _level && !_level.isClientSide())
+				_level.explode(null, x, y, z, (float) 1.5, Level.ExplosionInteraction.MOB);
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.EXPLOSION_EMITTER, x, y, z, 1, 0.5, 0.5, 0.5, 0.5);
+		}
+		if ((immediatesourceentity.getPersistentData().getStringOr("shaft", "")).equals("sponge")) {
+			if (!(immediatesourceentity.getPersistentData().getStringOr("shaft", "")).equals("aqua")) {
+				if ((immediatesourceentity.getPersistentData().getStringOr("tip", "")).equals("gold")) {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"fill ~-3 ~-3 ~-3 ~3 ~3 ~3 air replace water");
+				} else {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"fill ~-2 ~-2 ~-2 ~2 ~2 ~2 air replace water");
+				}
+			}
+		}
+		if ((immediatesourceentity.getPersistentData().getStringOr("tip", "")).equals("prismarine")) {
 			if (entity.isUnderWater()) {
 				entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x() * 1.6), (entity.getDeltaMovement().y() * 1.6), (entity.getDeltaMovement().z() * 1.6)));
 			}
 		}
 		if ((immediatesourceentity.getPersistentData().getStringOr("shaft", "")).equals("blaze")) {
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(
-						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"fill ~-1 ~-2 ~-1 ~1 ~2 ~1 minecraft:fire replace minecraft:air");
+			if ((immediatesourceentity.getPersistentData().getStringOr("tip", "")).equals("gold")) {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"fill ~-2 ~-2 ~-2 ~2 ~2 ~2 minecraft:fire replace minecraft:air");
+			} else {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, LevelBasedPermissionSet.OWNER, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"fill ~-1 ~-2 ~-1 ~1 ~2 ~1 minecraft:fire replace minecraft:air");
+			}
 			{
 				final Vec3 _center = new Vec3(x, y, z);
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
@@ -94,7 +123,11 @@ public class ArrowEffectExecuterProcedure {
 				final Vec3 _center = new Vec3(x, y, z);
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (!(entityiterator == immediatesourceentity)) {
-						entityiterator.setDeltaMovement(new Vec3(((entityiterator.getX() - x) * 0.3), 1.1, ((entityiterator.getZ() - z) * 0.3)));
+						if ((immediatesourceentity.getPersistentData().getStringOr("tip", "")).equals("gold")) {
+							entityiterator.setDeltaMovement(new Vec3(((entityiterator.getX() - x) * 0.4), 1.2, ((entityiterator.getZ() - z) * 0.4)));
+						} else {
+							entityiterator.setDeltaMovement(new Vec3(((entityiterator.getX() - x) * 0.3), 1.1, ((entityiterator.getZ() - z) * 0.3)));
+						}
 					}
 				}
 			}
@@ -111,7 +144,11 @@ public class ArrowEffectExecuterProcedure {
 			}
 			StrawberrymcMod.queueServerWork(1, () -> {
 				if (entity instanceof LivingEntity) {
-					entity.setDeltaMovement(new Vec3(0, 1.2, 0));
+					if ((immediatesourceentity.getPersistentData().getStringOr("tip", "")).equals("gold")) {
+						entity.setDeltaMovement(new Vec3(0, 1.3, 0));
+					} else {
+						entity.setDeltaMovement(new Vec3(0, 1.2, 0));
+					}
 				}
 			});
 		}

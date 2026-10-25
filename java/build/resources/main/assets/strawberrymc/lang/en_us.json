@@ -152,5 +152,10 @@
   "advancements.luck_based.title": "Luck Based",
   "advancements.luck_based.descr": "Obtain a 4-Leaf Clover",
   "gui.strawberrymc.fletching_table_gui.label_empty": "==>",
-  "item.strawberrymc.iron_bow": "Iron Bow"
+  "item.strawberrymc.iron_bow": "Iron Bow",
+  "advancements.echo_shard_advancement.title": "Take (Auto) Aim",
+  "advancements.echo_shard_advancement.descr": "I SWEAR IM NOT CHEATING",
+  "biome.strawberrymc.montane_jungle": "Montane Jungle",
+  "biome.strawberrymc.alpine_meadow": "Alpine Meadow",
+  "item.strawberrymc.fir_tree_spawner": "Fir Tree Spawner"
 }

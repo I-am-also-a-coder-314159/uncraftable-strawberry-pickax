@@ -12,6 +12,8 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.client.model.object.boat.BoatModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 
+import io.github.strawberrymc.client.model.Modelivy;
+import io.github.strawberrymc.client.model.Modelgrass;
 import io.github.strawberrymc.client.model.Modelcoconut_model_Converted;
 
 @EventBusSubscriber(Dist.CLIENT)
@@ -25,7 +27,9 @@ public class StrawberrymcModModels {
 
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(Modelgrass.LAYER_LOCATION, Modelgrass::createBodyLayer);
 		event.registerLayerDefinition(Modelcoconut_model_Converted.LAYER_LOCATION, Modelcoconut_model_Converted::createBodyLayer);
+		event.registerLayerDefinition(Modelivy.LAYER_LOCATION, Modelivy::createBodyLayer);
 		event.registerLayerDefinition(ECHOWOOD_BOAT_LAYER_LOCATION, BoatModel::createBoatModel);
 		event.registerLayerDefinition(ECHOWOOD_CHEST_BOAT_LAYER_LOCATION, BoatModel::createChestBoatModel);
 		event.registerLayerDefinition(PALM_BOAT_LAYER_LOCATION, BoatModel::createBoatModel);

@@ -123,15 +123,15 @@
     "fluidRestrictions": [],
     "generateFeature": true,
     "restrictionBiomes": [
-      "#is_overworld"
+      "end_highlands"
     ],
     "blocksToReplace": [
-      "TAG:stone_ore_replaceables"
+      "Blocks.END_STONE"
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 46,
-    "frequencyOnChunk": 29,
-    "minGenerateHeight": 1,
-    "maxGenerateHeight": 268
+    "frequencyPerChunks": 1,
+    "frequencyOnChunk": 6,
+    "minGenerateHeight": 10,
+    "maxGenerateHeight": 70
   }
 }

@@ -120,6 +120,7 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> GREEN_BERYL;
 	public static final DeferredItem<Item> COCONUT_OIL;
 	public static final DeferredItem<Item> IRON_BOW;
+	public static final DeferredItem<Item> FIR_TREE_SPAWNER;
 	static {
 		CHORINE = register("chorine", ChorineItem::new);
 		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
@@ -224,6 +225,7 @@ public class StrawberrymcModItems {
 		GREEN_BERYL = register("green_beryl", GreenBerylItem::new);
 		COCONUT_OIL = register("coconut_oil", CoconutOilItem::new);
 		IRON_BOW = register("iron_bow", IronBowItem::new);
+		FIR_TREE_SPAWNER = block(StrawberrymcModBlocks.FIR_TREE_SPAWNER);
 	}
 
 	// Start of user code block custom items

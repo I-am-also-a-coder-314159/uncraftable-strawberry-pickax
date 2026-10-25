@@ -1,0 +1,163 @@
+---- Minecraft Crash Report ----
+// I'm sorry, Dave.
+
+Time: 2026-10-24 08:09:41
+Description: Ticking entity
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.entity.Entity.getDisplayName()" because the return value of "io.github.strawberrymc.procedures.ArrowFlightVisualsProcedure.findEntityInWorldRange(net.minecraft.world.level.LevelAccessor, java.lang.Class, double, double, double, double)" is null
+	at TRANSFORMER/strawberrymc@1.0.0/io.github.strawberrymc.procedures.ArrowFlightVisualsProcedure.execute(ArrowFlightVisualsProcedure.java:48) ~[main/:?] {}
+	at TRANSFORMER/strawberrymc@1.0.0/io.github.strawberrymc.procedures.ArrowFlightVisualsProcedure.onEntityTick(ArrowFlightVisualsProcedure.java:36) ~[main/:?] {}
+	at net.neoforged.bus.SubscribeEventListener.invoke(SubscribeEventListener.java:50) ~[bus-8.0.5.jar:?] {}
+	at net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar:?] {}
+	at net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar:?] {}
+	at TRANSFORMER/neoforge@26.1.2.95/net.neoforged.neoforge.event.EventHooks.fireEntityTickPre(EventHooks.java:960) ~[neoforge-26.1.2.95-universal.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:845) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.level.Level.guardEntityTick(Level.java:535) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.level.ServerLevel.lambda$tick$0(ServerLevel.java:450) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:52) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:430) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1150) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1003) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:146) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1035) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.server.IntegratedServer.processPacketsAndTick(IntegratedServer.java:119) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:776) [minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:300) [minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at java.base/java.lang.Thread.run(Thread.java:1474) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at TRANSFORMER/strawberrymc@1.0.0/io.github.strawberrymc.procedures.ArrowFlightVisualsProcedure.execute(ArrowFlightVisualsProcedure.java:48) ~[main/:?] {}
+	at TRANSFORMER/strawberrymc@1.0.0/io.github.strawberrymc.procedures.ArrowFlightVisualsProcedure.onEntityTick(ArrowFlightVisualsProcedure.java:36) ~[main/:?] {}
+	at net.neoforged.bus.SubscribeEventListener.invoke(SubscribeEventListener.java:50) ~[bus-8.0.5.jar:?] {}
+	at net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar:?] {}
+	at net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar:?] {}
+	at TRANSFORMER/neoforge@26.1.2.95/net.neoforged.neoforge.event.EventHooks.fireEntityTickPre(EventHooks.java:960) ~[neoforge-26.1.2.95-universal.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:845) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.level.Level.guardEntityTick(Level.java:535) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.level.ServerLevel.lambda$tick$0(ServerLevel.java:450) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:52) ~[minecraft-patched-26.1.2.95.jar:?] {}
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:skeleton (net.minecraft.world.entity.monster.skeleton.Skeleton)
+	Entity ID: 1
+	Entity Name: Skeleton
+	Entity's Exact location: -1836.50, 30.00, -383.50
+	Entity's Block location: World: (-1837,30,-384), Section: (at 3,14,0 in -115,1,-24; chunk contains blocks -1840,-64,-384 to -1825,319,-369), Region: (-4,-1; contains chunks -128,-32 to -97,-1, blocks -2048,-64,-512 to -1537,319,-1)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.level.Level.guardEntityTick(Level.java:535) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.level.ServerLevel.lambda$tick$0(ServerLevel.java:450) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:52) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:430) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1150) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1003) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:146) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1035) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.server.IntegratedServer.processPacketsAndTick(IntegratedServer.java:119) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:776) [minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:300) [minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at java.base/java.lang.Thread.run(Thread.java:1474) [?:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; ServerPlayer{name=Dev, id=79, pos=(-1831.1072583199398, 70.37607948239862, -368.7668056103262), mode=CREATIVE, permission=owner}
+	Chunk stats: 841
+	Level dimension: minecraft:overworld
+	Level time: 229812 game time, 253337 day time
+	Level spawn location: World: (32,85,48), Section: (at 0,5,0 in 2,5,3; chunk contains blocks 32,-64,48 to 47,319,63), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level name: New World
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Commands: true
+	Known server brands: neoforge
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Loaded entity count: 81
+	Server weather: Rain time: 1 (now: false), thunder time: 1 (now: false)
+Stacktrace:
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.level.ServerLevel.fillReportDetails(ServerLevel.java:1863) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1153) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1003) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:146) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1035) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.server.IntegratedServer.processPacketsAndTick(IntegratedServer.java:119) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:776) [minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:300) [minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at java.base/java.lang.Thread.run(Thread.java:1474) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 26.1.2
+	Minecraft Version ID: 26.1.2
+	Operating System: Mac OS X (aarch64) version 15.5
+	Java Version: 25.0.2, JetBrains s.r.o.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), JetBrains s.r.o.
+	Memory: 129863224 bytes (123 MiB) / 673185792 bytes (642 MiB) up to 2147483648 bytes (2048 MiB)
+	Memory (heap): init: 128MiB, used: 517MiB, committed: 642MiB, max: 2048MiB
+	Memory (non-head): init: 007MiB, used: 194MiB, committed: 196MiB, max: 000MiB
+	CPUs: 8
+	Processor Vendor: Apple Inc.
+	Processor Name: Apple M1
+	Identifier: Apple Inc. Family 0x1b588bb3 Model 0 Stepping 0
+	Microarchitecture: ARM64 SoC: Firestorm + Icestorm
+	Frequency (GHz): 3.20
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 8
+	Graphics card #0 name: Apple M1
+	Graphics card #0 vendor: Apple (0x106b)
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Memory slot #0 capacity (MiB): 0.00
+	Memory slot #0 clockSpeed (GHz): 0.00
+	Memory slot #0 type: unknown
+	Virtual memory max (MiB): 18432.00
+	Virtual memory used (MiB): 16407.58
+	Swap memory total (MiB): 10240.00
+	Swap memory used (MiB): 9372.44
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 2882.25, total: 233752.44
+	Space in storage for workdir (MiB): available: 2882.25, total: 233752.44
+	JVM Flags: 0 total; 
+	Debug Flags: 0 total; 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/79, l='ServerLevel[New World]', x=-1831.11, y=70.38, z=-368.77]]
+	Active Data Packs: vanilla, mod_data, mod/neoforge, mod/strawberrymc
+	Available Data Packs: minecart_improvements, redstone_experiments, trade_rebalance, vanilla, mod/neoforge, mod/strawberrymc, mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	World Seed: 6592416162100167213
+	Suppressed Exceptions: ~~NONE~~
+	Type: Integrated Server
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Launched Version: 26.1.2.95
+	Class Processors: 
+		00.00%: neoforge:neoforge_dev_dist_cleaner
+		00.00%: neoforge:computing_frames (marker)
+		00.00%: neoforge:runtime_enum_extender
+		04.43%: neoforge:access_transformer
+		00.10%: neoforge:mixin
+		00.00%: neoforge:simple_processors_default (marker)
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.biome.biome
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.block.flowerpotblock
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.levelgen.structure.structure
+		00.27%: neoforge.coremods:method_redirector
+	Mod List: 
+		minecraft-patched-26.1.2.95.jar                   |Minecraft                     |minecraft                     |26.1.2              |Manifest: NOSIGNATURE
+		neoforge-26.1.2.95-universal.jar                  |NeoForge                      |neoforge                      |26.1.2.95           |Manifest: NOSIGNATURE
+		main                                              |Strawberry Minecraft          |strawberrymc                  |1.0.0               |Manifest: NOSIGNATURE
+	Crash Report UUID: 70ffe7bb-c538-4fac-9b93-f785d6a409a3
+	FML: 11.0.15
+	NeoForge: 26.1.2.95
