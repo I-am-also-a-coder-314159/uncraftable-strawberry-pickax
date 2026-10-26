@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:small_dripleaf",
+    "minecraft:lily_pad",
+    "minecraft:big_dripleaf",
+    "minecraft:bamboo_sapling",
+    "minecraft:cave_vines_plant",
+    "minecraft:big_dripleaf_stem",
+    {
+      "id": "#minecraft:leaves",
+      "required": false
+    },
+    "minecraft:azalea",
+    "minecraft:flowering_azalea"
+  ]
+}

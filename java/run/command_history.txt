@@ -1,50 +1,50 @@
-/give @s minecraft:bone_meal
-/setblock ~ ~ ~ strawberrymc:palm_sapling
-/give @s strawberrymc:echowood_sapling 64
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0, ignited:1b}
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:100, ignited:1b}
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/locate structure minecraft:mansion
-/tp @s 352 200 2064
-/effect give @s minecraft:night_vision infinite
-/locate structure minecraft:mansion
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/locate structure minecraft:mansion
-/locate structure minecraft:trial_chambers
-/tp @s 0 ~ 1728
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/give @s minecraft:phantom_membrane 10
+/give @s minecraft:echo_shard 10
+/give @s strawberrymc:iron_bow
+/data get entity @p SelectedItem
+/data get entity @s SelectedItem
+/give @s minecraft:echo_shard 10
+/summon minecraft:sheep
+/clear
+/give @s strawberrymc:iron_bow
+/give @s minecraft:arrow 10
+/give @s minecraft:sponge 10
+/fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace water
+/give 2
+/give @s minecraft:gunpowder 10
+/give @s minecraft:arrow 10
+/data get entity @s SelectedItem
+/fill ~-20 ~ ~-20 ~20 ~ ~20 minecraft:dirt
+/setblock ~ ~ ~ minecraft:structure_block
+/weather clear
+/locate biome strawberrymc:alpine_meadow
+/tp @s -2919 148 -1708
+/place feature strawberrymc:alpine_meadow_tree
+/place feature strawberrymc:fir
 /gamemode spectator
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/place structure minecraft:mansion
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/ww
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/locate structure minecraft:village_plains
-/tp @s 1120 ~ 2976
-/locate structure minecraft:village_plains
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/place structure minecraft:mansion
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/place structure minecraft:mansion
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/locate structure minecraft:desert_pyramid
-/tp @s 816 ~ 7008
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:1, Fuse:0}
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/place structure minecraft:desert_pyramid
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}w
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/place structure minecraft:village_desert
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/place structure minecraft:village_desert
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/execute in strawberrymc:void_dim run tp @s ~ ~ ~
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
-/
-/summon minecraft:creeper ~ ~ ~ {ExplosionRadius:127, Fuse:0}
+/tp @p 1000 100 1000
+/locate biome strawberrymc:alpine_meadow
+/tp @s -2904 100 -1688
+/gamemode creative
+/setblock ~ ~ ~ minecraft:structure_block
+/locate biome strawberrymc:alpine_meadow
+/tp @s 342 2 -2535
+/gamemode creative
+/gamemode spectator
+/gamemode creative
+/setblock ~ ~ ~ minecraft:structure_block
+/give @s strawberrymc:fir_tree_spawner
+/time set minecraft:day
+/setblock ~ ~ ~ minecraft:fletching_table
+/give @s minecraft:arrow 100
+/give @s minecraft:gold_ingot 100
+/give @s minecraft:blaze_rod 100
+/give @s strawberrymc:iron_bow
+/setblock ~ ~ ~ minecraft:fletching_table
+/give @s minecraft:breeze_rod 100
+/give @s minecraft:arrow 100
+/give @s arrow 10
+/summon minecraft:warden
+/time set minecraft:day
+/give @s strawberrymc:fir_tree_spawner
+/setblock ~ ~ ~ minecraft:structure_block

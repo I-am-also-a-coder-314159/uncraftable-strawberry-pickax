@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
-  "biomes": "#is_overworld",
+  "biomes": "end_highlands",
   "features": "strawberrymc:chorine_ore",
   "step": "underground_ores"
 }

@@ -30,5 +30,5 @@
       }
     }
   },
-  "parent": "minecraft:adventure/adventuring_time"
+  "parent": "minecraft:adventure/root"
 }

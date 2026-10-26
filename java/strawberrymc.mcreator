@@ -2049,20 +2049,6 @@
       }
     },
     {
-      "name": "GreenBeryl",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "green_beryl",
-      "metadata": {
-        "files": [
-          "src/main/java/io/github/strawberrymc/item/GreenBerylItem.java",
-          "src/main/resources/assets/strawberrymc/models/item/green_beryl.json",
-          "src/main/resources/assets/strawberrymc/items/green_beryl.json"
-        ]
-      }
-    },
-    {
       "name": "RawDiamond",
       "type": "item",
       "compiles": true,
@@ -2087,19 +2073,6 @@
           "src/main/resources/assets/strawberrymc/models/item/lazurite.json",
           "src/main/resources/assets/strawberrymc/items/lazurite.json",
           "src/main/java/io/github/strawberrymc/item/LazuriteItem.java"
-        ]
-      }
-    },
-    {
-      "name": "Gemcutter",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gemcutter",
-      "metadata": {
-        "files": [
-          "src/main/java/io/github/strawberrymc/world/inventory/GemcutterMenu.java",
-          "src/main/java/io/github/strawberrymc/client/gui/GemcutterScreen.java"
         ]
       }
     },
@@ -3702,6 +3675,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -3775,7 +3752,718 @@
       "type": "item",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "smite_vial"
+      "registry_name": "smite_vial",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/SmiteVialItem.java",
+          "src/main/resources/assets/strawberrymc/items/smite_vial.json",
+          "src/main/resources/assets/strawberrymc/models/item/smite_vial.json"
+        ]
+      }
+    },
+    {
+      "name": "TallFire",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_fire",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/loot_table/blocks/tall_fire.json",
+          "src/main/resources/assets/strawberrymc/models/block/tall_fire.json",
+          "src/main/java/io/github/strawberrymc/block/TallFireBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/tall_fire.json",
+          "src/main/resources/assets/strawberrymc/blockstates/tall_fire.json",
+          "src/main/resources/assets/strawberrymc/items/tall_fire.json"
+        ]
+      }
+    },
+    {
+      "name": "TallFireIgniteHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_fire_ignite_handler",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TallFireIgniteHandlerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TallFireNaturalIgniter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_fire_natural_igniter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TallFireNaturalIgniterProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TallFireTicking",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_fire_ticking",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TallFireTickingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TallFireExtinguish",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_fire_extinguish",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TallFireExtinguishProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TallFireParticleEmitter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_fire_particle_emitter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TallFireParticleEmitterProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TallFireDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_fire_damage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TallFireDamageProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GreenBeryl",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_beryl",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/item/GreenBerylItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/green_beryl.json",
+          "src/main/resources/assets/strawberrymc/items/green_beryl.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldOreOverride",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_ore_override",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blocks/emerald_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "DeepslateEmeraldOreOverride",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_emerald_ore_override",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blocks/deepslate_emerald_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "CoconutOil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_oil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/coconut_oil.json",
+          "src/main/resources/assets/strawberrymc/items/coconut_oil.json",
+          "src/main/java/io/github/strawberrymc/item/CoconutOilItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutOilRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_oil_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/coconut_oil_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CalcGemcutterOutput",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calc_gemcutter_output",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CalcGemcutterOutputProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Gemcutter",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gemcutter",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/world/inventory/GemcutterMenu.java",
+          "src/main/java/io/github/strawberrymc/network/GemcutterSlotMessage.java",
+          "src/main/java/io/github/strawberrymc/client/gui/GemcutterScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "LuckBased",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "luck_based",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/luck_based.json"
+        ]
+      }
+    },
+    {
+      "name": "FletchingTableGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fletching_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/io/github/strawberrymc/client/gui/FletchingTableGUIScreen.java",
+          "src/main/java/io/github/strawberrymc/world/inventory/FletchingTableGUIMenu.java",
+          "src/main/java/io/github/strawberrymc/network/FletchingTableGUISlotMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenFletchingTableGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_fletching_table_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/OpenFletchingTableGUIProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "IronBow",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_bow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/iron_bow.json",
+          "src/main/resources/assets/strawberrymc/models/item/iron_bow.json",
+          "src/main/java/io/github/strawberrymc/item/IronBowItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CalcFletching",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calc_fletching",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/CalcFletchingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ShrinkFletchingTableIngredients",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shrink_fletching_table_ingredients",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/ShrinkFletchingTableIngredientsProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ArrowImpactEffects",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_impact_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/ArrowImpactEffectsProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ArrowEffectExecuter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_effect_executer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/ArrowEffectExecuterProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TriggerEntityHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trigger_entity_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/TriggerEntityHitProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ArrowFlightVisuals",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_flight_visuals",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/ArrowFlightVisualsProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EchoShardAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echo_shard_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/echo_shard_advancement.json"
+        ]
+      }
+    },
+    {
+      "name": "MontaneJungle",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "montane_jungle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/montane_jungle_tree.json",
+          "src/main/resources/data/strawberrymc/worldgen/biome/montane_jungle.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/montane_jungle_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "AlpineMeadow",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alpine_meadow",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/biome/alpine_meadow.json"
+        ]
+      }
+    },
+    {
+      "name": "FirGeneration",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fir_generation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/FirGenerationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "FirTreeSpawner",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fir_tree_spawner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/fir_tree_spawner.json",
+          "src/main/java/io/github/strawberrymc/block/FirTreeSpawnerBlock.java",
+          "src/main/resources/assets/strawberrymc/items/fir_tree_spawner.json",
+          "src/main/resources/assets/strawberrymc/models/block/fir_tree_spawner.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/fir_tree_spawner.json",
+          "src/main/resources/assets/strawberrymc/models/item/fir_tree_spawner.json"
+        ]
+      }
+    },
+    {
+      "name": "DeadFirGeneration",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dead_fir_generation",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/DeadFirGenerationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "FirSnagGeneration",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fir_snag_generation",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/FirSnagGenerationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DetermineRandFir",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "determine_rand_fir",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/io/github/strawberrymc/procedures/DetermineRandFirProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -3815,8 +4503,8 @@
   ],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~Voidstone@CUSTOM:Voidstone",
       "~ChorineOre@CUSTOM:ChorineOre",
+      "~Voidstone@CUSTOM:Voidstone",
       "~GlowrootTuberStone@CUSTOM:GlowrootTuberStone",
       "~RadoniteOre@CUSTOM:RadoniteOre",
       "~RadoniteBlock@CUSTOM:RadoniteBlock",
@@ -4096,6 +4784,7 @@
       "~Voidstone@CUSTOM:Voidstone"
     ],
     "BLOCKS:minecraft:replaceable": [
+      "~TallFire@CUSTOM:TallFire",
       "~VoidTears@CUSTOM:VoidTears"
     ],
     "BIOMES:minecraft:has_structure/pillager_outpost": [
@@ -4122,8 +4811,49 @@
       "CUSTOM:StrippedJuniperLog",
       "CUSTOM:StrippedJuniperWood"
     ],
+    "BLOCKS:mod:dry_ignition": [
+      "Blocks.SHORT_DRY_GRASS",
+      "Blocks.TALL_DRY_GRASS",
+      "Blocks.LEAF_LITTER",
+      "Blocks.HAY_BLOCK",
+      "Blocks.BAMBOO_SAPLING"
+    ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~VoidDim@CUSTOM:Voidstone"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~IronBow@CUSTOM:IronBow"
+    ],
+    "BLOCKS:mod:amethyst_shard_pierceable": [
+      "Blocks.DECORATED_POT",
+      "Blocks.BAMBOO_SAPLING",
+      "Blocks.LANTERN",
+      "Blocks.FLOWER_POT",
+      "Blocks.POINTED_DRIPSTONE",
+      "TAG:minecraft:leaves",
+      "TAG:minecraft:impermeable",
+      "Blocks.GLASS_PANE",
+      "Blocks.MOSS_BLOCK",
+      "Blocks.AZALEA",
+      "Blocks.FLOWERING_AZALEA",
+      "Blocks.BIG_DRIPLEAF",
+      "Blocks.BIG_DRIPLEAF_STEM",
+      "Blocks.SMALL_DRIPLEAF",
+      "Blocks.WATERLILY"
+    ],
+    "BLOCKS:mod:vegetation": [
+      "Blocks.BIG_DRIPLEAF",
+      "Blocks.BIG_DRIPLEAF_STEM",
+      "Blocks.SMALL_DRIPLEAF",
+      "Blocks.WATERLILY",
+      "TAG:minecraft:leaves",
+      "Blocks.BAMBOO_SAPLING",
+      "Blocks.CAVE_VINES_PLANT",
+      "Blocks.AZALEA",
+      "Blocks.FLOWERING_AZALEA"
+    ],
+    "BIOMES:minecraft:has_structure/jungle_temple": [
+      "~MontaneJungle@CUSTOM:MontaneJungle"
     ]
   },
   "tab_element_order": {},
@@ -4197,7 +4927,7 @@
       "item.strawberrymc.recovery_pearl": "Recovery Pearl",
       "item.strawberrymc.coconut": "Coconut",
       "item.strawberrymc.palm_seedling": "Palm Seedling",
-      "advancements.crystal_hollows_here.title": "Crystal Hollows Here",
+      "advancements.crystal_hollows_here.title": "Crystal Hollows Here!",
       "advancements.crystal_hollows_here.descr": "not a lush cave....",
       "death.attack.shocking.item": "%1$s was shocked by %2$s using %3$s",
       "death.attack.shocking": "%1$s was electricuted",
@@ -4216,7 +4946,7 @@
       "item.strawberrymc.green_beryl": "Green Beryl",
       "item.strawberrymc.raw_diamond": "Raw Diamond",
       "item.strawberrymc.lazurite": "Lazurite",
-      "gui.strawberrymc.gemcutter.label_empty": "\u003d\u003e",
+      "gui.strawberrymc.gemcutter.label_empty": "\u003d\u003d\u003e",
       "gui.strawberrymc.gemcutter.label_gemcutter": "Gemcutter",
       "gui.strawberrymc.gemcutter.label_lubricant": "Lubricant",
       "item.minecraft.lingering_potion.effect.herb": "Lingering Potion of Herb",
@@ -4276,7 +5006,18 @@
       "entity.strawberrymc.juniper_boat": "Juniper Boat",
       "item.strawberrymc.juniper_chest_boat": "Juniper Boat with Chest",
       "entity.strawberrymc.juniper_chest_boat": "Juniper Boat with Chest",
-      "item.strawberrymc.chiseled_cauldron": "Chiseled Cauldron"
+      "item.strawberrymc.chiseled_cauldron": "Chiseled Cauldron",
+      "item.strawberrymc.smite_vial": "Smite Vial",
+      "item.strawberrymc.tall_fire": "Tall Fire",
+      "advancements.luck_based.title": "Luck Based",
+      "advancements.luck_based.descr": "Obtain a 4-Leaf Clover",
+      "gui.strawberrymc.fletching_table_gui.label_empty": "\u003d\u003d\u003e",
+      "item.strawberrymc.iron_bow": "Iron Bow",
+      "advancements.echo_shard_advancement.title": "Take (Auto) Aim",
+      "advancements.echo_shard_advancement.descr": "I SWEAR IM NOT CHEATING",
+      "biome.strawberrymc.montane_jungle": "Montane Jungle",
+      "biome.strawberrymc.alpine_meadow": "Alpine Meadow",
+      "item.strawberrymc.fir_tree_spawner": "Fir Tree Spawner"
     }
   },
   "metadata": {
@@ -4289,6 +5030,9 @@
       "src/main/java/io/github/strawberrymc/client/StrawberrymcModSkyboxRenderer.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModFluidTypes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModFluids.java",
+      "src/main/java/io/github/strawberrymc/network/MenuStateUpdateMessage.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModMenus.java",
+      "src/main/java/io/github/strawberrymc/init/StrawberrymcModScreens.java",
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticleTypes.java",
       "src/main/java/io/github/strawberrymc/init/StrawberrymcModParticles.java",

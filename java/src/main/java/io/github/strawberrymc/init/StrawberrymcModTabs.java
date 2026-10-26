@@ -25,6 +25,8 @@ public class StrawberrymcModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.strawberrymc.debug")).icon(() -> new ItemStack(Blocks.COMMAND_BLOCK)).displayItems((parameters, tabData) -> {
 				tabData.accept(StrawberrymcModBlocks.OASIS_SPAWNER.get().asItem());
 				tabData.accept(StrawberrymcModBlocks.CHISELED_CAULDRON.get().asItem());
+				tabData.accept(StrawberrymcModBlocks.TALL_FIRE.get().asItem());
+				tabData.accept(StrawberrymcModBlocks.FIR_TREE_SPAWNER.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -39,6 +41,8 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.FLINT_SHARD.get());
 			tabData.accept(StrawberrymcModItems.COCONUT.get());
 			tabData.accept(StrawberrymcModItems.SMITE_VIAL.get());
+			tabData.accept(StrawberrymcModItems.GREEN_BERYL.get());
+			tabData.accept(StrawberrymcModItems.COCONUT_OIL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.CHORINE_ORE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.CHORINE_BLOCK.get().asItem());
@@ -134,12 +138,14 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_BOOTS.get());
 			tabData.accept(StrawberrymcModItems.RECOVERY_PEARL.get());
 			tabData.accept(StrawberrymcModItems.SMITE_VIAL.get());
+			tabData.accept(StrawberrymcModItems.IRON_BOW.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.GARNET_BLOCK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
 			if (tabData.hasPermissions()) {
 				tabData.accept(StrawberrymcModBlocks.GLOWROOT_DUMMY_SPAWNER.get().asItem());
 				tabData.accept(StrawberrymcModBlocks.CHISELED_CAULDRON.get().asItem());
+				tabData.accept(StrawberrymcModBlocks.FIR_TREE_SPAWNER.get().asItem());
 			}
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(StrawberrymcModItems.COCONUT.get());

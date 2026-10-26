@@ -12,7 +12,7 @@
     "seaLevel": 0,
     "generateOreVeins": true,
     "generateAquifers": true,
-    "horizontalNoiseSize": 4,
+    "horizontalNoiseSize": 1,
     "verticalNoiseSize": 4,
     "defaultEffects": "overworld",
     "useCustomEffects": true,
